@@ -1,0 +1,43 @@
+---
+// First-visit intro (homepage, once per session). Shown only when the head script adds html.pre.
+// The IHI mark draws itself, the wordmark settles, a hairline fills, then the curtain lifts.
+// Controller: src/scripts/motion.ts. Failsafe: the head script removes it after 6s regardless.
+---
+<div class="preloader" aria-hidden="true">
+  <div class="pre-in">
+    <svg class="pre-mark" viewBox="0 0 638 462" role="presentation">
+      <rect class="pre-v" x="0" y="0" width="55" height="462" style="--d:0ms" />
+      <rect class="pre-v" x="163" y="1" width="22" height="461" style="--d:120ms" />
+      <rect class="pre-v" x="452" y="1" width="23" height="461" style="--d:240ms" />
+      <rect class="pre-v" x="583" y="0" width="55" height="462" style="--d:360ms" />
+      <rect class="pre-h" x="163" y="210" width="312" height="21" />
+    </svg>
+    <p class="pre-word">Home Harmonics</p>
+    <span class="pre-line"><span></span></span>
+  </div>
+</div>
+
+<style is:global>
+  .preloader { display: none; }
+  html.pre .preloader {
+    position: fixed; inset: 0; z-index: 100;
+    display: grid; place-items: center;
+    background: var(--walnut) url('/grain.png');
+    color: var(--alabaster);
+    clip-path: inset(0);
+    transition: clip-path 1000ms cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  html.pre-out .preloader { clip-path: inset(0 0 100% 0); }
+  .pre-in { display: grid; justify-items: center; gap: 28px; transition: opacity 500ms var(--ease), transform 800ms var(--ease); }
+  html.pre-out .pre-in { opacity: 0; transform: translateY(-28px); }
+  .pre-mark { width: 60px; height: auto; overflow: visible; }
+  .pre-mark rect { fill: currentColor; transform-box: fill-box; }
+  .pre-v { transform-origin: 50% 100%; animation: pre-rise 1000ms var(--ease) both; animation-delay: var(--d); }
+  .pre-h { transform-origin: 0 50%; animation: pre-span 800ms var(--ease) 700ms both; }
+  .pre-word { margin: 0; padding-left: 0.3em; font: 300 0.78rem/1 var(--sans); letter-spacing: 0.3em; text-transform: uppercase; animation: pre-word 1400ms var(--ease) 650ms both; }
+  .pre-line { display: block; width: 140px; height: 1px; overflow: hidden; background: color-mix(in srgb, var(--alabaster) 22%, transparent); }
+  .pre-line span { display: block; height: 100%; background: var(--alabaster); transform-origin: 0 50%; animation: pre-span 1700ms cubic-bezier(0.65, 0, 0.35, 1) 250ms both; }
+  @keyframes pre-rise { from { transform: scaleY(0); } }
+  @keyframes pre-span { from { transform: scaleX(0); } }
+  @keyframes pre-word { from { opacity: 0; letter-spacing: 0.7em; } }
+</style>

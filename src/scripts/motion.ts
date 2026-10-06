@@ -6,6 +6,25 @@ const motion = root.classList.contains('motion');
 const header = document.querySelector<HTMLElement>('.site-header')!;
 const lenis = () => (window as unknown as { hhLenis?: { stop(): void; start(): void } }).hhLenis;
 
+// First-visit intro: lifts ~2s after navigation (or when the page has loaded, max 3.6s).
+// Any click, key, wheel or touch skips it straight away.
+const pre = document.querySelector<HTMLElement>('.preloader');
+if (pre && root.classList.contains('pre')) {
+  root.style.overflow = 'hidden';
+  let lifted = false;
+  const lift = () => {
+    if (lifted) return;
+    lifted = true;
+    root.classList.add('pre-out');
+    root.style.overflow = '';
+    setTimeout(() => { root.classList.remove('pre', 'pre-out'); pre.remove(); }, 1100);
+  };
+  const whenLoaded = () => setTimeout(lift, Math.max(0, 2000 - performance.now()));
+  document.readyState === 'complete' ? whenLoaded() : addEventListener('load', whenLoaded, { once: true });
+  setTimeout(lift, 3600);
+  for (const ev of ['pointerdown', 'keydown', 'wheel', 'touchstart']) addEventListener(ev, lift, { once: true, passive: true });
+}
+
 // Scroll reveals. Elements already on screen are shown at once (no flash), the rest reveal on entry.
 if (motion) {
   const io = new IntersectionObserver(

@@ -194,6 +194,11 @@ main:focus { outline: none; }
 .motion [data-intro='words'] .w > span { animation: intro-word 1000ms var(--ease) both; animation-delay: calc(250ms + var(--i) * 70ms); }
 .motion [data-intro='settle'] picture { animation: settle 1.6s var(--ease) both; }
 
+/* While the first-visit intro is up, hold the hero's intro; it plays as the curtain lifts. */
+html.pre:not(.pre-out) [data-intro],
+html.pre:not(.pre-out) [data-intro] .w > span,
+html.pre:not(.pre-out) [data-intro] picture { animation-play-state: paused; }
+
 /* Page transitions (cross-document View Transitions; plain navigation where unsupported) */
 @view-transition { navigation: auto; }
 ::view-transition-old(root) { animation: vt-out 250ms var(--ease) both; }

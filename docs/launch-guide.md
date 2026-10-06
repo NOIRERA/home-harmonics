@@ -18,21 +18,11 @@ Never paste a **secret** key into chat, email or a document. Only into Vercel.
 
 ---
 
-## Part 1 — Put the code on GitHub (10 minutes)
+## Part 1 — GitHub ✅ done (6 Oct 2026)
 
-Vercel deploys from GitHub. In Terminal, inside the project folder:
-
-```bash
-cd "/Users/savethehood/Desktop/HOME HARMONICS"
-```
-
-```bash
-git init && git add . && git commit -m "Home Harmonics site"
-```
-
-Then on github.com: **New repository** → name `home-harmonics` → **Private** → Create. Copy the two lines GitHub shows under "push an existing repository" and run them in Terminal.
-
-The large `PHOTO ASSETS` folder is included on purpose (the media script reads it).
+The code is in a private repository: https://github.com/NOIRERA/home-harmonics (branch `main`).
+Vercel deploys from it, and every push to `main` redeploys the site automatically.
+The `PHOTO ASSETS` folder is included on purpose (the media script reads it).
 
 ---
 

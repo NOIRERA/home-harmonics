@@ -1,0 +1,16 @@
+{
+  "name": "Home Harmonics",
+  "founder": "Yaz Scott",
+  "url": "https://www.home-harmonics.com",
+  "entity": "Home Harmonics is a Dallas–Fort Worth-based home organization and move-in setup company that travels to clients across Texas and beyond.",
+  "email": "hello@home-harmonics.com",
+  "phone": "(817) 883-1887",
+  "phoneE164": "+18178831887",
+  "instagram": "https://www.instagram.com/homeharmonics/",
+  "googleProfile": "https://www.google.com/maps?cid=8972241469728059377",
+  "reviews": { "rating": "5.0", "count": 14 },
+  "leadTime": "about 4–6 weeks",
+  "yearsInIndustry": { "value": 2, "asOf": "2026-10" },
+  "dayRate": 600,
+  "minimumDays": { "single": 1, "wholeHome": 2, "moveIn": 3, "travel": 2 }
+}

@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import InquiryForm from '../components/InquiryForm.astro';
+import { settings, price, usd, crumbSchema } from '../lib/site';
+
+const crumbs = [{ label: 'Inquire', href: '/inquire/' }];
+---
+<Base
+  title="Request a Consultation | Home Harmonics, Dallas–Fort Worth"
+  description="Request a consultation with Home Harmonics. Yaz replies the same day to arrange a complimentary 15-minute fit call."
+  schema={[crumbSchema(crumbs)]}
+  hideStickyCta
+>
+  <PageHero
+    eyebrow="Inquire"
+    title="Tell us about | *your home.*"
+    lead="Yaz replies the same day to arrange a complimentary 15-minute fit call."
+    crumbs={crumbs}
+  />
+
+  <Section bg="limestone" from="alabaster" class="iq">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Before you send</p>
+        <ul role="list" class="ticks iq-notes">
+          <li>We reply the same day.</li>
+          <li>Discreet, and no obligation.</li>
+          <li>Single spaces from {usd(price.single)}, whole-home from {usd(price.wholeHome)}, move-in from {usd(price.moveIn)}.</li>
+          <li>A 50% deposit holds your dates.</li>
+          <li>Currently scheduling {settings.leadTime} out.</li>
+        </ul>
+        <p class="muted">Prefer to talk? Call or text <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a>, or write to <a href={`mailto:${settings.email}`}>{settings.email}</a>.</p>
+        <p class="muted">Designer, builder or realtor? <a href="/trade/#trade-inquiry">Send a trade inquiry</a>.</p>
+      </div>
+      <InquiryForm />
+    </div>
+  </Section>
+</Base>

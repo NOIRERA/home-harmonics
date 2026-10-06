@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import { settings, crumbSchema } from '../lib/site';
+
+const crumbs = [{ label: 'Privacy', href: '/privacy/' }];
+---
+<Base title="Privacy Policy | Home Harmonics" description="How Home Harmonics collects, uses and protects the information you share through this website." schema={[crumbSchema(crumbs)]}>
+  <PageHero eyebrow="Privacy" title="Privacy *policy.*" lead="Last updated October 6, 2026." crumbs={crumbs} />
+  <Section bg="alabaster">
+    <div class="wrap">
+      <div class="prose">
+        <p>Client privacy is fundamental to our work. This policy explains what information Home Harmonics (“we”) collects through home-harmonics.com, how it is used, and the choices you have.</p>
+
+        <h2>What we collect</h2>
+        <ul>
+          <li><strong>Information you send us.</strong> When you submit an inquiry or trade inquiry: your name, email, phone number, home location, what you need, your timeline, any move or closing date, who referred you, and anything you write in the note.</li>
+          <li><strong>How you found us.</strong> Campaign tags in the link you arrived from (such as utm_source) and advertising click identifiers, saved with your inquiry so we know which channels work.</li>
+          <li><strong>Usage information.</strong> If analytics is enabled, Google Analytics records pages visited, device and approximate location, using cookies. It does not receive the contents of your inquiry.</li>
+          <li><strong>Spam protection.</strong> Forms are protected by Cloudflare Turnstile, which evaluates signals from your browser to tell people from automated traffic.</li>
+        </ul>
+
+        <h2>How we use it</h2>
+        <p>To reply to your inquiry, arrange calls and walkthroughs, prepare proposals, deliver the work you engage us for, and understand how people find the site. We do not sell your information, and we do not share it for others’ marketing.</p>
+
+        <h2>Who processes it</h2>
+        <p>We rely on a small number of service providers to run the site and our correspondence: Vercel (website hosting), Resend (email delivery), Cloudflare (spam protection and email routing), Google (email and, if enabled, analytics). Each processes information only to provide its service to us.</p>
+
+        <h2>Your home and photographs</h2>
+        <p>Nothing in your home is photographed or shared without your written consent, and the level of consent is set out in your service agreement. Project photographs on this site are shared with each client’s written permission.</p>
+
+        <h2>How long we keep it</h2>
+        <p>Inquiries that do not become projects are deleted within two years. Client records are kept for as long as needed for the engagement and for our legal, tax and insurance obligations.</p>
+
+        <h2>Your choices</h2>
+        <p>You can ask us what information we hold about you, ask us to correct or delete it, or ask us to stop contacting you, by writing to <a href={`mailto:${settings.email}`}>{settings.email}</a>. You can block or delete cookies in your browser settings.</p>
+
+        <h2>Children</h2>
+        <p>This site is not directed to children under 13, and we do not knowingly collect their information.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes, the updated version will be posted here with a new date.</p>
+
+        <h2>Contact</h2>
+        <p>Home Harmonics, Dallas–Fort Worth, Texas. <a href={`mailto:${settings.email}`}>{settings.email}</a> · <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a></p>
+      </div>
+    </div>
+  </Section>
+</Base>

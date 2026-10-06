@@ -1,0 +1,140 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import Words from '../components/Words.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { faqById } from '../content/faq';
+import { settings, price, usd, crumbSchema } from '../lib/site';
+
+const crumbs = [{ label: 'Investment', href: '/investment/' }];
+const d = settings.minimumDays;
+const tiers = [
+  { name: 'Move-In Concierge', href: '/services/move-in-concierge/', from: usd(price.moveIn), min: `${d.moveIn} full days on site` },
+  { name: 'Whole-Home Organization', href: '/services/whole-home-organization/', from: usd(price.wholeHome), min: `${d.wholeHome} full days on site` },
+  { name: 'Signature Spaces', href: '/services/signature-spaces/', from: usd(price.single), min: `${d.single} full day per space` },
+  { name: 'Seasonal Resets', href: '/services/seasonal-resets/', from: 'In your proposal', min: 'For project clients' },
+  { name: 'Travel engagements', href: '/where-we-work/', from: 'Travel and lodging at cost', min: `${d.travel} on-site days minimum` },
+];
+const factors = [
+  { t: 'Home size', d: 'How many rooms and how much is in each.' },
+  { t: 'Scope', d: 'The number of spaces, and how much editing each needs.' },
+  { t: 'Timeline', d: 'A fixed move or closing date can mean more days in a shorter window.' },
+  { t: 'Sourcing', d: 'The products in your design plan, billed at cost plus a handling fee.' },
+  { t: 'Travel', d: 'Outside Dallas–Fort Worth, travel and lodging are billed at cost.' },
+];
+const included = [
+  'A complimentary fit call and walkthrough',
+  'A household profile',
+  'A design plan for your approval',
+  'Editing, donation and removal',
+  'Sourcing and installation',
+  'Labeling throughout',
+  'A care guide for the household',
+  'A check-in thirty days later',
+];
+const separate = [
+  'Products and supplies, at cost plus a handling fee, within the budget you approve',
+  'Travel and lodging outside Dallas–Fort Worth, at cost',
+  'Built storage such as cabinetry or garage systems, quoted separately and coordinated by Yaz, with an image of the finished space before anything is built',
+];
+---
+<Base
+  title="How Much Does a Professional Organizer Cost in Dallas? | Home Harmonics Investment"
+  description={`Home Harmonics pricing: single spaces from ${usd(price.single)}, whole-home organization from ${usd(price.wholeHome)}, move-in concierge from ${usd(price.moveIn)}. Priced by project, never by the hour.`}
+  schema={[crumbSchema(crumbs)]}
+>
+  <PageHero
+    eyebrow="Investment"
+    title="Clear starting points, | *a fixed proposal.*"
+    lead="Every engagement is priced by project, never by the hour. These are the minimums; your proposal sets the exact figure after a complimentary walkthrough."
+    crumbs={crumbs}
+  >
+    <button class="link no-print" type="button" onclick="window.print()">Print or save as PDF <span class="arrow" aria-hidden="true">→</span></button>
+  </PageHero>
+
+  <Section bg="alabaster" class="iv-tiers">
+    <div class="wrap">
+      <table class="cmp" data-reveal>
+        <caption class="sr-only">Starting prices by service</caption>
+        <thead><tr><th scope="col">Service</th><th scope="col">Begins at</th><th scope="col">Minimum</th></tr></thead>
+        <tbody>
+          {tiers.map((t) => (
+            <tr>
+              <th scope="row"><a href={t.href}>{t.name}</a></th>
+              <td data-label="Begins at">{t.from}</td>
+              <td data-label="Minimum">{t.min}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="muted iv-note" data-reveal>A 50% deposit holds your dates. Engagements are scheduled as consecutive days, and the details are in your agreement.</p>
+    </div>
+  </Section>
+
+  <Section bg="limestone" from="alabaster" class="iv-factors">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">What moves the figure</p>
+        <h2 class="h2"><Words reveal text="Five things *set the investment.*" /></h2>
+      </header>
+      <ol role="list" class="iv-five">
+        {factors.map((f, i) => <li data-reveal style={`--delay:${i * 70}ms`}><span class="eyebrow muted">0{i + 1}</span><h3 class="h3">{f.t}</h3><p class="muted">{f.d}</p></li>)}
+      </ol>
+    </div>
+  </Section>
+
+  <Section bg="alabaster" from="limestone" class="iv-incl">
+    <div class="wrap iv-two">
+      <div data-reveal>
+        <p class="eyebrow">Included</p>
+        <ul role="list" class="ticks">{included.map((x) => <li>{x}</li>)}</ul>
+      </div>
+      <div data-reveal>
+        <p class="eyebrow">Billed separately</p>
+        <ul role="list" class="ticks">{separate.map((x) => <li>{x}</li>)}</ul>
+      </div>
+    </div>
+  </Section>
+
+  <Section bg="limestone" from="alabaster" class="iv-begin">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">How it begins</p>
+        <h2 class="h2"><Words reveal text="A walkthrough, *then a proposal.*" /></h2>
+      </div>
+      <div class="prose" data-reveal>
+        <p>It starts with a complimentary 15-minute fit call about what you need and when. Then a complimentary 30–45 minute walkthrough, in your home or by video, covering every space in scope.</p>
+        <p>A written proposal follows within about two business days, with the scope, the dates and the investment. A 50% deposit holds the dates.</p>
+        <h2>For assistants and house managers</h2>
+        <p>This page is written to be forwarded. Print it or save it as a PDF, and send the inquiry on your principal’s behalf; Yaz replies the same day.</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section bg="alabaster" from="limestone" class="iv-faq">
+    <div class="wrap split">
+      <div><p class="eyebrow">Questions</p><h2 class="h2"><Words reveal text="Answers, *first.*" /></h2></div>
+      <FaqList items={faqById(['hourly', 'cost-whole-home', 'products', 'built-storage', 'consultation'])} stacked />
+    </div>
+  </Section>
+
+  <CtaBand from="alabaster" />
+</Base>
+
+<style is:global>
+  .iv-tiers .cmp tbody th { width: 40%; }
+  .iv-note { margin-top: 32px; max-width: 44rem; }
+  .iv-five { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: var(--rule); }
+  .iv-five li { display: grid; gap: 12px; align-content: start; padding: 28px 24px 8px 0; }
+  .iv-five li + li { border-left: var(--rule); padding-left: 24px; }
+  .iv-two { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 112px); }
+  .iv-two .eyebrow { margin-bottom: 16px; }
+  button.link { background-color: transparent; border: 0; padding: 0; cursor: pointer; }
+  @media (max-width: 1023px) {
+    .iv-five { grid-template-columns: 1fr; border-top: 0; }
+    .iv-five li, .iv-five li + li { border-left: 0; border-top: var(--rule); padding: 24px 0; }
+    .iv-two { grid-template-columns: 1fr; }
+  }
+</style>

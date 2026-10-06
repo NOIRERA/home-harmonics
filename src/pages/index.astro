@@ -1,0 +1,431 @@
+---
+import { getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Section from '../components/Section.astro';
+import Img from '../components/Img.astro';
+import Words from '../components/Words.astro';
+import InquiryForm from '../components/InquiryForm.astro';
+import { getEntry } from 'astro:content';
+import { media, type MediaId } from '../lib/media';
+import { steps } from '../content/method';
+import { settings, price, usd, claim, voices } from '../lib/site';
+
+const garage = (await getEntry('projects', 'garage'))!.data;
+
+// Hero: art-directed sources (16:9 desktop, 4:5 mobile). Sharp at first paint; it is the LCP.
+const set = (src: ImageMetadata, widths: number[], format: 'avif' | 'webp') => getImage({ src, widths, format });
+const [dA, dW, mA, mW] = await Promise.all([
+  set(media.hero.src, [960, 1280, 1672], 'avif'),
+  set(media.hero.src, [960, 1280, 1672], 'webp'),
+  set(media.heroMobile.src, [480, 753], 'avif'),
+  set(media.heroMobile.src, [480, 753], 'webp'),
+]);
+
+const services: { href: string; title: string; line: string; from: number; img: MediaId }[] = [
+  { href: '/services/move-in-concierge/', title: 'Move-In Concierge', line: 'Unpacked, placed and labeled before your first night.', from: price.moveIn, img: 'bedroom' },
+  { href: '/services/whole-home-organization/', title: 'Whole-Home Organization', line: 'Every room edited, designed and set up to stay that way.', from: price.wholeHome, img: 'livingPantry' },
+  { href: '/services/signature-spaces/', title: 'Signature Spaces', line: 'Wardrobes, pantries and the rooms you use most.', from: price.single, img: 'closet' },
+];
+
+const stages: { label: string; line: string; img: MediaId }[] = [
+  { label: 'Before the move', line: 'A room-by-room plan, sourcing and labels, settled before the truck arrives.', img: 'pantryTall' },
+  { label: 'Move day', line: 'Kitchen, pantry, closets, linens and baths unpacked and set up.', img: 'bedroom' },
+  { label: 'The day after', line: 'Kids’ spaces ready, boxes gone, every drawer where you would look for it.', img: 'entry' },
+];
+
+const begin = [
+  { t: 'A short fit call', d: 'Fifteen minutes, complimentary, to hear what you need and when.' },
+  { t: 'A walkthrough', d: 'Thirty to forty-five minutes in your home or by video, also complimentary. We look at every space in scope.' },
+  { t: 'A proposal', d: 'Scope, schedule and investment within about two business days. A 50% deposit holds your dates.' },
+];
+---
+<Base
+  title="Home Organization & Move-In Setup in Dallas–Fort Worth | Home Harmonics"
+  description={`Home organization and move-in setup based in Dallas–Fort Worth, traveling to homes across Texas and beyond. Engagements from ${usd(price.single)}. We reply the same day.`}
+  transparentHeader
+  footerFrom="walnut"
+>
+  <!-- 01 Hero -->
+  <section class="hero" data-bg="alabaster">
+    <div class="hero-copy">
+      <h1>
+        <span class="eyebrow" data-intro style="--delay:100ms">Home organization &amp; move-in setup <span aria-hidden="true">·</span> <span class="nowrap">Based in Dallas–Fort Worth</span></span>
+        <Words class="display hero-h" intro text="Your home, | already handled." />
+      </h1>
+      <p class="lead hero-sub" data-intro style="--delay:750ms">An effortlessly ordered home, designed around the way you live.</p>
+      <p class="muted hero-support" data-intro style="--delay:850ms">Traveling to homes across Texas and beyond.</p>
+      <div class="hero-actions" data-intro style="--delay:950ms">
+        <a class="btn" href="/inquire/" data-magnetic>Request a consultation</a>
+        <a class="link" href="/work/">See our work <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="img hero-media" data-intro="settle" data-parallax data-truth="generated_atmosphere">
+      <picture>
+        <source media="(max-width: 767px)" type="image/avif" srcset={mA.srcSet.attribute} sizes="100vw" />
+        <source media="(max-width: 767px)" type="image/webp" srcset={mW.srcSet.attribute} sizes="100vw" />
+        <source type="image/avif" srcset={dA.srcSet.attribute} sizes="(max-width: 1023px) 100vw, 62vw" />
+        <source type="image/webp" srcset={dW.srcSet.attribute} sizes="(max-width: 1023px) 100vw, 62vw" />
+        <img src={dW.src} alt={media.hero.alt} width={media.hero.src.width} height={media.hero.src.height} fetchpriority="high" loading="eager" decoding="async" />
+      </picture>
+    </div>
+  </section>
+
+  <!-- 02 Statement -->
+  <Section bg="alabaster" class="statement">
+    <div class="wrap st-grid">
+      <h2 class="h2 st-h"><Words reveal text="Your home should support your life — *not quietly demand more from it.*" /></h2>
+      <p class="lead muted st-p" data-reveal>
+        The work happens where no one looks: behind cabinet doors, inside drawers, along the rail of a wardrobe.
+        Each space is planned around who uses it and how often, then sourced, installed and labeled, so the house keeps running without anyone managing it.
+      </p>
+      <Img id="drawer" class="st-img" reveal="mask" parallax sizes="(min-width: 1024px) 24vw, 70vw" widths={[480, 720, 1000]} />
+    </div>
+  </Section>
+
+  <!-- 03 Selected work (real project) -->
+  <Section bg="limestone" from="alabaster" id="work" class="work">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="h2"><Words reveal text="A garage, *fully fitted.*" /></h2>
+      </header>
+      <div class="work-grid">
+        <a class="work-main" href="/work/garage/" aria-label="View the garage project">
+          <Img id="garageAfter" reveal="mask" parallax sizes="(min-width: 1024px) 62vw, 100vw" widths={[640, 960, 1280, 1448]} />
+        </a>
+        <Img id="garageAfter" class="work-detail" reveal="mask" alt="Detail: bikes and scooters hung on the wall system above the cabinetry" zoom={1.9} origin="52% 46%" sizes="(min-width: 1024px) 22vw, 60vw" widths={[480, 720, 1000]} style="--delay:200ms" />
+        <div class="work-copy" data-reveal>
+          <p class="eyebrow muted">{garage.space} · Design, built storage &amp; organization · {garage.duration}</p>
+          <dl class="work-dl">
+            <div><dt class="eyebrow">Starting point</dt><dd>Bins, boxes and bikes had taken over the floor.</dd></div>
+            <div><dt class="eyebrow">What we did</dt><dd>Designed the storage, brought in a build partner for the cabinetry and racks, then gave every bike, tool and bin a place.</dd></div>
+            <div><dt class="eyebrow">Result</dt><dd>{garage.results[0]}.</dd></div>
+          </dl>
+          <a class="link" href="/work/garage/">View the project <span class="arrow" aria-hidden="true">→</span></a>
+          <p class="work-caption muted">Real project photography.</p>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- 04 Services index -->
+  <Section bg="alabaster" from="limestone" id="services" class="svc">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">Services</p>
+        <h2 class="h2"><Words reveal text="Three ways *to begin.*" /></h2>
+      </header>
+      <ol role="list" class="svc-list">
+        {services.map((s, i) => (
+          <li data-reveal style={`--delay:${i * 90}ms`}>
+            <a class="svc-row" href={s.href}>
+              <span class="eyebrow svc-num">0{i + 1}</span>
+              <span class="h3 svc-title">{s.title}</span>
+              <span class="muted svc-line">{s.line}</span>
+              <Img id={s.img} class="svc-img" alt="" sizes="(min-width: 1024px) 16vw, 92vw" widths={[480, 720, 960]} />
+              <span class="eyebrow svc-price">From {usd(s.from)}</span>
+              <span class="svc-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+      <p class="svc-note" data-reveal>
+        <span class="muted">Seasonal Resets keep it that way, offered to every project client.</span>
+        <a class="link" href="/services/seasonal-resets/">Seasonal Resets <span class="arrow" aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </Section>
+
+  <!-- 05 Move-In Concierge (walnut band, sticky text on desktop) -->
+  <Section bg="walnut" from="alabaster" id="move-in" class="movein">
+    <div class="wrap mi-grid">
+      <div class="mi-text">
+        <p class="eyebrow">Move-In Concierge</p>
+        <h2 class="h2"><Words reveal text="You don’t move in. | *You arrive.*" /></h2>
+        <p class="lead mi-sub" data-reveal>Walk into a home that’s ready to live in.</p>
+        <ol role="list" class="mi-stages">
+          {stages.map((s, i) => (
+            <li class:list={[i === 0 && 'is-active']} data-step-for={`movein:${i}`}>
+              <span class="eyebrow">{s.label}</span>
+              <span>{s.line}</span>
+            </li>
+          ))}
+        </ol>
+        <a class="btn" href="/services/move-in-concierge/">Plan a move-in</a>
+      </div>
+      <div class="mi-stills">
+        {stages.map((s, i) => (
+          <Img id={s.img} class="mi-still" reveal="mask" parallax={i === 1} sizes="(min-width: 1024px) 44vw, 100vw" widths={[640, 960, 1280]} data-step={`movein:${i}`} />
+        ))}
+      </div>
+    </div>
+  </Section>
+
+  <!-- 06 The Harmonics Method (sticky numeral) -->
+  <Section bg="alabaster" from="walnut" id="method" class="method">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">The Harmonics Method</p>
+        <h2 class="h2"><Words reveal text="Five steps. *Each ends with something in your hands.*" /></h2>
+      </header>
+      <div class="m-grid">
+        <div class="m-num" aria-hidden="true">
+          {steps.map((_, i) => <span class:list={['m-n', i === 0 && 'is-active']} data-step-for={`method:${i}`}>0{i + 1}</span>)}
+        </div>
+        <ol role="list" class="m-steps">
+          {steps.map((s, i) => (
+            <li data-step={`method:${i}`} data-reveal>
+              <span class="eyebrow m-inline">0{i + 1}</span>
+              <h3 class="h3">{s.t}</h3>
+              <p class="muted">{s.d}</p>
+              <p class="eyebrow m-del">Deliverable · {s.del}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <a class="link m-link" href="/investment/">What an engagement involves <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </Section>
+
+  <!-- 07 A Letter from Yaz -->
+  <Section bg="limestone" from="alabaster" id="letter" class="letter">
+    <div class="wrap l-grid">
+      <Img id="yazPortrait" class="l-img" reveal="mask" sizes="(min-width: 1024px) 34vw, 90vw" widths={[480, 720, 1003]} />
+      <div class="l-text">
+        <p class="eyebrow">A letter from Yaz</p>
+        <div class="l-letter" data-reveal>
+          <p>For as long as I can remember, I was the one friends and family called when a closet, a pantry or a whole move got away from them. Two years ago I made it my work.</p>
+          <p>I don’t do one-day makeovers. I design systems around the way your household actually lives, so the calm lasts long after I leave.</p>
+        </div>
+        <p class="l-sign" data-reveal>Yaz Scott, Founder</p>
+        <a class="link" href="/about/">Read the full letter <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </Section>
+
+  <!-- 08 Voices: only approved quotes with real text; omitted until then -->
+  {voices.length > 0 && (
+    <Section bg="alabaster" from="limestone" id="voices" class="voices">
+      <div class="wrap">
+        <p class="eyebrow">Voices</p>
+        <div class="v-list">
+          {voices.map((v, i) => (
+            <figure class:list={['v-item', i === 0 && 'v-lead']} data-reveal style={`--delay:${i * 90}ms`}>
+              <blockquote><p>“{v.display}”</p></blockquote>
+              <figcaption class="eyebrow muted">{v.name} · {v.project}</figcaption>
+            </figure>
+          ))}
+        </div>
+        {claim('googleRating') && (
+          <a class="link v-google" href={settings.googleProfile} rel="noopener">Read all {settings.reviews.count} reviews on Google <span class="arrow" aria-hidden="true">→</span></a>
+        )}
+      </div>
+    </Section>
+  )}
+
+  <!-- 09 How we begin -->
+  <Section bg="alabaster" from={voices.length > 0 ? undefined : 'limestone'} id="begin" class="begin">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">How we begin</p>
+        <h2 class="h2"><Words reveal text="Three conversations, *then a plan.*" /></h2>
+      </header>
+      <ol role="list" class="b-cols">
+        {begin.map((b, i) => (
+          <li data-reveal style={`--delay:${i * 90}ms`}>
+            <span class="eyebrow muted">0{i + 1}</span>
+            <h3 class="h3">{b.t}</h3>
+            <p class="muted">{b.d}</p>
+          </li>
+        ))}
+      </ol>
+      <div class="b-foot" data-reveal>
+        <p class="b-base"><span class="h3">Based in Dallas. <em>Working where you are.</em></span></p>
+        <ul role="list" class="b-facts muted">
+          <li>Currently scheduling {settings.leadTime} out.</li>
+          {claim('googleRating') && voices.length === 0 && <li><a href={settings.googleProfile} rel="noopener">{settings.reviews.rating} on Google · {settings.reviews.count} reviews</a></li>}
+        </ul>
+        <a class="link" href="/investment/">See what engagements look like <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </Section>
+
+  <!-- 10 For the trade -->
+  <Section bg="limestone" from="alabaster" id="trade" class="trade">
+    <div class="wrap t-grid">
+      <div data-reveal>
+        <p class="eyebrow">For the trade</p>
+        <h2 class="h2 t-h">You create the home. <em>We make it beautifully livable.</em></h2>
+        <p class="muted t-p">Post-install organization, move-in completion and client handoff for designers, architects, builders and realtors.</p>
+        <a class="link" href="/trade/">For designers and builders <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <Img id="laundry" class="t-img" reveal="mask" sizes="(min-width: 1024px) 40vw, 100vw" widths={[640, 960, 1280]} />
+    </div>
+  </Section>
+
+  <!-- 11 Inquire -->
+  <Section bg="walnut" from="limestone" id="inquire" class="inquire" data-hide-cta="">
+    <div class="wrap inq-grid">
+      <div class="inq-intro">
+        <p class="eyebrow">Inquire</p>
+        <h2 class="h2"><Words reveal text="Tell us about *your home.*" /></h2>
+        <ul role="list" class="inq-notes" data-reveal>
+          <li>We reply the same day.</li>
+          <li>Discreet, and no obligation.</li>
+          <li>Single spaces from {usd(price.single)}, whole-home from {usd(price.wholeHome)}, move-in from {usd(price.moveIn)}.</li>
+          <li>Travel engagements: {price.travelDays} on-site days minimum, travel and lodging at cost.</li>
+        </ul>
+      </div>
+      <InquiryForm />
+    </div>
+  </Section>
+</Base>
+
+<style is:global>
+  /* 01 Hero */
+  .hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 8fr); min-height: 100svh; padding-top: var(--header-h); background: var(--alabaster); }
+  .hero-copy { align-self: end; padding: 48px clamp(28px, 3.5vw, 64px) clamp(56px, 11vh, 128px) var(--gutter); }
+  .hero-h { margin-top: 28px; }
+  .hero-sub { margin-top: 32px; max-width: 26rem; }
+  .hero-support { margin-top: 10px; font-size: 0.95rem; }
+  .hero-actions { margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
+  .hero-media { height: calc(100svh - var(--header-h)); min-height: 560px; }
+  @media (max-width: 1023px) {
+    .hero { grid-template-columns: 1fr; min-height: 0; }
+    .hero-copy { padding: 56px var(--gutter) 48px; }
+    .hero-media { height: 62vh; min-height: 0; }
+  }
+  @media (max-width: 767px) {
+    .hero-copy { padding: 40px var(--gutter); }
+    .hero-media { height: auto; aspect-ratio: 4 / 5; }
+    .hero-actions .btn { width: 100%; }
+  }
+
+  /* 02 Statement */
+  .st-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: 56px; }
+  .st-h { grid-column: 2 / span 9; }
+  .st-p { grid-column: 6 / span 4; }
+  .st-img { grid-column: 10 / span 3; aspect-ratio: 4 / 5; }
+  @media (max-width: 1023px) {
+    .st-h, .st-p { grid-column: 1 / -1; }
+    .st-img { grid-column: 4 / -1; }
+  }
+
+  /* 03 Selected work */
+  .work-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; }
+  .work-main { grid-column: 1 / span 8; grid-row: 1; display: block; }
+  .work-main .img { aspect-ratio: 4 / 3; }
+  .work-detail { grid-column: 6 / span 3; grid-row: 2; aspect-ratio: 4 / 5; margin-top: -18%; z-index: 2; outline: 10px solid var(--limestone); }
+  .work-copy { grid-column: 10 / span 3; grid-row: 1 / span 2; align-self: center; display: grid; gap: 28px; }
+  .work-dl { display: grid; gap: 20px; }
+  .work-dl dt { margin-bottom: 4px; }
+  .work-dl dd { font: 300 1.25rem/1.4 var(--serif); }
+  .work-caption { font-size: 0.8125rem; }
+  @media (max-width: 1023px) {
+    .work-main { grid-column: 1 / -1; margin-inline: calc(var(--gutter) * -1); }
+    .work-detail { grid-column: 5 / -1; margin-top: -20%; }
+    .work-copy { grid-column: 1 / -1; grid-row: 3; margin-top: 40px; }
+  }
+
+  /* 04 Services index: rows, not cards. Image reveals beside the row on hover. */
+  .svc-list { border-top: var(--rule); }
+  .svc-list > li { border-bottom: var(--rule); }
+  .svc-row {
+    position: relative; display: grid; align-items: center; gap: 24px;
+    grid-template-columns: 64px minmax(0, 1.25fr) minmax(0, 1fr) var(--svc-img-w) 120px 28px;
+    padding: clamp(28px, 3.2vw, 48px) 0; text-decoration: none;
+    --svc-img-w: clamp(150px, 13vw, 200px);
+  }
+  .svc-title { background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 0 1px; transition: background-size 600ms var(--ease); justify-self: start; }
+  .svc-row:hover .svc-title, .svc-row:focus-visible .svc-title { background-size: 100% 1px; }
+  .svc-img {
+    /* sits in the empty 4th column: right = price col + arrow col + 2 gaps */
+    position: absolute; top: 50%; right: calc(120px + 28px + 48px); width: var(--svc-img-w);
+    aspect-ratio: 4 / 5; translate: 0 -50%; z-index: 2; pointer-events: none;
+    clip-path: inset(100% 0 0 0); transition: clip-path 700ms var(--ease);
+  }
+  .svc-row:hover .svc-img, .svc-row:focus-visible .svc-img { clip-path: inset(0); }
+  .svc-price { grid-column: 5; white-space: nowrap; }
+  .svc-arrow { grid-column: 6; font-size: 1.25rem; transition: translate var(--t-ui) var(--ease); }
+  .svc-row:hover .svc-arrow { translate: 6px 0; }
+  .svc-note { margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; }
+  @media (max-width: 1023px) {
+    .svc-row { grid-template-columns: 1fr; gap: 10px; }
+    .svc-img { position: relative; top: auto; right: auto; width: 100%; order: -1; translate: none; clip-path: none; aspect-ratio: 4 / 3; margin-bottom: 14px; }
+    .svc-price, .svc-arrow { grid-column: auto; }
+    .svc-arrow { display: none; }
+  }
+
+  /* 05 Move-In */
+  .mi-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(48px, 8vw, 140px); }
+  .mi-text { position: sticky; top: calc(var(--header-h) + 8vh); align-self: start; display: grid; gap: 28px; justify-items: start; }
+  .mi-sub { margin-top: -4px; }
+  .mi-stages { width: 100%; }
+  .mi-stages li { display: grid; gap: 6px; padding: 18px 0; border-top: var(--rule); opacity: 0.62; transition: opacity 600ms var(--ease); }
+  .mi-stages li:last-child { border-bottom: var(--rule); }
+  .mi-stages li.is-active { opacity: 1; }
+  .mi-stills { display: grid; gap: clamp(64px, 12vh, 160px); }
+  .mi-still { aspect-ratio: 4 / 5; }
+  @media (max-width: 1023px) {
+    .mi-grid { grid-template-columns: 1fr; }
+    .mi-text { position: static; }
+    .mi-stages li { opacity: 1; }
+    .mi-stills { gap: 24px; }
+  }
+
+  /* 06 Method */
+  .m-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(40px, 6vw, 120px); }
+  .m-num { position: sticky; top: calc(var(--header-h) + 12vh); align-self: start; height: clamp(9rem, 17vw, 16rem); }
+  .m-n { position: absolute; inset: 0; font: 300 clamp(9rem, 17vw, 16rem)/1 var(--serif); letter-spacing: -0.04em; color: var(--taupe); opacity: 0; translate: 0 14px; transition: opacity 700ms var(--ease), translate 700ms var(--ease); }
+  .m-n.is-active { opacity: 1; translate: 0 0; }
+  .m-steps li { display: grid; gap: 14px; max-width: 34rem; padding: clamp(40px, 9vh, 104px) 0; border-top: var(--rule); }
+  .m-del { color: color-mix(in srgb, currentColor 74%, transparent); }
+  .m-inline { display: none; }
+  .m-link { margin-top: 32px; }
+  @media (max-width: 1023px) { .m-grid { grid-template-columns: 1fr; } .m-num { display: none; } .m-inline { display: block; } }
+
+  /* 07 Letter */
+  .l-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(40px, 7vw, 120px); align-items: center; }
+  .l-img { aspect-ratio: 4 / 5; max-width: 520px; }
+  .l-text { display: grid; gap: 28px; justify-items: start; }
+  .l-letter { display: grid; gap: 1em; font: 300 clamp(1.35rem, 1.1rem + 0.9vw, 2rem)/1.4 var(--serif); max-width: 36rem; }
+  .l-sign { font: italic 300 1.25rem/1 var(--serif); }
+  @media (max-width: 1023px) { .l-grid { grid-template-columns: 1fr; } }
+
+  /* 08 Voices: lead quote large, the rest beside each other */
+  .v-list { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(48px, 6vw, 96px) clamp(32px, 5vw, 80px); margin-top: 40px; }
+  .v-item blockquote { font: italic 300 clamp(1.3rem, 1.1rem + 0.8vw, 1.85rem)/1.4 var(--serif); }
+  .v-lead { grid-column: 1 / -1; }
+  .v-lead blockquote { font-size: var(--fs-h2); line-height: 1.12; max-width: 52rem; }
+  .v-item figcaption { margin-top: 20px; }
+  .v-google { margin-top: 56px; }
+  @media (max-width: 1023px) { .v-list { grid-template-columns: 1fr; } }
+
+  /* 09 How we begin */
+  .b-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: var(--rule); }
+  .b-cols li { display: grid; gap: 12px; align-content: start; padding: 32px 32px 8px 0; }
+  .b-cols li + li { border-left: var(--rule); padding-left: 32px; }
+  .b-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; margin-top: 72px; padding-top: 32px; border-top: var(--rule); }
+  .b-facts { display: grid; gap: 4px; }
+  .b-facts a { text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  @media (max-width: 1023px) {
+    .b-cols { grid-template-columns: 1fr; border-top: 0; }
+    .b-cols li, .b-cols li + li { border-left: 0; border-top: var(--rule); padding: 28px 0; }
+  }
+
+  /* 10 Trade (slim band) */
+  .trade { --pad: clamp(72px, 8vw, 120px); }
+  .t-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(40px, 6vw, 100px); align-items: center; }
+  .t-h { margin: 20px 0 24px; }
+  .t-p { max-width: 30rem; margin-bottom: 20px; }
+  .t-img { aspect-ratio: 3 / 2; }
+  @media (max-width: 1023px) { .t-grid { grid-template-columns: 1fr; } }
+
+  /* 11 Inquire */
+  .inq-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(48px, 7vw, 120px); }
+  .inq-intro { display: grid; gap: 24px; align-content: start; }
+  .inq-notes { display: grid; gap: 10px; margin-top: 12px; max-width: 26rem; }
+  .inq-notes li { padding-left: 22px; position: relative; }
+  .inq-notes li::before { content: ''; position: absolute; left: 0; top: 0.8em; width: 10px; height: 1px; background: var(--sage); }
+  @media (max-width: 1023px) { .inq-grid { grid-template-columns: 1fr; } }
+</style>

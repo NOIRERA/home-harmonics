@@ -1,0 +1,106 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { getImage } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import Img from '../../components/Img.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { serviceBySlug } from '../../content/services';
+import { media, type MediaId } from '../../lib/media';
+import { settings, abs, crumbSchema } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('journal')).sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post, more: posts.filter((x) => x.id !== post.id).slice(0, 2) } }));
+}
+const { post, more } = Astro.props as { post: CollectionEntry<'journal'>; more: CollectionEntry<'journal'>[] };
+const d = post.data;
+const { Content } = await render(post);
+const minutes = Math.max(1, Math.round((post.body ?? '').split(/\s+/).length / 230));
+const fmt = (x: Date) => x.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const iso = (x: Date) => x.toISOString().slice(0, 10);
+const hero = d.hero as MediaId;
+if (!(hero in media)) throw new Error(`Journal ${post.id}: unknown hero ${hero}`);
+const svc = d.service ? serviceBySlug(d.service) : undefined;
+const crumbs = [{ label: 'Journal', href: '/journal/' }, { label: d.title, href: `/journal/${post.id}/` }];
+const ogImg = await getImage({ src: media[hero].src, width: 1200, height: 630, fit: 'cover', format: 'jpg' });
+const article = {
+  '@type': 'Article',
+  headline: d.title,
+  description: d.summary,
+  datePublished: iso(d.published),
+  dateModified: iso(d.reviewed),
+  image: abs(ogImg.src),
+  mainEntityOfPage: abs(`/journal/${post.id}/`),
+  author: { '@type': 'Person', '@id': abs('/about/#yaz'), name: settings.founder, url: abs('/about/') },
+  publisher: { '@id': abs('/#business') },
+};
+---
+<Base title={`${d.title} | Home Harmonics Journal`} description={d.description} schema={[article, crumbSchema(crumbs)]}>
+  <PageHero eyebrow={`Journal · ${minutes} min read`} title={d.title} crumbs={crumbs} />
+
+  <Section bg="alabaster" class="ar">
+    <div class="wrap ar-grid">
+      <aside class="ar-meta" data-reveal>
+        <p><span class="eyebrow muted">Written by</span><a href="/about/">{settings.founder}</a>, Founder</p>
+        <p><span class="eyebrow muted">Published</span><time datetime={iso(d.published)}>{fmt(d.published)}</time></p>
+        <p><span class="eyebrow muted">Last reviewed</span><time datetime={iso(d.reviewed)}>{fmt(d.reviewed)}</time></p>
+        {svc && <p><span class="eyebrow muted">Related</span><a href={`/services/${svc.slug}/`}>{svc.name}</a></p>}
+      </aside>
+      <article class="ar-body">
+        <div class="ar-short" data-reveal>
+          <p class="eyebrow">In short</p>
+          <p>{d.summary}</p>
+        </div>
+        <Img id={hero} class="ar-hero" reveal="mask" sizes="(min-width: 1024px) 60vw, 100vw" widths={[640, 960, 1280]} />
+        <div class="prose ar-prose"><Content /></div>
+      </article>
+    </div>
+  </Section>
+
+  {more.length > 0 && (
+    <Section bg="limestone" from="alabaster" class="ar-more">
+      <div class="wrap">
+        <p class="eyebrow">More from the journal</p>
+        <ul role="list" class="ar-more-list">
+          {more.map((m) => (
+            <li data-reveal>
+              <a href={`/journal/${m.id}/`}>
+                <span class="h3">{m.data.title}</span>
+                <span class="muted">{m.data.description}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Section>
+  )}
+
+  <CtaBand from={more.length > 0 ? 'limestone' : 'alabaster'} />
+</Base>
+
+<style is:global>
+  .ar { padding-top: 0; }
+  .ar-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 8fr); gap: clamp(40px, 6vw, 112px); }
+  .ar-meta { position: sticky; top: calc(var(--header-h) + 32px); align-self: start; display: grid; gap: 20px; font-size: 0.95rem; }
+  .ar-meta .eyebrow { margin-bottom: 4px; }
+  .ar-meta a { text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  .ar-body { max-width: 46rem; }
+  .ar-short { padding: 28px 0; border-top: 1px solid currentColor; border-bottom: var(--rule); margin-bottom: 48px; }
+  .ar-short p:last-child { margin-top: 10px; font: 300 clamp(1.2rem, 1.05rem + 0.6vw, 1.6rem)/1.45 var(--serif); }
+  .ar-hero { aspect-ratio: 3 / 2; margin-bottom: 48px; }
+  .ar-prose { font-size: 1.125rem; line-height: 1.75; max-width: none; }
+  .ar-prose h2 { font: 350 clamp(1.5rem, 1.2rem + 1vw, 2.1rem)/1.2 var(--serif); margin-top: 1.6em; }
+  .ar-prose ul, .ar-prose ol { display: grid; gap: 0.5em; padding-left: 1.3em; }
+  .ar-prose li::marker { color: var(--taupe); }
+  .ar-prose strong { font-weight: 600; }
+  .ar-more-list { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 24px; }
+  .ar-more-list a { display: grid; gap: 12px; padding-top: 24px; border-top: var(--rule); text-decoration: none; }
+  .ar-more-list a:hover .h3 { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+  @media (max-width: 1023px) {
+    .ar-grid { grid-template-columns: 1fr; }
+    .ar-meta { position: static; grid-template-columns: 1fr 1fr; }
+    .ar-more-list { grid-template-columns: 1fr; }
+  }
+</style>

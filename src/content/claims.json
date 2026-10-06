@@ -1,0 +1,13 @@
+{
+  "insured": { "satisfied": true, "note": "General liability in force" },
+  "insuredOutOfState": { "satisfied": false, "note": "No out-of-state coverage yet" },
+  "writtenAgreement": { "satisfied": true, "note": "Written contract in use" },
+  "googleRating": { "satisfied": true, "note": "Owner confirmed all 14 reviews are genuine clients. Re-check count before each publish" },
+  "cpo": { "satisfied": false, "note": "Owner skipped verification link; do not show" },
+  "coloradoSprings": { "satisfied": true, "note": "Client consent confirmed by owner; city level only" },
+  "yearsInIndustry": { "satisfied": true, "note": "Two years as of Oct 2026" },
+  "confidentiality": { "satisfied": false, "note": "Needs lawyer-reviewed NDA template" },
+  "vettedTeam": { "satisfied": false, "note": "Solo operation; never claim" },
+  "travelWindows": { "satisfied": false, "note": "None scheduled" },
+  "partners": { "satisfied": false, "note": "No named partners" }
+}

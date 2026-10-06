@@ -1,0 +1,69 @@
+---
+import { Image } from 'astro:assets';
+import lockup from '../assets/brand/lockup-ink.png';
+import { settings, claim } from '../lib/site';
+
+interface Props { from?: 'alabaster' | 'limestone' | 'walnut' }
+const { from } = Astro.props;
+const year = new Date().getFullYear();
+const explore = [
+  ['Services', '/services/'], ['Work', '/work/'], ['About', '/about/'], ['For the Trade', '/trade/'],
+  ['Investment', '/investment/'], ['FAQ', '/faq/'], ['Where we work', '/where-we-work/'], ['Journal', '/journal/'],
+];
+---
+<footer
+  class:list={['band', 'site-footer', from && from !== 'alabaster' && 'seam']}
+  data-bg="alabaster"
+  data-hide-cta
+  style={from && from !== 'alabaster' ? `--from: var(--${from})` : undefined}
+>
+  <div class="wrap ft-grid">
+    <div class="ft-brand">
+      <Image src={lockup} alt="Home Harmonics" width={200} densities={[1, 2]} loading="lazy" />
+      <p class="muted">Dallas–Fort Worth home base · Travel engagements across Texas and beyond</p>
+    </div>
+    <div>
+      <p class="eyebrow">Contact</p>
+      <ul role="list" class="ft-list">
+        <li>Call or text <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a></li>
+        <li><a href={`mailto:${settings.email}`}>{settings.email}</a></li>
+        <li><a href={settings.instagram} rel="me noopener">Instagram</a></li>
+      </ul>
+      <p class="muted ft-note">We reply the same day.</p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="eyebrow">Explore</p>
+      <ul role="list" class="ft-list">{explore.map(([l, h]) => <li><a href={h}>{l}</a></li>)}</ul>
+    </nav>
+    <div>
+      <p class="eyebrow">Practice</p>
+      <ul role="list" class="ft-list">
+        {claim('googleRating') && (
+          <li><a href={settings.googleProfile} rel="noopener">{settings.reviews.rating} on Google · {settings.reviews.count} reviews</a></li>
+        )}
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/terms/">Terms</a></li>
+      </ul>
+      <p class="muted ft-note">Client privacy is fundamental to our work. Nothing is photographed or shared without written consent.</p>
+    </div>
+  </div>
+  <div class="wrap ft-legal muted">
+    <p>© {year} Home Harmonics</p>
+    <p>Atmospheric imagery on this site is digitally created. Project photography is of real Home Harmonics work.</p>
+  </div>
+</footer>
+
+<style is:global>
+  .site-footer { --pad: clamp(80px, 9vw, 128px); padding-bottom: 40px; font-size: 0.95rem; }
+  .ft-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr)); gap: 48px; }
+  .ft-brand img { width: 200px; height: auto; margin-bottom: 24px; }
+  .ft-brand p { max-width: 20rem; }
+  .ft-grid .eyebrow { margin-bottom: 16px; }
+  .ft-list li { padding: 3px 0; }
+  .ft-list a { display: inline-block; padding: 6px 0; text-decoration: none; background: linear-gradient(currentColor, currentColor) no-repeat 0 calc(100% - 4px) / 0 1px; transition: background-size 500ms var(--ease); }
+  .ft-list a:hover { background-size: 100% 1px; }
+  .ft-note { margin-top: 14px; font-size: 0.875rem; max-width: 18rem; }
+  .ft-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; margin-top: 72px; padding-top: 24px; border-top: var(--rule); font-size: 0.8125rem; }
+  @media (max-width: 1023px) { .ft-grid { grid-template-columns: 1fr 1fr; } .ft-brand { grid-column: 1 / -1; } }
+  @media (max-width: 767px) { .ft-grid { grid-template-columns: 1fr; gap: 36px; } .site-footer { padding-bottom: 96px; } }
+</style>

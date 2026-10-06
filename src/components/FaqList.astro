@@ -1,0 +1,25 @@
+---
+import type { Faq } from '../content/faq';
+interface Props { items: Faq[]; stacked?: boolean }
+const { items, stacked } = Astro.props;
+---
+<div class:list={['faq', stacked && 'faq-stacked']}>
+  {items.map((f) => (
+    <article class="faq-item" id={f.id} data-reveal>
+      <h3 class="faq-q">{f.q}</h3>
+      <div class="faq-a">
+        <p>{f.a}</p>
+        {f.more && <p class="muted">{f.more}</p>}
+      </div>
+    </article>
+  ))}
+</div>
+
+<style is:global>
+  .faq { border-top: var(--rule); }
+  .faq-item { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px 48px; padding: clamp(28px, 4vw, 48px) 0; border-bottom: var(--rule); scroll-margin-top: calc(var(--header-h) + 24px); }
+  .faq-q { font: 350 clamp(1.3rem, 1.1rem + 0.7vw, 1.75rem)/1.25 var(--serif); }
+  .faq-a { display: grid; gap: 0.9em; max-width: 38rem; }
+  .faq-stacked .faq-item { grid-template-columns: 1fr; }
+  @media (max-width: 1023px) { .faq-item { grid-template-columns: 1fr; } }
+</style>

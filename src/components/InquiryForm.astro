@@ -1,0 +1,98 @@
+---
+import { settings, price, usd } from '../lib/site';
+import { PUBLIC_TURNSTILE_SITE_KEY } from 'astro:env/client';
+const attr = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'msclkid', 'fbclid'];
+---
+<form class="inq-form" method="post" action="/api/inquire/" data-inquiry data-phone={settings.phone}>
+  <div class="field">
+    <label for="f-name">Name</label>
+    <input id="f-name" name="name" autocomplete="name" required />
+  </div>
+  <div class="field">
+    <label for="f-email">Email</label>
+    <input id="f-email" name="email" type="email" autocomplete="email" required />
+  </div>
+  <div class="field">
+    <label for="f-phone">Phone</label>
+    <input id="f-phone" name="phone" type="tel" autocomplete="tel" required />
+  </div>
+  <div class="field">
+    <label for="f-location">Home location</label>
+    <input id="f-location" name="location" autocomplete="address-level2" aria-describedby="f-location-hint" required />
+    <span class="hint muted" id="f-location-hint">City and state</span>
+  </div>
+  <div class="field select">
+    <label for="f-need">What you need</label>
+    <select id="f-need" name="need" required>
+      <option value="" selected disabled>Choose one</option>
+      <option>Move-in</option>
+      <option>Whole home</option>
+      <option>A specific space</option>
+      <option>Not sure yet</option>
+    </select>
+  </div>
+  <div class="field select">
+    <label for="f-timeline">Timeline</label>
+    <select id="f-timeline" name="timeline" required>
+      <option value="" selected disabled>Choose one</option>
+      <option>As soon as possible</option>
+      <option>Within a month</option>
+      <option>One to three months</option>
+      <option>Three months or more</option>
+      <option>I have a move or closing date</option>
+    </select>
+  </div>
+  <div class="field">
+    <label for="f-date">Move or closing date <span class="opt">(optional)</span></label>
+    <input id="f-date" name="moveDate" type="date" />
+  </div>
+  <div class="field">
+    <label for="f-ref">Referred by <span class="opt">(optional)</span></label>
+    <input id="f-ref" name="referral" autocomplete="off" />
+  </div>
+  <div class="field full">
+    <label for="f-note">Anything we should know <span class="opt">(optional)</span></label>
+    <textarea id="f-note" name="note" rows="4"></textarea>
+  </div>
+  <div class="hp" aria-hidden="true">
+    <label for="f-company">Company</label>
+    <input id="f-company" name="company" tabindex="-1" autocomplete="off" />
+  </div>
+  {attr.map((a) => <input type="hidden" name={a} data-attr />)}
+  <input type="hidden" name="page" data-page />
+  {PUBLIC_TURNSTILE_SITE_KEY && <div class="cf-turnstile full" data-sitekey={PUBLIC_TURNSTILE_SITE_KEY} data-appearance="interaction-only"></div>}
+  <div class="form-foot">
+    <p class="muted">Engagements begin at {usd(price.single)} for a single space. A 50% deposit holds your dates. We reply the same day.</p>
+    <button class="btn" type="submit">Request a consultation</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+    <p class="muted small">Prefer to talk? Call or text <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a>.</p>
+  </div>
+</form>
+
+<style is:global>
+  .inq-form { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 28px; }
+  .field { position: relative; display: grid; gap: 6px; align-content: start; }
+  .field.full, .form-foot { grid-column: 1 / -1; }
+  .field label { font: 500 var(--fs-micro)/1.5 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; }
+  .field .opt { text-transform: none; letter-spacing: 0; font-weight: 400; opacity: 0.8; }
+  .field input, .field select, .field textarea {
+    appearance: none; width: 100%; min-height: 52px; padding: 12px 0;
+    background: transparent; color: inherit; border: 0; border-radius: 0;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 45%, transparent);
+    font: 400 1.0625rem/1.4 var(--sans);
+    transition: border-color var(--t-ui) var(--ease);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus { border-bottom-color: currentColor; }
+  .field input:user-invalid, .field select:user-invalid { border-bottom-color: #d9826a; }
+  .field textarea { min-height: 112px; resize: vertical; }
+  .field select { padding-right: 28px; cursor: pointer; }
+  .field.select::after { content: ''; position: absolute; right: 6px; top: 46px; width: 8px; height: 8px; border-right: 1px solid; border-bottom: 1px solid; rotate: 45deg; pointer-events: none; }
+  .field option { color: var(--ink); background: var(--alabaster); }
+  .field .hint { font-size: 0.875rem; }
+  [data-bg='walnut'] .inq-form { color-scheme: dark; }
+  .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+  .form-foot { display: grid; gap: 18px; justify-items: start; margin-top: 8px; }
+  .form-foot .small { font-size: 0.875rem; }
+  .form-status:empty { display: none; }
+  @media (max-width: 767px) { .inq-form { grid-template-columns: 1fr; } .form-foot .btn { width: 100%; } }
+</style>

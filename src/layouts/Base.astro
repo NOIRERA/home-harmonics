@@ -1,0 +1,82 @@
+---
+import '../styles/global.css';
+import { getImage } from 'astro:assets';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { media } from '../lib/media';
+import { abs, orgSchema } from '../lib/site';
+import { PUBLIC_GA4_ID } from 'astro:env/client';
+
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+  schema?: object[];
+  /** Header starts transparent over a hero, frosts after ~60% of the first screen. */
+  transparentHeader?: boolean;
+  footerFrom?: 'alabaster' | 'limestone' | 'walnut';
+  hideStickyCta?: boolean;
+}
+const { title, description, noindex, schema, transparentHeader = false, footerFrom, hideStickyCta } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const og = await getImage({ src: media.hero.src, width: 1200, height: 630, fit: 'cover', format: 'jpg' });
+const ogUrl = abs(og.src);
+---
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Home Harmonics" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#F3EFE8" />
+    <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="preload" href="/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <script is:inline>
+      (function (c) {
+        c.add('js');
+        var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var save = navigator.connection && navigator.connection.saveData;
+        if (!reduce && !save) c.add('motion');
+      })(document.documentElement.classList);
+    </script>
+    {PUBLIC_GA4_ID && (
+      <script is:inline define:vars={{ id: PUBLIC_GA4_ID }}>
+        // GA4: queue is ready immediately; the library itself loads after first paint (protects LCP).
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { dataLayer.push(arguments); };
+        gtag('js', new Date());
+        gtag('config', id);
+        addEventListener('load', function () {
+          setTimeout(function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+            document.head.appendChild(s);
+          }, 1500);
+        });
+      </script>
+    )}
+    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': [orgSchema(), ...(schema ?? [])] })} />
+  </head>
+  <body>
+    <Header transparent={transparentHeader} />
+    <main id="main" tabindex="-1"><slot /></main>
+    <Footer from={footerFrom} />
+    {!hideStickyCta && <a class="btn sticky-cta" href="/inquire/" data-sticky-cta>Request a consultation</a>}
+    <div class="top-sentinel" aria-hidden="true"></div>
+    <script>
+      import '../scripts/motion.ts';
+    </script>
+  </body>
+</html>

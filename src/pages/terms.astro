@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import { settings, crumbSchema } from '../lib/site';
+
+const crumbs = [{ label: 'Terms', href: '/terms/' }];
+---
+<Base title="Terms of Use | Home Harmonics" description="Terms of use for the Home Harmonics website." schema={[crumbSchema(crumbs)]}>
+  <PageHero eyebrow="Terms" title="Terms *of use.*" lead="Last updated October 6, 2026." crumbs={crumbs} />
+  <Section bg="alabaster">
+    <div class="wrap">
+      <div class="prose">
+        <p>These terms govern your use of home-harmonics.com. By using the site, you agree to them.</p>
+
+        <h2>The website is information, not an agreement</h2>
+        <p>Prices on this site are starting points. Every engagement is set out in a written proposal and service agreement, and that agreement governs the work, the schedule, payment, deposits, cancellations and photo consent. Where the agreement and this site differ, the agreement applies.</p>
+
+        <h2>Inquiries</h2>
+        <p>Sending an inquiry does not create an engagement or reserve dates. Dates are held only once a proposal is accepted and the deposit is received.</p>
+
+        <h2>Content and imagery</h2>
+        <p>The text, photography and design of this site belong to Home Harmonics or are used with permission, and may not be copied for commercial use without written consent. Atmospheric imagery on this site is digitally created. Project photography is of real Home Harmonics work, shared with each client’s written permission.</p>
+
+        <h2>Links</h2>
+        <p>Links to other websites, such as reviews or social media, are provided for convenience. We are not responsible for their content.</p>
+
+        <h2>No warranty</h2>
+        <p>We work to keep this site accurate and available, but it is provided as is. To the extent permitted by law, Home Harmonics is not liable for losses arising from use of the website itself.</p>
+
+        <h2>Governing law</h2>
+        <p>These terms are governed by the laws of the State of Texas.</p>
+
+        <h2>Contact</h2>
+        <p><a href={`mailto:${settings.email}`}>{settings.email}</a> · <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a></p>
+      </div>
+    </div>
+  </Section>
+</Base>

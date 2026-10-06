@@ -1,0 +1,6 @@
+# Home Harmonics — search and AI crawlers welcome (plan §13.7: GEO).
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://www.home-harmonics.com/sitemap-index.xml

@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { faqs, faqSchema, lastReviewed, type Faq } from '../content/faq';
+import { crumbSchema } from '../lib/site';
+
+const crumbs = [{ label: 'FAQ', href: '/faq/' }];
+const groups: { id: Faq['group']; label: string }[] = [
+  { id: 'work', label: 'The work' },
+  { id: 'investment', label: 'Investment' },
+  { id: 'travel', label: 'Travel' },
+  { id: 'privacy', label: 'Privacy and people' },
+];
+const reviewed = new Date(lastReviewed + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<Base
+  title="Professional Organizer FAQ: Cost, Process, Travel | Home Harmonics"
+  description="Answers about professional home organization and move-in setup: what it includes, what it costs, how long it takes, travel, and privacy. Home Harmonics, Dallas–Fort Worth."
+  schema={[faqSchema(faqs), crumbSchema(crumbs)]}
+>
+  <PageHero eyebrow="FAQ" title="Answers, | *first.*" lead={`The questions we are asked most, answered plainly. Last reviewed ${reviewed}.`} crumbs={crumbs}>
+    <nav aria-label="FAQ sections" class="fq-jump">
+      {groups.map((g) => <a class="link" href={`#${g.id}`}>{g.label}</a>)}
+    </nav>
+  </PageHero>
+
+  {groups.map((g, i) => (
+    <Section bg={i % 2 ? 'limestone' : 'alabaster'} from={i === 0 ? undefined : i % 2 ? 'alabaster' : 'limestone'} id={g.id} class="fq-group">
+      <div class="wrap">
+        <h2 class="eyebrow fq-h">{g.label}</h2>
+        <FaqList items={faqs.filter((f) => f.group === g.id)} />
+      </div>
+    </Section>
+  ))}
+
+  <CtaBand from={groups.length % 2 ? 'alabaster' : 'limestone'} title="Still deciding? *Ask Yaz.*" />
+</Base>
+
+<style is:global>
+  .fq-jump { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+  .fq-h { margin-bottom: 28px; }
+  .fq-group { scroll-margin-top: var(--header-h); }
+</style>

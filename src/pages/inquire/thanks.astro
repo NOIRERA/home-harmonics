@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import { settings } from '../../lib/site';
+---
+<Base title="Thank you | Home Harmonics" description="Your inquiry has been received." noindex hideStickyCta>
+  <PageHero
+    eyebrow="Thank you"
+    title="Received, | *with thanks.*"
+    lead="A confirmation is on its way to your inbox. Yaz replies personally within the day to arrange a complimentary 15-minute fit call."
+  >
+    <a class="link" href="/work/">See the work <span class="arrow" aria-hidden="true">→</span></a>
+    <a class="link" href="/journal/">Read the journal <span class="arrow" aria-hidden="true">→</span></a>
+  </PageHero>
+
+  <Section bg="limestone" from="alabaster">
+    <div class="wrap">
+      <p class="eyebrow" style="margin-bottom:24px">What happens next</p>
+      <ol role="list" class="cols-3">
+        <li><span class="eyebrow muted">01</span><h2 class="h3">A short fit call</h2><p class="muted">Fifteen minutes, complimentary, about what you need and when.</p></li>
+        <li><span class="eyebrow muted">02</span><h2 class="h3">A walkthrough</h2><p class="muted">Thirty to forty-five minutes in your home or by video, also complimentary.</p></li>
+        <li><span class="eyebrow muted">03</span><h2 class="h3">A proposal</h2><p class="muted">Scope, schedule and investment within about two business days.</p></li>
+      </ol>
+      <p class="muted" style="margin-top:48px">Anything urgent? Call or text <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a>.</p>
+    </div>
+  </Section>
+</Base>

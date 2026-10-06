@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import Img from '../components/Img.astro';
+import Words from '../components/Words.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { faqById } from '../content/faq';
+import { settings, price, claim, crumbSchema } from '../lib/site';
+
+const crumbs = [{ label: 'Where we work', href: '/where-we-work/' }];
+const tiers = [
+  { t: 'Home base: Dallas–Fort Worth', d: 'Dallas, Fort Worth and the cities between. Walkthroughs in person, and engagements scheduled as consecutive days.' },
+  { t: 'Across Texas', d: 'Austin, Houston, San Antonio and anywhere in the state. Planning starts by video; the days on site are scheduled as one block.' },
+  {
+    t: 'Beyond Texas',
+    d: `By arrangement, with the same model: plan by video, then a scheduled block on site.${claim('coloradoSprings') ? ' Recent work includes Colorado Springs.' : ''}`,
+  },
+];
+const model = [
+  { t: 'Listen, by video', d: 'A virtual walkthrough of the home and the household, so the plan and sourcing are ready before arrival.' },
+  { t: 'A block on site', d: `A scoped residency of consecutive days, with a minimum of ${price.travelDays} on-site days.` },
+  { t: 'Follow-up from afar', d: 'Remote follow-up, a care guide for the household, and a check-in thirty days later.' },
+];
+---
+<Base
+  title="Where We Work: Dallas–Fort Worth, Texas & Beyond | Home Harmonics"
+  description={`Home Harmonics is based in Dallas–Fort Worth and travels to homes across Texas and beyond. Travel engagements: ${price.travelDays} on-site days minimum, travel and lodging at cost.`}
+  schema={[crumbSchema(crumbs)]}
+>
+  <PageHero
+    eyebrow="Where we work"
+    title="Based in Dallas. | *Working where you are.*"
+    lead="Home Harmonics is based in Dallas–Fort Worth and travels to homes across Texas and beyond, by arrangement."
+    img="entry"
+    crumbs={crumbs}
+  />
+
+  <Section bg="alabaster" class="ww-tiers">
+    <div class="wrap">
+      <ol role="list" class="cols-3">
+        {tiers.map((x, i) => <li data-reveal style={`--delay:${i * 90}ms`}><span class="eyebrow muted">0{i + 1}</span><h2 class="h3">{x.t}</h2><p class="muted">{x.d}</p></li>)}
+      </ol>
+    </div>
+  </Section>
+
+  <Section bg="limestone" from="alabaster" class="ww-model">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Travel engagements</p>
+        <h2 class="h2"><Words reveal text="Planned from afar, *finished in person.*" /></h2>
+        <p class="muted measure">Travel engagements require a minimum of {price.travelDays} on-site days. Travel and lodging are billed at cost, and a 50% deposit holds the dates. Currently scheduling {settings.leadTime} out.</p>
+      </div>
+      <ol role="list" class="steps">
+        {model.map((m, i) => <li data-reveal><span class="steps-n" aria-hidden="true">0{i + 1}</span><div><h3 class="h3">{m.t}</h3><p class="muted">{m.d}</p></div></li>)}
+      </ol>
+    </div>
+  </Section>
+
+  <Section bg="alabaster" from="limestone" class="ww-faq">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 class="h2"><Words reveal text="About *travel.*" /></h2>
+        <Img id="pantryWide" class="ww-img" reveal="mask" sizes="(min-width: 1024px) 30vw, 100vw" widths={[480, 720, 1000]} />
+      </div>
+      <FaqList items={faqById(['travel', 'outside-dallas', 'second-home'])} stacked />
+    </div>
+  </Section>
+
+  <CtaBand from="alabaster" />
+</Base>
+
+<style is:global>
+  .ww-tiers .cols-3 h2 { margin-top: 4px; }
+  .ww-img { width: 100%; aspect-ratio: 3 / 2; margin-top: 16px; }
+</style>

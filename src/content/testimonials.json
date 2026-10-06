@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rose",
+    "name": "Rose S.",
+    "project": "Home organization",
+    "approved": true,
+    "text": "Zero judgment, amazing results. Home Harmonics transformed my home and my peace of mind.",
+    "excerpt": null
+  },
+  {
+    "id": "kennedy",
+    "name": "Kennedy O.",
+    "project": "Move-in and unpacking",
+    "approved": true,
+    "text": "I highly recommend this company! After my move, Yaz helped turn a stressful unpacking and organizing process into a smooth and manageable experience. Yaz was professional, efficient, and thoughtful in creating organized systems that work for my new home and family. Her support made settling in so much easier, and I'm extremely grateful for her help.",
+    "excerpt": "After my move, Yaz helped turn a stressful unpacking and organizing process into a smooth and manageable experience. … Her support made settling in so much easier."
+  },
+  {
+    "id": "samara",
+    "name": "Samara C.",
+    "project": "Pantry",
+    "approved": true,
+    "text": "Yaz is amazing at what she does. She completely transformed my pantry and brought my vision to life, all while staying within my budget. I would absolutely recommend her.",
+    "excerpt": "Yaz is amazing at what she does. She completely transformed my pantry and brought my vision to life … I would absolutely recommend her."
+  }
+]

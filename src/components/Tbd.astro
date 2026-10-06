@@ -1,0 +1,6 @@
+---
+// Visible placeholder. `npm run build:prod` fails while any of these remain on an indexable page.
+interface Props { note: string }
+const { note } = Astro.props;
+---
+<mark class="tbd">{`{{TBD: ${note}}}`}</mark>

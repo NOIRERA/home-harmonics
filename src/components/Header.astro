@@ -1,0 +1,150 @@
+---
+import markInk from '../assets/brand/mark-ink.png';
+import Img from './Img.astro';
+import type { MediaId } from '../lib/media';
+import { settings } from '../lib/site';
+
+interface Props { transparent?: boolean }
+const { transparent } = Astro.props;
+const path = Astro.url.pathname;
+
+const services: { href: string; label: string; img: MediaId }[] = [
+  { href: '/services/move-in-concierge/', label: 'Move-In Concierge', img: 'bedroom' },
+  { href: '/services/whole-home-organization/', label: 'Whole-Home Organization', img: 'livingPantry' },
+  { href: '/services/signature-spaces/', label: 'Signature Spaces', img: 'closet' },
+  { href: '/services/seasonal-resets/', label: 'Seasonal Resets', img: 'drawer' },
+  { href: '/where-we-work/', label: 'Travel Engagements', img: 'entry' },
+];
+const nav = [
+  { href: '/work/', label: 'Work' },
+  { href: '/about/', label: 'About' },
+  { href: '/trade/', label: 'For the Trade' },
+];
+const more = [
+  { href: '/investment/', label: 'Investment' },
+  { href: '/faq/', label: 'FAQ' },
+  { href: '/where-we-work/', label: 'Where we work' },
+  { href: '/journal/', label: 'Journal' },
+];
+---
+<a class="skip" href="#main">Skip to content</a>
+<header class:list={['site-header', !transparent && 'scrolled']} data-on="alabaster" data-transparent={transparent ? '' : undefined}>
+  <div class="hh-bar wrap">
+    <a href="/" class="hh-brand" aria-label="Home Harmonics, home">
+      <span class="hh-mark" style={`--mark: url("${markInk.src}")`} aria-hidden="true"></span>
+      <span class="hh-word" aria-hidden="true">Home Harmonics</span>
+    </a>
+    <nav class="hh-primary" aria-label="Primary">
+      <button class="hh-item" type="button" aria-expanded="false" aria-controls="services-panel" data-panel-toggle>Services</button>
+      {nav.map((n) => <a class="hh-item" href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>)}
+    </nav>
+    <a class="btn btn-sm hh-cta" href="/inquire/" data-magnetic>Request a consultation</a>
+    <button class="hh-menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+      <span class="hh-menu-label">Menu</span><span class="hh-burger" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div id="services-panel" class="hh-panel" hidden>
+    <div class="wrap hh-panel-in">
+      <ul role="list" class="hh-panel-list">
+        {services.map((s, i) => (
+          <li><a href={s.href} data-panel-img={i}><span class="eyebrow">0{i + 1}</span><span>{s.label}</span></a></li>
+        ))}
+        <li class="hh-panel-all"><a class="link" href="/services/">All services <span class="arrow" aria-hidden="true">→</span></a></li>
+      </ul>
+      <div class="hh-panel-imgs" aria-hidden="true">
+        {services.map((s, i) => <Img id={s.img} class={i === 0 ? 'hh-panel-img on' : 'hh-panel-img'} sizes="34vw" widths={[480, 720]} alt="" />)}
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Outside <header>: the frosted header's backdrop-filter would otherwise trap this fixed overlay. -->
+<div id="menu" class="hh-menu" hidden data-lenis-prevent>
+    <nav aria-label="Menu" class="wrap">
+      <p class="eyebrow muted">Services</p>
+      <ul role="list" class="hh-menu-list">
+        {services.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+      </ul>
+      <ul role="list" class="hh-menu-list hh-menu-sm">
+        {[...nav, ...more].map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+      </ul>
+      <a class="btn" href="/inquire/">Request a consultation</a>
+      <p class="hh-menu-contact muted">
+        Call or text <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a><br />
+        <a href={`mailto:${settings.email}`}>{settings.email}</a>
+      </p>
+    </nav>
+</div>
+
+<style is:global>
+  .site-header {
+    --hbg: var(--alabaster); --hfg: var(--ink);
+    position: fixed; inset: 0 0 auto; z-index: 50;
+    color: var(--hfg);
+    border-bottom: 1px solid transparent;
+    transition: background-color 450ms var(--ease), color 450ms var(--ease), border-color 450ms var(--ease);
+    view-transition-name: site-header;
+  }
+  .site-header[data-on='limestone'] { --hbg: var(--limestone); }
+  .site-header[data-on='walnut'] { --hbg: var(--walnut); --hfg: var(--alabaster); }
+  .site-header.menu-open { --hbg: var(--alabaster); --hfg: var(--ink); background: var(--alabaster); }
+  .site-header.scrolled, .site-header.panel-open {
+    background-color: color-mix(in srgb, var(--hbg) 96%, transparent);
+    border-bottom-color: color-mix(in srgb, var(--hfg) 14%, transparent);
+  }
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .site-header.scrolled {
+      background-color: color-mix(in srgb, var(--hbg) 82%, transparent);
+      -webkit-backdrop-filter: blur(14px) saturate(1.1);
+      backdrop-filter: blur(14px) saturate(1.1);
+    }
+  }
+  .hh-bar { position: relative; z-index: 2; display: flex; align-items: center; gap: 36px; height: var(--header-h); }
+  .hh-brand { display: flex; align-items: center; gap: 14px; margin-right: auto; min-height: 44px; text-decoration: none; }
+  .hh-mark { width: 24px; height: 24px; background: currentColor; -webkit-mask: var(--mark) center / contain no-repeat; mask: var(--mark) center / contain no-repeat; }
+  .hh-word { font: 400 0.8rem/1 var(--sans); letter-spacing: 0.26em; text-transform: uppercase; }
+  .hh-primary { display: flex; gap: 30px; }
+  .hh-item {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0;
+    background: linear-gradient(currentColor, currentColor) no-repeat 0 calc(100% - 12px) / 0 1px;
+    border: 0; cursor: pointer; text-decoration: none;
+    font: 500 0.74rem/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase;
+    transition: background-size 500ms var(--ease);
+  }
+  .hh-item:hover, .hh-item[aria-current='page'], .hh-item[aria-expanded='true'] { background-size: 100% 1px; }
+  .site-header[data-on='walnut']:not(.menu-open) .hh-cta { --btn-bg: var(--alabaster); --btn-fg: var(--walnut); --btn-fill: var(--limestone); }
+  .hh-menu-btn { display: none; align-items: center; gap: 12px; min-height: 44px; padding: 0; background: none; border: 0; cursor: pointer; font: 500 0.74rem/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; }
+  .hh-burger { position: relative; width: 22px; height: 1px; background: currentColor; transition: background-color var(--t-ui); }
+  .hh-burger::before, .hh-burger::after { content: ''; position: absolute; left: 0; width: 22px; height: 1px; background: currentColor; transition: translate var(--t-ui) var(--ease), rotate var(--t-ui) var(--ease); }
+  .hh-burger::before { translate: 0 -6px; }
+  .hh-burger::after { translate: 0 6px; }
+  .menu-open .hh-burger { background: transparent; }
+  .menu-open .hh-burger::before { translate: 0 0; rotate: 45deg; }
+  .menu-open .hh-burger::after { translate: 0 0; rotate: -45deg; }
+
+  /* Desktop services panel: detail image per item */
+  .hh-panel { position: absolute; inset: 100% 0 auto; background: var(--alabaster); color: var(--ink); border-bottom: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); }
+  .hh-panel-in { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; padding-block: 48px 56px; }
+  .hh-panel-list a:not(.link) { display: flex; align-items: baseline; gap: 24px; padding: 14px 0; text-decoration: none; font: 300 clamp(1.6rem, 1rem + 1.5vw, 2.4rem)/1.15 var(--serif); border-bottom: var(--rule); transition: padding-left 500ms var(--ease); }
+  .hh-panel-list a:not(.link):hover, .hh-panel-list a:not(.link):focus-visible { padding-left: 12px; }
+  .hh-panel-all { margin-top: 20px; }
+  .hh-panel-imgs { position: relative; aspect-ratio: 4 / 3; }
+  .hh-panel-img { position: absolute; inset: 0; opacity: 0; transition: opacity 600ms var(--ease); }
+  .hh-panel-img.on { opacity: 1; }
+
+  /* Mobile menu: text only */
+  .hh-menu { position: fixed; inset: 0; z-index: 49; overflow-y: auto; background: var(--alabaster); color: var(--ink); padding: calc(var(--header-h) + 24px) 0 48px; }
+  .hh-menu .eyebrow { margin-bottom: 8px; }
+  .hh-menu-list { margin-bottom: 32px; }
+  .hh-menu-list a { display: block; padding: 10px 0; text-decoration: none; font: 300 1.9rem/1.2 var(--serif); }
+  .hh-menu-sm a { font: 500 0.8rem/1.4 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; padding: 12px 0; }
+  .hh-menu .btn { width: 100%; }
+  .hh-menu-contact { margin-top: 24px; line-height: 2; }
+
+  @media (max-width: 1023px) {
+    .hh-primary, .hh-cta, .hh-panel { display: none; }
+    .hh-menu-btn { display: inline-flex; }
+  }
+  @media (max-width: 380px) { .hh-word { letter-spacing: 0.18em; font-size: 0.72rem; } }
+</style>

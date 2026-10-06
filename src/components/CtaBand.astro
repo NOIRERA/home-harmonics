@@ -1,0 +1,32 @@
+---
+import Section from './Section.astro';
+import Words from './Words.astro';
+import { settings, price, usd } from '../lib/site';
+
+type Tone = 'alabaster' | 'limestone' | 'walnut';
+interface Props { from?: Tone; title?: string; href?: string; label?: string; note?: string }
+const {
+  from = 'alabaster',
+  title = 'Tell us about *your home.*',
+  href = '/inquire/',
+  label = 'Request a consultation',
+  note = `We reply the same day. Engagements begin at ${usd(price.single)}, and a 50% deposit holds your dates.`,
+} = Astro.props;
+---
+<Section bg="walnut" from={from} class="cta-band" data-hide-cta="">
+  <div class="wrap cta-grid">
+    <h2 class="h2"><Words reveal text={title} /></h2>
+    <div class="cta-side" data-reveal>
+      <p class="muted">{note}</p>
+      <a class="btn" href={href} data-magnetic>{label}</a>
+      <p class="muted cta-phone">Or call or text <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a></p>
+    </div>
+  </div>
+</Section>
+
+<style is:global>
+  .cta-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(40px, 6vw, 96px); align-items: end; }
+  .cta-side { display: grid; gap: 24px; justify-items: start; max-width: 26rem; }
+  .cta-phone { font-size: 0.875rem; }
+  @media (max-width: 1023px) { .cta-grid { grid-template-columns: 1fr; } .cta-side .btn { width: 100%; } }
+</style>

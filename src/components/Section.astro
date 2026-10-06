@@ -1,0 +1,9 @@
+---
+type Tone = 'alabaster' | 'limestone' | 'walnut';
+interface Props { bg: Tone; from?: Tone; id?: string; class?: string; [key: `data-${string}`]: string | undefined }
+const { bg, from, id, class: cls, ...rest } = Astro.props;
+const seam = from && from !== bg;
+---
+<section id={id} class:list={['band', seam && 'seam', cls]} data-bg={bg} style={seam ? `--from: var(--${from})` : undefined} {...rest}>
+  <slot />
+</section>

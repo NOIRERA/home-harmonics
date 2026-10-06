@@ -1,0 +1,96 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import Img from '../components/Img.astro';
+import Words from '../components/Words.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { settings, claim, abs, crumbSchema } from '../lib/site';
+
+const crumbs = [{ label: 'About', href: '/about/' }];
+const person = {
+  '@type': 'Person',
+  '@id': abs('/about/#yaz'),
+  name: settings.founder,
+  jobTitle: 'Founder',
+  worksFor: { '@id': abs('/#business') },
+  url: abs('/about/'),
+  sameAs: [settings.instagram],
+};
+const principles = [
+  { t: 'One accountable lead', d: 'The person at your walkthrough is the person doing the work. When a project needs built storage, Yaz brings in a build partner and organizes once it is installed.' },
+  { t: 'Designed around your household', d: 'Every system starts with who uses a space and how often, not with a product catalogue.' },
+  { t: 'Privacy in writing', d: 'Nothing in your home is photographed or shared without your written consent.' },
+  { t: 'Built to last', d: 'A care guide written for your household, a check-in thirty days later, and Seasonal Resets when you want them.' },
+];
+const practice = [
+  claim('insured') && 'Insured',
+  claim('writtenAgreement') && 'A written service agreement on every engagement',
+  'Photography only with written consent',
+  `Based in Dallas–Fort Worth${claim('yearsInIndustry') ? `, ${settings.yearsInIndustry.value} years in the industry` : ''}`,
+].filter(Boolean) as string[];
+---
+<Base
+  title="About Yaz Scott, Founder of Home Harmonics | Dallas–Fort Worth"
+  description="A letter from Yaz Scott, founder of Home Harmonics: home organization and move-in setup in Dallas–Fort Worth, designed around how your household lives."
+  schema={[person, crumbSchema(crumbs)]}
+>
+  <PageHero eyebrow="About" title="A letter | *from Yaz.*" img="yazPortrait" crumbs={crumbs} />
+
+  <Section bg="alabaster" class="ab-letter">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Home Harmonics</p>
+        <Img id="yazWorking" class="ab-img" reveal="mask" sizes="(min-width: 1024px) 30vw, 100vw" widths={[480, 720, 1003]} />
+      </div>
+      <div class="ab-text" data-reveal>
+        <p>For as long as I can remember, I was the one friends and family called when a closet, a pantry or a whole move got away from them. Two years ago I made it my work.</p>
+        <p>Home Harmonics is built on a simple idea: your home should support your life, not quietly demand more from it. So I don’t do one-day makeovers. Before I touch anything, I listen. Who uses each space, how often, and what gets in the way. Then we edit together, I design a system for every space, source what it needs, install and label it, and leave you a care guide written for your household.</p>
+        <p>I work as one accountable lead. The person at your walkthrough is the person doing the work, and nothing in your home is photographed or shared without your written consent. When a project calls for built storage, I bring in a build partner and organize once it is installed.</p>
+        <p>I’m based in Dallas–Fort Worth and travel to homes across Texas and beyond. Wherever you are, the goal is the same: calm that lasts long after I leave.</p>
+        <p class="ab-sign">Yaz Scott, Founder</p>
+      </div>
+    </div>
+  </Section>
+
+  <Section bg="limestone" from="alabaster" class="ab-how">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="eyebrow">How I work</p>
+        <h2 class="h2"><Words reveal text="Four things *that don’t change.*" /></h2>
+      </header>
+      <ol role="list" class="ab-principles">
+        {principles.map((p, i) => (
+          <li data-reveal style={`--delay:${i * 80}ms`}>
+            <span class="eyebrow muted">0{i + 1}</span>
+            <h3 class="h3">{p.t}</h3>
+            <p class="muted">{p.d}</p>
+          </li>
+        ))}
+      </ol>
+      <ul role="list" class="ab-practice" data-reveal>
+        {practice.map((x) => <li class="eyebrow">{x}</li>)}
+      </ul>
+    </div>
+  </Section>
+
+  <CtaBand from="limestone" />
+</Base>
+
+<style is:global>
+  .ab-img { width: 100%; aspect-ratio: 4 / 5; max-width: 460px; margin-top: 8px; }
+  .ab-text { display: grid; gap: 1.1em; font: 300 clamp(1.2rem, 1.05rem + 0.55vw, 1.6rem)/1.55 var(--serif); max-width: 38rem; }
+  .ab-sign { font-style: italic; margin-top: 0.6em; }
+  .ab-principles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: var(--rule); }
+  .ab-principles li { display: grid; gap: 12px; align-content: start; padding: 32px 28px 8px 0; }
+  .ab-principles li + li { border-left: var(--rule); padding-left: 28px; }
+  .ab-practice { display: flex; flex-wrap: wrap; gap: 12px 32px; margin-top: clamp(56px, 7vw, 96px); padding-top: 28px; border-top: var(--rule); }
+  @media (max-width: 1023px) {
+    .ab-principles { grid-template-columns: 1fr 1fr; }
+    .ab-principles li:nth-child(3) { border-left: 0; padding-left: 0; }
+  }
+  @media (max-width: 767px) {
+    .ab-principles { grid-template-columns: 1fr; border-top: 0; }
+    .ab-principles li, .ab-principles li + li { border-left: 0; border-top: var(--rule); padding: 24px 0; }
+  }
+</style>

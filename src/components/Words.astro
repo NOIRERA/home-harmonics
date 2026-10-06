@@ -1,0 +1,24 @@
+---
+// Splits a headline into word spans for the line/word reveal. Markup: `*italic words*`, ` | ` = line break.
+interface Props { text: string; intro?: boolean; reveal?: boolean; class?: string }
+const { text, intro, reveal, class: cls } = Astro.props;
+
+type Tok = { w: string; em: boolean } | 'br';
+const toks: Tok[] = [];
+let em = false;
+for (const raw of text.split(' ')) {
+  if (raw === '|') { toks.push('br'); continue; }
+  let w = raw;
+  if (w.startsWith('*')) { em = true; w = w.slice(1); }
+  const end = w.endsWith('*');
+  if (end) w = w.slice(0, -1);
+  toks.push({ w, em });
+  if (end) em = false;
+}
+let i = 0;
+---
+<span class:list={['words', cls]} data-intro={intro ? 'words' : undefined} data-reveal={reveal ? 'words' : undefined}>{
+  toks.map((t) => t === 'br'
+    ? <br />
+    : <Fragment><span class="w"><span style={`--i:${i++}`}>{t.em ? <em>{t.w}</em> : t.w}</span></span>{' '}</Fragment>)
+}</span>

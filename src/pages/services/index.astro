@@ -1,0 +1,88 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import Img from '../../components/Img.astro';
+import Words from '../../components/Words.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { serviceBySlug } from '../../content/services';
+import { settings, price, usd, crumbSchema } from '../../lib/site';
+
+const crumbs = [{ label: 'Services', href: '/services/' }];
+const d = settings.minimumDays;
+const days = (n: number) => `${n} full day${n > 1 ? 's' : ''}`;
+const rows = [
+  { s: serviceBySlug('move-in-concierge'), begins: usd(price.moveIn), min: days(d.moveIn) },
+  { s: serviceBySlug('whole-home-organization'), begins: usd(price.wholeHome), min: days(d.wholeHome) },
+  { s: serviceBySlug('signature-spaces'), begins: usd(price.single), min: `${days(d.single)} per space` },
+  { s: serviceBySlug('seasonal-resets'), begins: 'In your proposal', min: 'Around your calendar' },
+];
+const spokes = ['closet-and-wardrobe-organization', 'pantry-and-kitchen-organization'].map(serviceBySlug);
+---
+<Base
+  title="Home Organization & Move-In Services in Dallas–Fort Worth | Home Harmonics"
+  description={`Move-in concierge, whole-home organization, signature spaces and seasonal resets in Dallas–Fort Worth and Texas. Priced by project from ${usd(price.single)}, never by the hour.`}
+  schema={[crumbSchema(crumbs)]}
+>
+  <PageHero
+    eyebrow="Services"
+    title="Organization and move-in setup, | *designed around you.*"
+    lead="Every engagement follows the same five-step method and is led by Yaz, from walkthrough to handover."
+    crumbs={crumbs}
+  />
+
+  <Section bg="alabaster" class="svx">
+    <div class="wrap">
+      <table class="cmp" data-reveal>
+        <caption class="sr-only">Comparison of Home Harmonics services</caption>
+        <thead>
+          <tr><th scope="col">Service</th><th scope="col">Best for</th><th scope="col">Begins at</th><th scope="col">Minimum on site</th></tr>
+        </thead>
+        <tbody>
+          {rows.map(({ s, begins, min }) => (
+            <tr>
+              <th scope="row"><a href={`/services/${s.slug}/`}>{s.name}</a></th>
+              <td data-label="Best for">{s.bestFor}</td>
+              <td data-label="Begins at">{begins}</td>
+              <td data-label="Minimum on site">{min}</td>
+            </tr>
+          ))}
+          <tr>
+            <th scope="row"><a href="/where-we-work/">Travel engagements</a></th>
+            <td data-label="Best for">Homes outside Dallas–Fort Worth</td>
+            <td data-label="Begins at">Travel and lodging at cost</td>
+            <td data-label="Minimum on site">{days(d.travel)}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="muted svx-note" data-reveal>Priced by project, never by the hour. Products are billed at cost plus a handling fee, and a 50% deposit holds your dates. <a href="/investment/">How investment works</a>.</p>
+    </div>
+  </Section>
+
+  <Section bg="limestone" from="alabaster" class="svx-spaces">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Signature Spaces</p>
+        <h2 class="h2"><Words reveal text="Or begin with *one room.*" /></h2>
+        <ul role="list" class="ticks svx-links">
+          {spokes.map((s) => <li><a href={`/services/${s.slug}/`}>{s.name}</a> <span class="muted">· {s.short}</span></li>)}
+          <li><a href="/services/signature-spaces/">Offices, playrooms, laundry and garages</a></li>
+        </ul>
+      </div>
+      <div class="svx-imgs">
+        <Img id="closet" reveal="mask" sizes="(min-width: 1024px) 28vw, 100vw" widths={[480, 720, 1000]} />
+        <Img id="pantryTall" reveal="mask" style="--delay:150ms" sizes="(min-width: 1024px) 22vw, 100vw" widths={[480, 720, 1000]} />
+      </div>
+    </div>
+  </Section>
+
+  <CtaBand from="limestone" />
+</Base>
+
+<style is:global>
+  .svx-note { margin-top: 32px; max-width: 44rem; }
+  .svx-links a { text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  .svx-imgs { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: end; }
+  .svx-imgs .img:first-child { aspect-ratio: 4 / 5; }
+  .svx-imgs .img:last-child { aspect-ratio: 4 / 5; margin-bottom: 15%; }
+</style>

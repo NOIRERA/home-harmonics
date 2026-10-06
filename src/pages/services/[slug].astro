@@ -1,0 +1,204 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import Img from '../../components/Img.astro';
+import Words from '../../components/Words.astro';
+import FaqList from '../../components/FaqList.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { services, serviceBySlug, type Service } from '../../content/services';
+import { faqById } from '../../content/faq';
+import { steps } from '../../content/method';
+import type { MediaId } from '../../lib/media';
+import { settings, usd, testimonial, serviceSchema, crumbSchema } from '../../lib/site';
+
+export function getStaticPaths() {
+  return services.map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+const { s } = Astro.props as { s: Service };
+const parent = s.parent ? serviceBySlug(s.parent) : undefined;
+const crumbs = [
+  { label: 'Services', href: '/services/' },
+  ...(parent ? [{ label: parent.name, href: `/services/${parent.slug}/` }] : []),
+  { label: s.name, href: `/services/${s.slug}/` },
+];
+const quote = s.quote ? testimonial(s.quote) : undefined;
+const projects = (await getCollection('projects', ({ data }) => !data.draft))
+  .filter((p) => s.projects?.includes(p.id))
+  .sort((a, b) => a.data.order - b.data.order);
+const hasProof = Boolean(quote) || projects.length > 0;
+const spokes = s.spokes?.map((sp) => ({ ...serviceBySlug(sp.slug), line: sp.line }));
+const glance: [string, string][] = [
+  ['What', s.short],
+  ['Begins at', s.from ? usd(s.from) : s.priceNote!],
+  ['Time on site', s.duration],
+  ['Who is on site', 'Yaz, one accountable lead'],
+  ['Where', 'Dallas–Fort Worth, Texas and beyond, by arrangement'],
+  ['Lead time', `Currently scheduling ${settings.leadTime} out`],
+];
+---
+<Base title={s.metaTitle} description={s.metaDescription} schema={[serviceSchema(s), crumbSchema(crumbs)]}>
+  <PageHero eyebrow={s.eyebrow} title={s.title} lead={s.lead} img={s.img} crumbs={crumbs}>
+    <a class="btn" href="/inquire/" data-magnetic>Request a consultation</a>
+    <span class="eyebrow muted">{s.from ? `From ${usd(s.from)}` : s.priceNote}</span>
+  </PageHero>
+
+  <Section bg="alabaster" class="sv-def">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">What it is</p>
+        <p class="sv-definition" data-reveal>{s.definition}</p>
+        {s.note && <p class="muted" data-reveal>{s.note}</p>}
+      </div>
+      <div class="glance" data-reveal>
+        <p class="eyebrow">At a glance</p>
+        <dl>
+          {glance.map(([k, v]) => <div><dt class="eyebrow muted">{k}</dt><dd>{v}</dd></div>)}
+        </dl>
+      </div>
+    </div>
+  </Section>
+
+  <Section bg="limestone" from="alabaster" class="sv-scope">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">What’s included</p>
+        <h2 class="h2"><Words reveal text="Everything in scope, *handled.*" /></h2>
+        {s.img2 && <Img id={s.img2} class="sv-scope-img" reveal="mask" sizes="(min-width: 1024px) 30vw, 100vw" widths={[480, 720, 1000]} />}
+      </div>
+      <ul role="list" class="ticks sv-ticks">
+        {s.scope.map((x, i) => <li data-reveal style={`--delay:${i * 50}ms`}>{x}</li>)}
+      </ul>
+    </div>
+  </Section>
+
+  {spokes && (
+    <Section bg="alabaster" from="limestone" class="sv-spokes">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="eyebrow">Spaces</p>
+          <h2 class="h2"><Words reveal text="Start with *one room.*" /></h2>
+        </header>
+        <ol role="list" class="spoke-list">
+          {spokes.map((sp, i) => (
+            <li data-reveal style={`--delay:${i * 90}ms`}>
+              <a class="spoke-row" href={`/services/${sp.slug}/`}>
+                <span class="eyebrow">0{i + 1}</span>
+                <span class="h3 spoke-name">{sp.name}</span>
+                <span class="muted">{sp.line}</span>
+                <span class="eyebrow">{sp.from ? `From ${usd(sp.from)}` : ''}</span>
+                <span aria-hidden="true" class="spoke-arrow">→</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+        {s.others && (
+          <ul role="list" class="cols-3 others">
+            {s.others.map((o) => <li data-reveal><h3 class="h3">{o.name}</h3><p class="muted">{o.line}</p></li>)}
+          </ul>
+        )}
+      </div>
+    </Section>
+  )}
+
+  <Section bg="alabaster" from={spokes ? undefined : 'limestone'} class="sv-method">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2 class="h2"><Words reveal text="The Harmonics *Method.*" /></h2>
+        <p class="muted measure">Every engagement follows the same five steps, and each one ends with something in your hands.</p>
+      </div>
+      <ol role="list" class="steps">
+        {steps.map((st, i) => (
+          <li data-reveal>
+            <span class="steps-n" aria-hidden="true">0{i + 1}</span>
+            <div>
+              <h3 class="h3">{st.t}</h3>
+              <p class="muted">{st.d}</p>
+              <p class="eyebrow muted">Deliverable · {st.del}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </Section>
+
+  {hasProof && (
+    <Section bg="limestone" from="alabaster" class="sv-proof">
+      <div class="wrap">
+        {quote && (
+          <figure class="sv-quote" data-reveal>
+            <blockquote><p>“{quote.display}”</p></blockquote>
+            <figcaption class="eyebrow muted">{quote.name} · {quote.project}</figcaption>
+          </figure>
+        )}
+        {projects.length > 0 && (
+          <div class="sv-projects">
+            <p class="eyebrow">Real projects</p>
+            <ul role="list">
+              {projects.map((p) => (
+                <li data-reveal>
+                  <a class="proj-row" href={`/work/${p.id}/`}>
+                    <Img id={p.data.after as MediaId} class="proj-img" alt="" position={p.data.cover} sizes="(min-width: 1024px) 18vw, 40vw" widths={[480, 720]} />
+                    <span class="proj-text">
+                      <span class="eyebrow muted">{p.data.space}{p.data.duration && ` · ${p.data.duration}`}</span>
+                      <span class="h3">{p.data.title}</span>
+                      <span class="link">View the project <span class="arrow" aria-hidden="true">→</span></span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </Section>
+  )}
+
+  <Section bg="alabaster" from={hasProof ? 'limestone' : undefined} class="sv-faq">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 class="h2"><Words reveal text="Answers, *first.*" /></h2>
+        <a class="link" href="/faq/">All questions <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <FaqList items={faqById(s.faqs)} stacked />
+    </div>
+  </Section>
+
+  <CtaBand from="alabaster" />
+</Base>
+
+<style is:global>
+  .sv-definition { font: 300 clamp(1.35rem, 1.1rem + 0.9vw, 2rem)/1.4 var(--serif); max-width: 34rem; }
+  .glance dl { border-top: var(--rule); }
+  .glance dl > div { display: grid; grid-template-columns: minmax(120px, 1fr) 2fr; gap: 16px; padding: 16px 0; border-bottom: var(--rule); }
+  .glance .eyebrow:first-child { margin-bottom: 16px; }
+  .sv-scope-img { width: 100%; aspect-ratio: 4 / 5; max-width: 420px; margin-top: 24px; }
+  .spoke-list { border-top: var(--rule); margin-bottom: clamp(48px, 6vw, 88px); }
+  .spoke-list li { border-bottom: var(--rule); }
+  .spoke-row { display: grid; grid-template-columns: 64px minmax(0, 1.2fr) minmax(0, 1fr) 120px 28px; align-items: center; gap: 24px; padding: clamp(24px, 3vw, 40px) 0; text-decoration: none; }
+  .spoke-name { background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 0 1px; transition: background-size 600ms var(--ease); justify-self: start; }
+  .spoke-row:hover .spoke-name { background-size: 100% 1px; }
+  .spoke-arrow { transition: translate var(--t-ui) var(--ease); }
+  .spoke-row:hover .spoke-arrow { translate: 6px 0; }
+  .steps { border-top: var(--rule); }
+  .steps li { display: grid; grid-template-columns: 72px 1fr; gap: 16px; padding: 28px 0; border-bottom: var(--rule); }
+  .steps li > div { display: grid; gap: 10px; }
+  .steps-n { font: 300 2.25rem/1 var(--serif); color: var(--taupe); }
+  .sv-quote blockquote { font: italic 300 clamp(1.6rem, 1.2rem + 1.6vw, 2.75rem)/1.25 var(--serif); max-width: 50rem; }
+  .sv-quote figcaption { margin-top: 20px; }
+  .sv-quote + .sv-projects { margin-top: clamp(64px, 8vw, 112px); }
+  .sv-projects > .eyebrow { margin-bottom: 20px; }
+  .sv-projects ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
+  .proj-row { display: grid; grid-template-columns: minmax(120px, 2fr) 3fr; gap: 24px; align-items: center; text-decoration: none; }
+  .proj-img { aspect-ratio: 4 / 5; }
+  .proj-text { display: grid; gap: 10px; justify-items: start; }
+  @media (max-width: 1023px) {
+    .spoke-row { grid-template-columns: 1fr; gap: 8px; }
+    .spoke-arrow { display: none; }
+    .sv-projects ul { grid-template-columns: 1fr; }
+    .glance dl > div { grid-template-columns: 1fr; gap: 4px; }
+  }
+</style>

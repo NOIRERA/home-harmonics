@@ -1,0 +1,59 @@
+---
+import Words from './Words.astro';
+import Img from './Img.astro';
+import type { MediaId } from '../lib/media';
+
+interface Props {
+  eyebrow: string;
+  /** Words markup: *italic*, ` | ` line break. */
+  title: string;
+  lead?: string;
+  img?: MediaId;
+  /** Trail after Home; last item is the current page. */
+  crumbs?: { label: string; href: string }[];
+}
+const { eyebrow, title, lead, img, crumbs } = Astro.props;
+const hasSlot = Astro.slots.has('default');
+---
+<section class="band ph" data-bg="alabaster">
+  <div class:list={['wrap', 'ph-grid', img && 'has-img']}>
+    <div class="ph-copy">
+      {crumbs && (
+        <nav aria-label="Breadcrumb" class="ph-crumbs" data-intro>
+          <ol role="list">
+            <li><a href="/">Home</a></li>
+            {crumbs.map((c, i) => (
+              <li>{i === crumbs.length - 1 ? <span aria-current="page">{c.label}</span> : <a href={c.href}>{c.label}</a>}</li>
+            ))}
+          </ol>
+        </nav>
+      )}
+      <h1>
+        <span class="eyebrow" data-intro style="--delay:100ms">{eyebrow}</span>
+        <Words class="display ph-h" intro text={title} />
+      </h1>
+      {lead && <p class="lead muted ph-lead" data-intro style="--delay:700ms">{lead}</p>}
+      {hasSlot && <div class="ph-slot" data-intro style="--delay:850ms"><slot /></div>}
+    </div>
+    {img && <Img id={img} class="ph-img" priority data-intro="settle" sizes="(min-width: 1024px) 40vw, 100vw" widths={[640, 960, 1280]} />}
+  </div>
+</section>
+
+<style is:global>
+  .ph { padding-top: calc(var(--header-h) + clamp(40px, 8vw, 112px)); padding-bottom: clamp(64px, 8vw, 120px); }
+  .ph-grid { display: grid; gap: clamp(40px, 6vw, 96px); align-items: end; }
+  .ph-grid.has-img { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+  .ph-h { font-size: clamp(2.6rem, 1.3rem + 3.8vw, 5.25rem); margin-top: 24px; }
+  .ph-lead { margin-top: 28px; max-width: 34rem; }
+  .ph-slot { margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
+  .ph-img { aspect-ratio: 4 / 5; max-height: 74vh; }
+  .ph-crumbs { margin-bottom: 40px; font: 500 var(--fs-micro)/1.5 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; }
+  .ph-crumbs ol { display: flex; flex-wrap: wrap; gap: 6px 10px; }
+  .ph-crumbs li + li::before { content: '/'; margin-right: 10px; opacity: 0.5; }
+  .ph-crumbs a { text-decoration: none; color: color-mix(in srgb, currentColor 74%, transparent); }
+  .ph-crumbs a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  @media (max-width: 1023px) {
+    .ph-grid.has-img { grid-template-columns: 1fr; }
+    .ph-img { aspect-ratio: 4 / 3; max-height: none; }
+  }
+</style>

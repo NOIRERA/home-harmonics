@@ -1,0 +1,52 @@
+---
+import { Picture, getImage } from 'astro:assets';
+import { media, type MediaId } from '../lib/media';
+
+interface Props {
+  id: MediaId;
+  alt?: string;
+  sizes?: string;
+  widths?: number[];
+  class?: string;
+  reveal?: 'mask' | 'fade';
+  parallax?: boolean;
+  priority?: boolean;
+  /** Crop into the frame: CSS zoom + origin on the img (e.g. detail crops). */
+  zoom?: number;
+  origin?: string;
+  position?: string;
+  style?: string;
+  [key: `data-${string}`]: string | undefined;
+}
+const { id, alt, sizes = '100vw', widths = [640, 960, 1280, 1672], class: cls, reveal, parallax, priority, zoom, origin, position, style, ...rest } = Astro.props;
+const m = media[id];
+const usable = widths.filter((w) => w <= m.src.width);
+if (!usable.includes(m.src.width) && m.src.width < Math.max(...widths)) usable.push(m.src.width);
+// Blurred placeholder under below-the-fold images; the hero/priority image is never hidden.
+const lqip = priority ? undefined : (await getImage({ src: m.src, width: 24, format: 'webp', quality: 40 })).src;
+const imgStyle = [
+  zoom && `transform: scale(${zoom}); transform-origin: ${origin ?? 'center'}`,
+  position && `object-position: ${position}`,
+].filter(Boolean).join(';') || undefined;
+---
+<div
+  class:list={['img', lqip && 'lq', cls]}
+  data-reveal={reveal}
+  data-parallax={parallax ? '' : undefined}
+  data-truth={m.truth}
+  data-placeholder={m.placeholder ? 'true' : undefined}
+  style={[lqip && `--lqip: url("${lqip}")`, style].filter(Boolean).join(';') || undefined}
+  {...rest}
+>
+  <Picture
+    src={m.src}
+    alt={alt ?? m.alt}
+    formats={['avif', 'webp']}
+    widths={usable}
+    sizes={sizes}
+    priority={priority}
+    loading={priority ? undefined : 'lazy'}
+    decoding="async"
+    style={imgStyle}
+  />
+</div>

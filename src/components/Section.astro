@@ -2,7 +2,8 @@
 type Tone = 'alabaster' | 'limestone' | 'walnut';
 interface Props { bg: Tone; from?: Tone; id?: string; class?: string; [key: `data-${string}`]: string | undefined }
 const { bg, from, id, class: cls, ...rest } = Astro.props;
-const seam = from && from !== bg;
+// Soft seams only between light tones; walnut bands get a clean edge (a long blend into walnut reads as a shadow).
+const seam = from && from !== bg && bg !== 'walnut' && from !== 'walnut';
 ---
 <section id={id} class:list={['band', seam && 'seam', cls]} data-bg={bg} style={seam ? `--from: var(--${from})` : undefined} {...rest}>
   <slot />

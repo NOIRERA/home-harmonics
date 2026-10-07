@@ -12,10 +12,10 @@ const explore = [
 ];
 ---
 <footer
-  class:list={['band', 'site-footer', from && from !== 'alabaster' && 'seam']}
+  class:list={['band', 'site-footer', from === 'limestone' && 'seam']}
   data-bg="alabaster"
   data-hide-cta
-  style={from && from !== 'alabaster' ? `--from: var(--${from})` : undefined}
+  style={from === 'limestone' ? `--from: var(--${from})` : undefined}
 >
   <div class="wrap ft-grid">
     <div class="ft-brand">
@@ -59,8 +59,8 @@ const explore = [
   .ft-brand img { width: 200px; height: auto; margin-bottom: 24px; }
   .ft-brand p { max-width: 20rem; }
   .ft-grid .eyebrow { margin-bottom: 16px; }
-  .ft-list li { padding: 3px 0; }
-  .ft-list a { display: inline-block; padding: 6px 0; text-decoration: none; background: linear-gradient(currentColor, currentColor) no-repeat 0 calc(100% - 4px) / 0 1px; transition: background-size 500ms var(--ease); }
+  .ft-list li { padding: 0; }
+  .ft-list a { display: inline-block; min-width: 44px; padding: 10px 0; text-decoration: none; background: linear-gradient(currentColor, currentColor) no-repeat 0 calc(100% - 4px) / 0 1px; transition: background-size 500ms var(--ease); }
   .ft-list a:hover { background-size: 100% 1px; }
   .ft-note { margin-top: 14px; font-size: 0.875rem; max-width: 18rem; }
   .ft-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; margin-top: 72px; padding-top: 24px; border-top: var(--rule); font-size: 0.8125rem; }

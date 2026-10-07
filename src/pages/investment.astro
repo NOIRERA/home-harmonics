@@ -6,7 +6,7 @@ import Words from '../components/Words.astro';
 import FaqList from '../components/FaqList.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { faqById } from '../content/faq';
-import { settings, price, usd, crumbSchema } from '../lib/site';
+import { settings, price, usd, claim, crumbSchema } from '../lib/site';
 
 const crumbs = [{ label: 'Investment', href: '/investment/' }];
 const d = settings.minimumDays;
@@ -51,7 +51,7 @@ const separate = [
     lead="Every engagement is priced by project, never by the hour. These are the minimums; your proposal sets the exact figure after a complimentary walkthrough."
     crumbs={crumbs}
   >
-    <button class="link no-print" type="button" onclick="window.print()">Print or save as PDF <span class="arrow" aria-hidden="true">→</span></button>
+    <button class="link no-print" type="button" onclick="window.print()" data-track="pdf_download">Print or save as PDF <span class="arrow" aria-hidden="true">→</span></button>
   </PageHero>
 
   <Section bg="alabaster" class="iv-tiers">
@@ -69,7 +69,7 @@ const separate = [
           ))}
         </tbody>
       </table>
-      <p class="muted iv-note" data-reveal>A 50% deposit holds your dates. Engagements are scheduled as consecutive days, and the details are in your agreement.</p>
+      <p class="muted iv-note" data-reveal>A 50% deposit holds your dates. Engagements are scheduled as consecutive days, and the details are in your agreement.{claim('insured') && ' Home Harmonics is insured.'}</p>
     </div>
   </Section>
 
@@ -98,7 +98,30 @@ const separate = [
     </div>
   </Section>
 
-  <Section bg="limestone" from="alabaster" class="iv-begin">
+  <Section bg="limestone" from="alabaster" class="iv-guide no-print">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">What you keep</p>
+        <h2 class="h2"><Words reveal text="The care guide, *written for your household.*" /></h2>
+        <p class="muted measure">The last step of every engagement. It records where things live and how each space resets, so anyone in the household, or anyone who helps run it, can keep the system as it was designed.</p>
+      </div>
+      <figure class="cg" data-reveal>
+        <div class="cg-page">
+          <p class="cg-top"><span class="eyebrow">Home Harmonics</span><span class="eyebrow">Care guide · Primary closet</span></p>
+          <p class="cg-title">Primary closet</p>
+          <dl class="cg-dl">
+            <div><dt class="eyebrow">Zones</dt><dd>Daily wear at eye level. Occasion and seasonal pieces above, in labeled boxes. Shoes by frequency, most-worn nearest the door.</dd></div>
+            <div><dt class="eyebrow">Ten-minute reset</dt><dd>Return hangers to their section, fold into the marked drawers, move anything out of season to the top shelf.</dd></div>
+            <div><dt class="eyebrow">Restock</dt><dd>Hangers, drawer inserts and box labels, with the product names and sizes used.</dd></div>
+            <div><dt class="eyebrow">Next reset</dt><dd>Spring and autumn changeovers.</dd></div>
+          </dl>
+        </div>
+        <figcaption class="muted cg-cap">An illustrative page. Every guide is written for its household and its spaces.</figcaption>
+      </figure>
+    </div>
+  </Section>
+
+  <Section bg="alabaster" from="limestone" class="iv-begin">
     <div class="wrap split">
       <div>
         <p class="eyebrow">How it begins</p>
@@ -113,14 +136,20 @@ const separate = [
     </div>
   </Section>
 
-  <Section bg="alabaster" from="limestone" class="iv-faq">
+  <Section bg="limestone" from="alabaster" class="iv-faq">
     <div class="wrap split">
-      <div><p class="eyebrow">Questions</p><h2 class="h2"><Words reveal text="Answers, *first.*" /></h2></div>
+      <div><p class="eyebrow">Questions</p><h2 class="h2"><Words reveal text="On cost, *plainly.*" /></h2></div>
       <FaqList items={faqById(['hourly', 'cost-whole-home', 'products', 'built-storage', 'consultation'])} stacked />
     </div>
   </Section>
 
-  <CtaBand from="alabaster" />
+  <div class="print-only print-foot">
+    <p><strong>Home Harmonics</strong> · Home organization and move-in setup · Dallas–Fort Worth, Texas and beyond</p>
+    <p>{settings.email} · Call or text {settings.phone} · home-harmonics.com/inquire/</p>
+    <p>Prices current as of {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}. Your written proposal sets the exact figure.</p>
+  </div>
+
+  <CtaBand from="limestone" />
 </Base>
 
 <style is:global>
@@ -132,6 +161,16 @@ const separate = [
   .iv-two { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 112px); }
   .iv-two .eyebrow { margin-bottom: 16px; }
   button.link { background-color: transparent; border: 0; padding: 0; cursor: pointer; }
+  /* Care-guide sample: a single typeset page, hairline edge, no shadow. */
+  .cg { display: grid; gap: 16px; }
+  .cg-page { background: var(--alabaster); border: var(--rule); padding: clamp(28px, 4vw, 56px); display: grid; gap: 28px; max-width: 34rem; }
+  .cg-top { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 14px; border-bottom: var(--rule); color: color-mix(in srgb, currentColor 74%, transparent); }
+  .cg-title { font: 300 clamp(1.8rem, 1.4rem + 1.4vw, 2.6rem)/1.1 var(--serif); }
+  .cg-dl { display: grid; gap: 18px; }
+  .cg-dl dt { margin-bottom: 4px; color: color-mix(in srgb, currentColor 74%, transparent); }
+  .cg-dl dd { font: 300 1.0625rem/1.55 var(--serif); }
+  .cg-cap { font-size: 0.875rem; max-width: 34rem; }
+  @media (max-width: 767px) { .cg-top { flex-direction: column; gap: 4px; } }
   @media (max-width: 1023px) {
     .iv-five { grid-template-columns: 1fr; border-top: 0; }
     .iv-five li, .iv-five li + li { border-left: 0; border-top: var(--rule); padding: 24px 0; }

@@ -75,6 +75,13 @@ main:focus { outline: none; }
 .muted { color: color-mix(in srgb, currentColor 74%, transparent); }
 .measure { max-width: 34rem; }
 .nowrap, a[href^='tel:'] { white-space: nowrap; }
+/* Typographic finish: balanced headings, no orphans, hanging quotes, figures that line up. */
+h1, h2, h3, .display, .h2, .h3, .lead, blockquote, .eyebrow, .sv-definition, .cs-p { text-wrap: balance; }
+p, li, dd, figcaption { text-wrap: pretty; }
+html { hanging-punctuation: first allow-end; }
+@supports not (hanging-punctuation: first) { blockquote > p:first-child { text-indent: -0.42em; } }
+.cmp, .eyebrow, .steps-n, .m-n, .svc-price, .glance dd { font-variant-numeric: lining-nums tabular-nums; }
+.l-letter, .ab-text, .ar-prose, .cs-p, .sv-definition { font-variant-numeric: oldstyle-nums proportional-nums; }
 .tbd { background: #ffe9a8; color: var(--ink); font: 500 0.75rem/1.4 var(--sans); padding: 2px 6px; letter-spacing: 0; text-transform: none; }
 
 /* Layout + bands. Colour morph = gradient seam inside the empty top padding (no text sits on mid-tones). */
@@ -106,7 +113,7 @@ main:focus { outline: none; }
 .cmp th, .cmp td { padding: 22px 24px 22px 0; border-bottom: var(--rule); vertical-align: top; }
 .cmp thead th { font: 500 var(--fs-micro)/1.5 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 1px solid currentColor; }
 .cmp tbody th { font: 350 clamp(1.3rem, 1.1rem + 0.7vw, 1.75rem)/1.2 var(--serif); width: 30%; }
-.cmp tbody th a { text-decoration: none; background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 0 1px; transition: background-size 600ms var(--ease); }
+.cmp tbody th a { display: inline-block; padding-block: 10px; margin-block: -10px; text-decoration: none; background: linear-gradient(currentColor, currentColor) no-repeat 0 calc(100% - 10px) / 0 1px; transition: background-size 600ms var(--ease); }
 .cmp tbody th a:hover { background-size: 100% 1px; }
 @media (max-width: 767px) {
   .cmp thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
@@ -249,10 +256,20 @@ html.lenis, html.lenis body { height: auto; }
 .top-sentinel { position: absolute; top: 60vh; left: 0; width: 1px; height: 1px; pointer-events: none; }
 
 /* Print: pages (esp. /investment/) are meant to be forwarded to assistants and house managers */
+.print-only { display: none; }
 @media print {
-  .site-header, .site-footer, .sticky-cta, .cta-band, .no-print, .skip, .img { display: none !important; }
-  .band { padding-block: 16px !important; background: none !important; color: #000 !important; }
+  @page { margin: 14mm 16mm; }
+  html { font-size: 12px; }
+  .site-header, .site-footer, .sticky-cta, .cta-band, .no-print, .skip, .img, .ph-crumbs, .preloader { display: none !important; }
+  .band { padding-block: 14px !important; background: none !important; color: #000 !important; }
   .ph { padding-top: 0 !important; }
+  .ph-h { font-size: 2.6rem !important; }
+  .h2 { font-size: 1.9rem !important; }
+  .sec-head { margin-bottom: 16px !important; }
+  .split, .iv-two { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
+  .cmp, li, dl > div, .print-foot { break-inside: avoid; }
+  .print-only { display: block; }
+  .print-foot { margin: 24px var(--gutter) 0; padding-top: 12px; border-top: 1px solid #000; display: grid; gap: 4px; font-size: 0.95rem; }
   [data-reveal], .w > span { opacity: 1 !important; transform: none !important; clip-path: none !important; }
 }
 

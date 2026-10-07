@@ -24,8 +24,8 @@ const after = d.after as MediaId;
 const crumbs = [{ label: 'Work', href: '/work/' }, { label: d.title, href: `/work/${p.id}/` }];
 const portrait = media[after].src.height > media[after].src.width;
 ---
-<Base title={`${d.title} — ${d.space} | Home Harmonics`.length <= 60 ? `${d.title} — ${d.space} | Home Harmonics` : `${d.title} | Home Harmonics`} description={d.summary} schema={[crumbSchema(crumbs)]}>
-  <PageHero eyebrow={d.space} title={d.title} lead={d.summary} crumbs={crumbs}>
+<Base title={`${d.title} — ${d.space} | Home Harmonics`.length <= 60 ? `${d.title} — ${d.space} | Home Harmonics` : `${d.title} | Home Harmonics`} description={d.summary} image={after} schema={[crumbSchema(crumbs)]}>
+  <PageHero eyebrow={d.space} title={d.title} lead={d.summary} img={after} imgAlt={`${d.title}: the finished ${d.space.toLowerCase()}`} imgPosition={d.cover} crumbs={crumbs}>
     <span class="eyebrow muted">{[...d.scope, d.duration].filter(Boolean).join(' · ')}</span>
   </PageHero>
 

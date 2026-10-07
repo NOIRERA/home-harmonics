@@ -4,7 +4,8 @@ import { getImage } from 'astro:assets';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Preloader from '../components/Preloader.astro';
-import { media } from '../lib/media';
+import { existsSync } from 'node:fs';
+import { media, type MediaId } from '../lib/media';
 import { abs, orgSchema } from '../lib/site';
 import { PUBLIC_GA4_ID } from 'astro:env/client';
 
@@ -19,11 +20,16 @@ interface Props {
   hideStickyCta?: boolean;
   /** First-visit intro (homepage only). */
   intro?: boolean;
+  /** Page's lead image: social-card fallback when no designed card exists in public/og/. */
+  image?: MediaId;
 }
-const { title, description, noindex, schema, transparentHeader = false, footerFrom, hideStickyCta, intro = false } = Astro.props;
+const { title, description, noindex, schema, transparentHeader = false, footerFrom, hideStickyCta, intro = false, image = 'hero' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const og = await getImage({ src: media.hero.src, width: 1200, height: 630, fit: 'cover', format: 'jpg' });
-const ogUrl = abs(og.src);
+// Designed cards (title + image + mark) come from scripts/og-cards.mjs; a page without one uses its own image.
+const card = `/og/${Astro.url.pathname.replace(/^\/|\/$/g, '').replace(/\//g, '-') || 'home'}.jpg`;
+const ogUrl = existsSync(`public${card}`)
+  ? abs(card)
+  : abs((await getImage({ src: media[image].src, width: 1200, height: 630, fit: 'cover', format: 'jpg' })).src);
 ---
 <!doctype html>
 <html lang="en-US">
@@ -40,6 +46,9 @@ const ogUrl = abs(og.src);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#F3EFE8" />
     <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
@@ -87,7 +96,7 @@ const ogUrl = abs(og.src);
     <Header transparent={transparentHeader} />
     <main id="main" tabindex="-1"><slot /></main>
     <Footer from={footerFrom} />
-    {!hideStickyCta && <a class="btn sticky-cta" href="/inquire/" data-sticky-cta>Request a consultation</a>}
+    {!hideStickyCta && <aside aria-label="Quick contact"><a class="btn sticky-cta" href="/inquire/" data-sticky-cta>Request a consultation</a></aside>}
     <div class="top-sentinel" aria-hidden="true"></div>
     <script>
       import '../scripts/motion.ts';

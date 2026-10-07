@@ -37,7 +37,7 @@ const article = {
   publisher: { '@id': abs('/#business') },
 };
 ---
-<Base title={`${d.seoTitle ?? d.title} | Home Harmonics`} description={d.description} schema={[article, crumbSchema(crumbs)]}>
+<Base title={`${d.seoTitle ?? d.title} | Home Harmonics`} description={d.description} image={hero} schema={[article, crumbSchema(crumbs)]}>
   <PageHero eyebrow={`Journal · ${minutes} min read`} title={d.title} crumbs={crumbs} />
 
   <Section bg="alabaster" class="ar">

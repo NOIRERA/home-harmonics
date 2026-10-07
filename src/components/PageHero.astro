@@ -9,10 +9,13 @@ interface Props {
   title: string;
   lead?: string;
   img?: MediaId;
+  imgAlt?: string;
+  /** object-position for the hero crop, e.g. "50% 30%". */
+  imgPosition?: string;
   /** Trail after Home; last item is the current page. */
   crumbs?: { label: string; href: string }[];
 }
-const { eyebrow, title, lead, img, crumbs } = Astro.props;
+const { eyebrow, title, lead, img, imgAlt, imgPosition, crumbs } = Astro.props;
 const hasSlot = Astro.slots.has('default');
 ---
 <section class="band ph" data-bg="alabaster">
@@ -35,7 +38,7 @@ const hasSlot = Astro.slots.has('default');
       {lead && <p class="lead muted ph-lead" data-intro style="--delay:700ms">{lead}</p>}
       {hasSlot && <div class="ph-slot" data-intro style="--delay:850ms"><slot /></div>}
     </div>
-    {img && <Img id={img} class="ph-img" priority data-intro="settle" sizes="(min-width: 1024px) 40vw, 100vw" widths={[640, 960, 1280]} />}
+    {img && <Img id={img} alt={imgAlt} position={imgPosition} class="ph-img" priority data-intro="settle" sizes="(min-width: 1600px) 50vw, (min-width: 1024px) 40vw, 100vw" widths={[640, 960, 1280, 1600]} />}
   </div>
 </section>
 
@@ -47,6 +50,11 @@ const hasSlot = Astro.slots.has('default');
   .ph-lead { margin-top: 28px; max-width: 34rem; }
   .ph-slot { margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
   .ph-img { aspect-ratio: 4 / 5; max-height: 74vh; }
+  /* Wide screens: the image runs to the right edge, like the homepage hero, instead of floating in empty space. */
+  @media (min-width: 1600px) {
+    .ph-grid.has-img { grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); }
+    .ph-img { aspect-ratio: auto; height: min(78vh, 1000px); max-height: none; margin-right: calc((100vw - var(--max)) / -2 - var(--gutter)); }
+  }
   .ph-crumbs { margin-bottom: 40px; font: 500 var(--fs-micro)/1.5 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; }
   .ph-crumbs ol { display: flex; flex-wrap: wrap; gap: 6px 10px; }
   .ph-crumbs li + li::before { content: '/'; margin-right: 10px; opacity: 0.5; }

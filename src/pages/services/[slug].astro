@@ -38,7 +38,7 @@ const glance: [string, string][] = [
   ['Lead time', `Currently scheduling ${settings.leadTime} out`],
 ];
 ---
-<Base title={s.metaTitle} description={s.metaDescription} schema={[serviceSchema(s), crumbSchema(crumbs)]}>
+<Base title={s.metaTitle} description={s.metaDescription} image={s.img} schema={[serviceSchema(s), crumbSchema(crumbs)]}>
   <PageHero eyebrow={s.eyebrow} title={s.title} lead={s.lead} img={s.img} crumbs={crumbs}>
     <a class="btn" href="/inquire/" data-magnetic>Request a consultation</a>
     <span class="eyebrow muted">{s.from ? `From ${usd(s.from)}` : s.priceNote}</span>

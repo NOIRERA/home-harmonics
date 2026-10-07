@@ -11,6 +11,8 @@ interface Props {
   reveal?: 'mask' | 'fade';
   parallax?: boolean;
   priority?: boolean;
+  /** Load now without raising priority (e.g. hover images that must be ready on first reveal). */
+  eager?: boolean;
   /** Crop into the frame: CSS zoom + origin on the img (e.g. detail crops). */
   zoom?: number;
   origin?: string;
@@ -18,7 +20,7 @@ interface Props {
   style?: string;
   [key: `data-${string}`]: string | undefined;
 }
-const { id, alt, sizes = '100vw', widths = [640, 960, 1280, 1672], class: cls, reveal, parallax, priority, zoom, origin, position, style, ...rest } = Astro.props;
+const { id, alt, sizes = '100vw', widths = [640, 960, 1280, 1672], class: cls, reveal, parallax, priority, eager, zoom, origin, position, style, ...rest } = Astro.props;
 const m = media[id];
 const usable = widths.filter((w) => w <= m.src.width);
 if (!usable.includes(m.src.width) && m.src.width < Math.max(...widths)) usable.push(m.src.width);
@@ -45,7 +47,7 @@ const imgStyle = [
     widths={usable}
     sizes={sizes}
     priority={priority}
-    loading={priority ? undefined : 'lazy'}
+    loading={priority ? undefined : eager ? 'eager' : 'lazy'}
     decoding="async"
     style={imgStyle}
   />

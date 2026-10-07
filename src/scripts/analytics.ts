@@ -7,6 +7,8 @@ export const track = (name: string, params: Record<string, unknown> = {}) =>
 
 if (PUBLIC_GA4_ID) {
   document.addEventListener('click', (e) => {
+    const t = (e.target as Element).closest<HTMLElement>('[data-track]');
+    if (t) track(t.dataset.track!, { page: location.pathname });
     const a = (e.target as Element).closest<HTMLAnchorElement>('a[href]');
     if (!a) return;
     const href = a.getAttribute('href')!;

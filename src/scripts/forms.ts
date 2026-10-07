@@ -28,7 +28,38 @@ const token = (form: HTMLFormElement) =>
     check();
   });
 
+// Plain-language inline messages instead of browser bubbles (native validation still works without JS).
+const message = (el: HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement) => {
+  const label = el.labels?.[0]?.childNodes[0]?.textContent?.trim().toLowerCase() ?? 'this';
+  const nice: Record<string, string> = { phone: 'phone number', role: 'your role', timeline: 'a timeline', 'what you need': 'what you need' };
+  if (el.validity.valueMissing) return el.tagName === 'SELECT' ? `Please choose ${nice[label] ?? 'one'}.` : `Please add your ${nice[label] ?? label}.`;
+  if (el.validity.typeMismatch && el.type === 'email') return 'Please check the email address.';
+  return el.validationMessage;
+};
+const showError = (el: HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement) => {
+  const field = el.closest('.field');
+  if (!field) return;
+  let err = field.querySelector<HTMLElement>('.err');
+  if (el.validity.valid) { err?.remove(); el.removeAttribute('aria-invalid'); return; }
+  if (!err) {
+    err = document.createElement('p');
+    err.className = 'err';
+    err.id = `${el.id}-err`;
+    field.append(err);
+    el.setAttribute('aria-describedby', [el.getAttribute('aria-describedby'), err.id].filter(Boolean).join(' '));
+  }
+  err.textContent = message(el);
+  el.setAttribute('aria-invalid', 'true');
+};
+
 forms.forEach((form) => {
+  form.noValidate = true;
+  const fields = [...form.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>('.field input, .field select, .field textarea')];
+  fields.forEach((el) => {
+    el.addEventListener('blur', () => { if (el.value || el.hasAttribute('aria-invalid')) showError(el); });
+    el.addEventListener('input', () => { if (el.hasAttribute('aria-invalid')) showError(el); });
+    el.addEventListener('change', () => { if (el.hasAttribute('aria-invalid')) showError(el); });
+  });
   const status = form.querySelector<HTMLElement>('.form-status');
   const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
   const phone = form.dataset.phone ?? '';
@@ -41,7 +72,11 @@ forms.forEach((form) => {
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (!form.reportValidity()) return;
+    if (!form.checkValidity()) {
+      fields.forEach(showError);
+      fields.find((el) => !el.validity.valid)?.focus();
+      return;
+    }
     const label = button?.textContent ?? '';
     if (button) { button.disabled = true; button.textContent = 'Sending…'; }
     say('');
@@ -54,7 +89,11 @@ forms.forEach((form) => {
       const kind = form.action.includes('/api/trade') ? 'trade' : 'inquiry';
       track(kind === 'trade' ? 'trade_form_submit' : 'form_step1_submit');
       try { sessionStorage.setItem('hh-lead', kind); } catch {}
-      location.href = '/inquire/thanks/';
+      // A calm beat of confirmation before the thank-you page.
+      form.classList.add('is-sent');
+      if (button) button.textContent = 'Received';
+      say('Received, thank you. One moment…');
+      setTimeout(() => { location.href = '/inquire/thanks/'; }, 900);
     } catch (err) {
       say(`${(err as Error).message} Please try again, or call or text ${phone}.`);
       (window as unknown as { turnstile?: { reset(): void } }).turnstile?.reset();

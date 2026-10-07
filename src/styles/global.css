@@ -155,7 +155,12 @@ html { hanging-punctuation: first allow-end; }
 .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 .form-foot { display: grid; gap: 18px; justify-items: start; margin-top: 8px; }
 .form-foot .small { font-size: 0.875rem; }
+.form-next { margin-bottom: 6px; }
 .form-status:empty { display: none; }
+.field .err { margin: 2px 0 0; font-size: 0.875rem; color: #8f3418; }
+[data-bg='walnut'] .field .err { color: #f3c2ad; }
+.field [aria-invalid='true'] { border-bottom-color: currentColor; border-bottom-width: 2px; }
+.inq-form.is-sent .field, .inq-form.is-sent .form-foot > :not(.form-status):not(.btn) { opacity: 0.35; transition: opacity 600ms var(--ease); }
 @media (max-width: 767px) { .inq-form { grid-template-columns: 1fr; } .form-foot .btn { width: 100%; } }
 
 /* Buttons + links */

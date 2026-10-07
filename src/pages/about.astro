@@ -23,12 +23,16 @@ const principles = [
   { t: 'Privacy in writing', d: 'Nothing in your home is photographed or shared without your written consent.' },
   { t: 'Built to last', d: 'A care guide written for your household, a check-in thirty days later, and Seasonal Resets when you want them.' },
 ];
-const practice = [
-  claim('insured') && 'Insured',
-  claim('writtenAgreement') && 'A written service agreement on every engagement',
-  'Photography only with written consent',
-  `Based in Dallas–Fort Worth${claim('yearsInIndustry') ? `, ${settings.yearsInIndustry.value} years in the industry` : ''}`,
-].filter(Boolean) as string[];
+// Visible operating standards (plan §7). Every line is backed by the claims ledger or the privacy policy.
+const standards = [
+  claim('insured') && { t: 'Insurance', d: 'General liability insurance in force on every engagement.' },
+  claim('writtenAgreement') && { t: 'A written agreement', d: 'Scope, dates, investment and the photography consent level, set out and signed before work begins.' },
+  { t: 'Photography', d: 'Nothing in your home is photographed without written consent. You choose the level: none, unidentifiable details only, or the finished space.' },
+  { t: 'Your information', d: 'Inquiries that do not become projects are deleted within two years. Nothing is sold or shared for marketing.' },
+  { t: 'One accountable lead', d: 'Yaz is at the walkthrough and in your home. Built storage is made by a build partner Yaz coordinates, and she organizes once it is installed.' },
+  { t: 'Money', d: 'A 50% deposit holds your dates. Products are billed at cost plus a handling fee, within a budget you approve, and built storage is quoted separately.' },
+].filter(Boolean) as { t: string; d: string }[];
+const since = claim('yearsInIndustry') ? `${settings.yearsInIndustry.value} years in the industry` : '';
 ---
 <Base
   title="About Yaz Scott, Founder | Home Harmonics, Dallas"
@@ -68,13 +72,25 @@ const practice = [
           </li>
         ))}
       </ol>
-      <ul role="list" class="ab-practice" data-reveal>
-        {practice.map((x) => <li class="eyebrow">{x}</li>)}
-      </ul>
     </div>
   </Section>
 
-  <CtaBand from="limestone" />
+  <Section bg="alabaster" from="limestone" id="standards" class="ab-standards">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Standards</p>
+        <h2 class="h2"><Words reveal text="Trust, *in writing.*" /></h2>
+        <p class="muted measure">For homeowners, and for the assistants and house managers who vet who comes into a home.{since && ` Based in Dallas–Fort Worth, ${since}.`}</p>
+      </div>
+      <dl class="ab-std">
+        {standards.map((x, i) => (
+          <div data-reveal style={`--delay:${i * 60}ms`}><dt class="eyebrow">{x.t}</dt><dd>{x.d}</dd></div>
+        ))}
+      </dl>
+    </div>
+  </Section>
+
+  <CtaBand from="alabaster" />
 </Base>
 
 <style is:global>
@@ -84,7 +100,10 @@ const practice = [
   .ab-principles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: var(--rule); }
   .ab-principles li { display: grid; gap: 12px; align-content: start; padding: 32px 28px 8px 0; }
   .ab-principles li + li { border-left: var(--rule); padding-left: 28px; }
-  .ab-practice { display: flex; flex-wrap: wrap; gap: 12px 32px; margin-top: clamp(56px, 7vw, 96px); padding-top: 28px; border-top: var(--rule); }
+  .ab-std { border-top: var(--rule); }
+  .ab-std > div { display: grid; grid-template-columns: minmax(140px, 1fr) 2.4fr; gap: 24px; padding: 22px 0; border-bottom: var(--rule); }
+  .ab-std dd { font: 300 1.2rem/1.5 var(--serif); }
+  @media (max-width: 1023px) { .ab-std > div { grid-template-columns: 1fr; gap: 6px; } }
   @media (max-width: 1023px) {
     .ab-principles { grid-template-columns: 1fr 1fr; }
     .ab-principles li:nth-child(3) { border-left: 0; padding-left: 0; }

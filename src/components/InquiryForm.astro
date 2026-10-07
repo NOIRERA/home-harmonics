@@ -62,7 +62,7 @@ const attr = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_conte
   <input type="hidden" name="page" data-page />
   {PUBLIC_TURNSTILE_SITE_KEY && <div class="cf-turnstile full" data-sitekey={PUBLIC_TURNSTILE_SITE_KEY} data-appearance="interaction-only"></div>}
   <div class="form-foot">
-    <p class="muted">Engagements begin at {usd(price.single)} for a single space. A 50% deposit holds your dates. We reply the same day.</p>
+    <p class="muted"><span class="eyebrow form-next">What happens next</span>Yaz replies the same day to arrange a complimentary 15-minute fit call. Engagements begin at {usd(price.single)} for a single space.</p>
     <button class="btn" type="submit">Request a consultation</button>
     <p class="form-status" role="status" aria-live="polite"></p>
     <p class="muted small">Prefer to talk? Call or text <a href={`tel:${settings.phoneE164}`}>{settings.phone}</a>.</p>

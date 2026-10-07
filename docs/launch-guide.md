@@ -158,6 +158,9 @@ The old Wix site goes offline the moment the nameservers change, so do this only
 - [ ] Send a trade inquiry → both emails arrive.
 - [ ] GA4 Realtime shows `generate_lead` (Part 3.4).
 - [ ] Phone link opens the dialer on a phone; the sticky "Request a consultation" bar appears after the first screen.
+- [ ] **Mobile speed:** run `https://pagespeed.web.dev/` on `/` and `/services/move-in-concierge/` (Mobile tab). Target LCP ≤ 2.5 s. If it is over, tell Claude: the next lever is the hero image.
+- [ ] **Social preview:** paste `https://www.home-harmonics.com/` into a text message or https://www.opengraph.xyz/ → the designed card (headline, image, mark) appears.
+- [ ] **Print:** on `/investment/`, "Print or save as PDF" gives a clean brief with the contact footer.
 
 ---
 
@@ -187,6 +190,16 @@ From the master plan §13.5a. On business.google.com:
 - **Reviews:** reply to each of the 14, briefly and specifically. Ask every new client at day 14.
 
 ---
+
+## After adding a page, article or project
+
+New journal posts and projects work on their own: they get a social preview from their own image. For the designed card (headline + image), run once on a computer with the project, then commit:
+
+```bash
+npm run build && PLAYWRIGHT=$(npm root -g)/playwright/index.mjs npm run og && npm run build
+```
+
+(Needs Playwright installed once with `npm i -g playwright && npx playwright install chromium`; it is deliberately not a site dependency.) Then run `npm run indexnow` after the deploy.
 
 ## Later (optional)
 - **Keystatic editor** so Yaz can add journal posts and projects in a browser. Ask Claude to set it up once the GitHub repo exists.

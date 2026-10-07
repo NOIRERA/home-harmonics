@@ -1,0 +1,48 @@
+{
+ "mobile /": {
+  "perf": 82,
+  "a11y": 100,
+  "bp": 100,
+  "seo": 100,
+  "lcp": 4735,
+  "cls": 0,
+  "tbt": 0,
+  "fcp": 1810,
+  "kb": 681,
+  "lcpEl": null,
+  "failed": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "interactive",
+   "mainthread-work-breakdown",
+   "unused-css-rules",
+   "cache-insight",
+   "document-latency-insight",
+   "image-delivery-insight",
+   "network-dependency-tree-insight"
+  ]
+ },
+ "mobile /services/move-in-concierge/": {
+  "perf": 87,
+  "a11y": 100,
+  "bp": 100,
+  "seo": 100,
+  "lcp": 3905,
+  "cls": 0.003,
+  "tbt": 0,
+  "fcp": 1953,
+  "kb": 542,
+  "lcpEl": null,
+  "failed": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "interactive",
+   "unused-css-rules",
+   "cache-insight",
+   "document-latency-insight",
+   "forced-reflow-insight",
+   "image-delivery-insight",
+   "network-dependency-tree-insight"
+  ]
+ }
+}

@@ -201,17 +201,7 @@
      ]
     }
    ],
-   "/trade/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
+   "/trade/": [],
    "/where-we-work/": [
     {
      "id": "region",
@@ -362,7 +352,7 @@
  },
  "seo": {
   "/": {
-   "title": "Home Organization &amp; Move-In Setup in Dallas–Fort Worth | Home Harmonics",
+   "title": "Home Organization &amp; Move-In Setup in Dallas | Home Harmonics",
    "desc": "Home organization and move-in setup based in Dallas–Fort Worth, traveling to homes across Texas and beyond. Engagements from $600. We reply the same day.",
    "canonical": "https://www.home-harmonics.com/",
    "robots": null,
@@ -384,7 +374,7 @@
    "lang": "en-US"
   },
   "/about/": {
-   "title": "About Yaz Scott, Founder of Home Harmonics | Dallas–Fort Worth",
+   "title": "About Yaz Scott, Founder | Home Harmonics, Dallas",
    "desc": "A letter from Yaz Scott, founder of Home Harmonics: home organization and move-in setup in Dallas–Fort Worth, designed around how your household lives.",
    "canonical": "https://www.home-harmonics.com/about/",
    "robots": null,
@@ -408,8 +398,8 @@
    "lang": "en-US"
   },
   "/faq/": {
-   "title": "Professional Organizer FAQ: Cost, Process, Travel | Home Harmonics",
-   "desc": "Answers about professional home organization and move-in setup: what it includes, what it costs, how long it takes, travel, and privacy. Home Harmonics, Dallas–Fort Worth.",
+   "title": "Professional Organizer FAQ | Home Harmonics, Dallas",
+   "desc": "Answers about home organization and move-in setup in Dallas–Fort Worth: what it includes, what it costs, how long it takes, travel and privacy.",
    "canonical": "https://www.home-harmonics.com/faq/",
    "robots": null,
    "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
@@ -481,7 +471,7 @@
    "lang": "en-US"
   },
   "/investment/": {
-   "title": "How Much Does a Professional Organizer Cost in Dallas? | Home Harmonics Investment",
+   "title": "Professional Organizer Cost in Dallas | Home Harmonics",
    "desc": "Home Harmonics pricing: single spaces from $600, whole-home organization from $1,200, move-in concierge from $1,800. Priced by project, never by the hour.",
    "canonical": "https://www.home-harmonics.com/investment/",
    "robots": null,
@@ -505,7 +495,7 @@
    "lang": "en-US"
   },
   "/journal/": {
-   "title": "Journal: Home Organization &amp; Move-In Advice | Home Harmonics",
+   "title": "Journal: Organization &amp; Move-In Advice | Home Harmonics",
    "desc": "Practical thinking on home organization, move-ins, custom cabinetry and working with designers, written by Yaz Scott of Home Harmonics.",
    "canonical": "https://www.home-harmonics.com/journal/",
    "robots": null,
@@ -529,7 +519,7 @@
    "lang": "en-US"
   },
   "/journal/how-long-whole-home-organization-takes/": {
-   "title": "How long does whole-home organization take? | Home Harmonics Journal",
+   "title": "How long does whole-home organization take? | Home Harmonics",
    "desc": "What sets the length of a whole-home organization project, why consecutive days matter, and how to make the work go faster.",
    "canonical": "https://www.home-harmonics.com/journal/how-long-whole-home-organization-takes/",
    "robots": null,
@@ -554,8 +544,8 @@
    "lang": "en-US"
   },
   "/journal/organizing-inside-custom-cabinetry/": {
-   "title": "Organizing inside custom cabinetry | Home Harmonics Journal",
-   "desc": "How to organize custom cabinetry so it works as well as it looks: zones by frequency of use, measuring every drawer and shelf, and inserts sized to the millwork.",
+   "title": "Organizing inside custom cabinetry | Home Harmonics",
+   "desc": "Organize custom cabinetry so it works as well as it looks: zones by frequency of use, measuring every drawer and shelf, and inserts sized to the millwork.",
    "canonical": "https://www.home-harmonics.com/journal/organizing-inside-custom-cabinetry/",
    "robots": null,
    "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
@@ -579,8 +569,8 @@
    "lang": "en-US"
   },
   "/journal/what-a-move-in-concierge-does/": {
-   "title": "What a move-in concierge actually does | Home Harmonics Journal",
-   "desc": "A move-in concierge plans your new home before the move, unpacks and sets up every key room, and clears the boxes. Here is what happens before, during and after.",
+   "title": "What a move-in concierge actually does | Home Harmonics",
+   "desc": "A move-in concierge plans your new home before the move, unpacks and sets up every key room, and clears the boxes: what happens before, during and after.",
    "canonical": "https://www.home-harmonics.com/journal/what-a-move-in-concierge-does/",
    "robots": null,
    "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
@@ -604,7 +594,7 @@
    "lang": "en-US"
   },
   "/journal/working-with-your-interior-designer/": {
-   "title": "How a professional organizer works with your interior designer | Home Harmonics Journal",
+   "title": "Working With Your Interior Designer | Home Harmonics",
    "desc": "Where an interior designer and a professional organizer meet, when to bring the organizer in, and how a co-branded handover works.",
    "canonical": "https://www.home-harmonics.com/journal/working-with-your-interior-designer/",
    "robots": null,
@@ -653,8 +643,8 @@
    "lang": "en-US"
   },
   "/services/": {
-   "title": "Home Organization &amp; Move-In Services in Dallas–Fort Worth | Home Harmonics",
-   "desc": "Move-in concierge, whole-home organization, signature spaces and seasonal resets in Dallas–Fort Worth and Texas. Priced by project from $600, never by the hour.",
+   "title": "Organization &amp; Move-In Services in Dallas | Home Harmonics",
+   "desc": "Move-in concierge, whole-home organization, signature spaces and seasonal resets in Dallas–Fort Worth. Priced by project from $600, never by the hour.",
    "canonical": "https://www.home-harmonics.com/services/",
    "robots": null,
    "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
@@ -677,7 +667,7 @@
    "lang": "en-US"
   },
   "/services/closet-and-wardrobe-organization/": {
-   "title": "Closet &amp; Wardrobe Organization in Dallas–Fort Worth and Texas | Home Harmonics",
+   "title": "Closet &amp; Wardrobe Organization in Dallas | Home Harmonics",
    "desc": "Closet and wardrobe organization in Dallas–Fort Worth: edited, zoned, sourced and labeled around how you dress. Begins at one full day, from $600.",
    "canonical": "https://www.home-harmonics.com/services/closet-and-wardrobe-organization/",
    "robots": null,
@@ -704,7 +694,7 @@
    "lang": "en-US"
   },
   "/services/move-in-concierge/": {
-   "title": "Move-In Concierge &amp; Unpacking in Dallas–Fort Worth and Texas | Home Harmonics",
+   "title": "Move-In Concierge &amp; Unpacking in Dallas | Home Harmonics",
    "desc": "Unpacking and move-in setup for new homes, relocations and new builds, planned before the move and finished before your first night. From $1,800.",
    "canonical": "https://www.home-harmonics.com/services/move-in-concierge/",
    "robots": null,
@@ -731,7 +721,7 @@
    "lang": "en-US"
   },
   "/services/pantry-and-kitchen-organization/": {
-   "title": "Pantry &amp; Kitchen Organization in Dallas–Fort Worth and Texas | Home Harmonics",
+   "title": "Pantry &amp; Kitchen Organization in Dallas | Home Harmonics",
    "desc": "Pantry and kitchen organization in Dallas–Fort Worth: edited, zoned, decanted and labeled around how you cook. Begins at one full day, from $600.",
    "canonical": "https://www.home-harmonics.com/services/pantry-and-kitchen-organization/",
    "robots": null,
@@ -758,7 +748,7 @@
    "lang": "en-US"
   },
   "/services/seasonal-resets/": {
-   "title": "Seasonal Resets &amp; Ongoing Home Organization in Dallas–Fort Worth and Texas | Home Harmonics",
+   "title": "Seasonal Resets in Dallas–Fort Worth | Home Harmonics",
    "desc": "Seasonal wardrobe changeovers, pantry, holiday and post-travel resets for Home Harmonics project clients in Dallas–Fort Worth and Texas.",
    "canonical": "https://www.home-harmonics.com/services/seasonal-resets/",
    "robots": null,
@@ -783,7 +773,7 @@
    "lang": "en-US"
   },
   "/services/signature-spaces/": {
-   "title": "Signature Spaces: Closet, Pantry &amp; Room Organization in Dallas–Fort Worth and Texas | Home Harmonics",
+   "title": "Signature Spaces in Dallas–Fort Worth | Home Harmonics",
    "desc": "Single-space organization for wardrobes, pantries, kitchens, offices, playrooms, laundry and garages in Dallas–Fort Worth. From $600 for one full day.",
    "canonical": "https://www.home-harmonics.com/services/signature-spaces/",
    "robots": null,
@@ -810,7 +800,7 @@
    "lang": "en-US"
   },
   "/services/whole-home-organization/": {
-   "title": "Whole-Home Organization in Dallas–Fort Worth and Texas | Home Harmonics",
+   "title": "Whole-Home Organization in Dallas | Home Harmonics",
    "desc": "Whole-home organization in Dallas–Fort Worth: every room edited, designed, sourced, installed and labeled, with a care guide. From $1,200.",
    "canonical": "https://www.home-harmonics.com/services/whole-home-organization/",
    "robots": null,
@@ -861,8 +851,8 @@
    "lang": "en-US"
   },
   "/trade/": {
-   "title": "For Interior Designers, Builders &amp; Realtors | Home Harmonics",
-   "desc": "Post-install organization, move-in completion and co-branded client handoff for interior designers, architects, builders, realtors and household managers in Dallas–Fort Worth and beyond.",
+   "title": "For Designers, Builders &amp; Realtors | Home Harmonics",
+   "desc": "Post-install organization, move-in completion and co-branded client handoff for designers, architects, builders and realtors in Dallas–Fort Worth.",
    "canonical": "https://www.home-harmonics.com/trade/",
    "robots": null,
    "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
@@ -885,8 +875,8 @@
    "lang": "en-US"
   },
   "/where-we-work/": {
-   "title": "Where We Work: Dallas–Fort Worth, Texas &amp; Beyond | Home Harmonics",
-   "desc": "Home Harmonics is based in Dallas–Fort Worth and travels to homes across Texas and beyond. Travel engagements: 2 on-site days minimum, travel and lodging at cost.",
+   "title": "Where We Work: Dallas, Texas &amp; Beyond | Home Harmonics",
+   "desc": "Based in Dallas–Fort Worth, traveling to homes across Texas and beyond. Travel engagements: 2 on-site days minimum, travel and lodging at cost.",
    "canonical": "https://www.home-harmonics.com/where-we-work/",
    "robots": null,
    "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
@@ -909,7 +899,7 @@
    "lang": "en-US"
   },
   "/work/": {
-   "title": "Selected Work: Real Home Organization Projects | Home Harmonics",
+   "title": "Work: Real Home Organization Projects | Home Harmonics",
    "desc": "Real home organization projects by Home Harmonics, photographed on site and shared with each client’s written permission.",
    "canonical": "https://www.home-harmonics.com/work/",
    "robots": null,
@@ -957,7 +947,7 @@
    "lang": "en-US"
   },
   "/work/guest-bathroom/": {
-   "title": "A guest bath, cleared and calm — Guest bathroom | Home Harmonics",
+   "title": "A guest bath, cleared and calm | Home Harmonics",
    "desc": "Open wire shelving and a crowded counter replaced by a closed cabinet and a vanity kept for daily things.",
    "canonical": "https://www.home-harmonics.com/work/guest-bathroom/",
    "robots": null,
@@ -1125,7 +1115,7 @@
   "panelOpens": true,
   "panelFirstFocus": {
    "tag": "a",
-   "text": "Work",
+   "text": "02Whole-Home Organization",
    "outline": "solid 2px",
    "visible": true
   },

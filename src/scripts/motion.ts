@@ -155,9 +155,13 @@ if (KEYS.some((k) => qs.has(k))) {
 document.querySelectorAll<HTMLInputElement>('form [data-attr]').forEach((i) => (i.value = attr[i.name] ?? ''));
 document.querySelectorAll<HTMLInputElement>('form [data-page]').forEach((i) => (i.value = location.pathname));
 
+// Desktop hover images on the homepage services list: fetch after load so the first hover is never blank (phones skip it).
+const fine = matchMedia('(min-width: 1024px) and (hover: hover) and (pointer: fine)').matches;
+const preloadHover = () => document.querySelectorAll<HTMLImageElement>('.svc-img img').forEach((i) => (i.loading = 'eager'));
+if (fine) document.readyState === 'complete' ? preloadHover() : addEventListener('load', preloadHover, { once: true });
+
 // Desktop-only premium layer: Lenis, parallax, magnetic CTA. Never on touch, low memory or reduced motion.
 const nav = navigator as Navigator & { deviceMemory?: number };
-const fine = matchMedia('(min-width: 1024px) and (hover: hover) and (pointer: fine)').matches;
 if (motion && fine && !(nav.deviceMemory && nav.deviceMemory <= 4)) {
   const go = () => import('./motion-desktop').then((m) => m.init());
   const idle = () => ('requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 2000 }) : setTimeout(go, 600));

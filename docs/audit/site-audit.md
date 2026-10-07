@@ -1,7 +1,43 @@
 # Home Harmonics — Site Audit (Phase 1)
 
 **Date:** 7 Oct 2026 · **Rubric:** `docs/home-harmonics-master-plan.md` (v1.1) + `docs/decisions-v1.2.md` (owner-approved deviations) · **Build audited:** commit `096bfde`
-**Status:** Phase 2 complete (8 Oct 2026). Every P0/P1 fixable in code is fixed; what remains needs assets or Vercel configuration. See "Phase 2 results" below; the original Phase 1 findings follow unchanged for reference.
+**Status:** Phase 3 complete (7 Oct 2026). Every P0, P1 and P2 item fixable in code is fixed, and seven of the ten elevation ideas are built. What remains needs assets, facts or Vercel configuration. See "Phase 3 results" and "Phase 2 results" below; the original Phase 1 findings follow unchanged for reference.
+
+## Phase 3 results (P2 polish and elevation ideas)
+
+| Item | Status | Commit | Evidence |
+|---|---|---|---|
+| **P2-1** Orphans in headings/body | ✅ Fixed | `bd17a56` | `text-wrap: balance` on headings, eyebrows and leads; `pretty` on paragraphs, list items and captions |
+| **P2-2** Templated headings | ✅ Fixed | `48bfc77` | Each service page has its own scope heading, FAQ heading and one authored "how it runs" detail; homepage services heading is now "Engagements, by scope."; /investment/ FAQ is "On cost, plainly." |
+| **P2-3** Copy tics | ✅ Fixed | `48bfc77` | "rather than" 10 → 3; "who uses it and how often" kept only in the Method and the Letter |
+| **P2-4** Voice drift | ✅ Fixed | `48bfc77` | "Yaz" for who does the work (Method, homepage, trade, work); "we" only in reply promises and invitations; "I" only in the Letter |
+| **P2-5** HTML comments in output | ✅ Fixed | `bd17a56` | All template comments are `{/* */}`; none ship |
+| **P2-6** Descriptions > 160 | ✅ Fixed (Phase 2) | `e5ccd0f` | — |
+| **P2-7** One OG image site-wide | ✅ Fixed | `30934c3` | Designed card per page (`public/og/`, 26 cards); fallback to the page's own image for new pages |
+| **P2-8** Sticky CTA outside a landmark | ✅ Fixed | `bd17a56` | `<aside aria-label="Quick contact">`; **axe: 0 issues on all 28 pages at 390 and 1440** |
+| **P2-9** Table row links 21px | ✅ Fixed | `bd17a56` | Row links padded to ≥ 44px tall |
+| **P2-10** Hover images not preloaded | ✅ Fixed | final commit | Desktop only: the three hover images are fetched right after page load; phones never download them early (mobile weight unchanged) |
+| **P2-11** Phone landscape hero | ✅ Fixed | `48bfc77` | At 844×390 text and image sit side by side; CTA bottom at 349px of 390 |
+| **P2-12** `pdf_download` not tracked | ✅ Fixed | `bd17a56` | Print button fires `pdf_download` (all 9 §16 events now wired) |
+| **P2-13** Case studies open text-only | ✅ Fixed | `bd17a56` | The finished (real) photo is in the case-study hero; the truth-flag build check still applies |
+| **P2-14** Measured results, client quote | ⏳ **Facts needed** | n/a | Hours, rooms, items donated, or a consented quote per project. Never invented |
+| **P2-15** Service hero small at ≥ 1920 | ✅ Fixed | `bd17a56` | Page-hero images run to the right edge from 1600px, like the homepage hero |
+| **P2-16** Mobile homepage long | ✅ Fixed | `48bfc77` | Homepage at 390: 16,461 → 14,539 px (−12%); at 360: 14,696 px. Service rows image-beside-text on phones, wide Move-In stills, tighter Method |
+| **P2-17 / P2-22** Hero text lag | ✅ Fixed | `48bfc77` | Word reveal starts at 120ms (was 250ms); supporting lines follow sooner |
+| **P2-18** Schema detail | ✅ Fixed | `48bfc77` | 16 DFW cities in `areaServed` (also named on /where-we-work/), `priceRange`, Service `image`, org `image` |
+| **P2-19** Trade band interrupts the homeowner path | ✅ Fixed | `48bfc77` | Order is now … Letter → For the trade → Voices → How we begin → Inquire |
+| **P2-21** grain.png weight | ✅ Fixed | `30934c3` | 24 KB → 7 KB, same texture |
+| **E-2** Care guide shown | ✅ Built | `bd17a56` | /investment/ "What you keep": a typeset sample page, labeled illustrative |
+| **E-4** Deeper case studies | ◑ Partly | `bd17a56` | Finished photo leads each case study; measured results and quotes wait on facts (P2-14) |
+| **E-5** Typographic finishing pass | ✅ Built | `bd17a56` | Balanced headings, hanging quotes, tabular figures in tables, old-style figures in serif prose |
+| **E-6** Designed social cards | ✅ Built | `30934c3` | `npm run og` (see launch guide) |
+| **E-7** Assistant / house-manager brief | ✅ Built | `bd17a56` | Print layout of /investment/ with contact footer and date; insurance line (claim-gated) |
+| **E-8** Six articles, Journal in nav | ✅ Built | `8a20ce2` | Custom-home move-in prep; seasonal wardrobe changeover |
+| **E-9** Standards on /about/ | ✅ Built | `a359ef0` | Insurance, written agreement, photo-consent levels, two-year deletion, one lead, money. Ledger-gated; nothing on key/alarm handling or NDAs (no facts / `confidentiality` is false) |
+| **E-10** Form craft | ✅ Built | `a359ef0` | Inline plain-language errors (aria-invalid/describedby), focus to first problem, "Received" beat before redirect, "What happens next" line |
+| **E-1 / E-3** Photography | 📷 Asset needed | n/a | — |
+
+**Regression pass after Phase 3** (`data/checks.json`, `data/lighthouse-final.json`): axe **0 issues** on all 28 pages at 390 and 1440; 0 broken links; one H1 per page, no heading skips; **0 horizontal overflow** on 28 pages × 11 widths (360–2560 and 844×390 landscape); header fits at 1024 with Journal added (36px gaps); no phone tap targets under 24px in main content; production launch gate passes. Lighthouse mobile (local server, no compression/CDN): `/` 82–83, `/services/move-in-concierge/` 87; accessibility, best practices and SEO 100; CLS ≤ 0.003; TBT 0. Mobile LCP is still 3.9–4.4 s locally, unchanged from Phase 2: **re-measure on the Vercel preview** (launch guide Part 7).
 
 ## Phase 2 results
 
@@ -29,7 +65,7 @@
 
 **Regression pass after all fixes** (`data/checks.json`; previous run kept as `data/checks-before.json`): axe shows only the known P2-8 landmark item; 0 broken links; one H1 per page and no heading skips; no review markup; reduced motion, skip link and sticky bar all behave.
 
-**Still open (P2, not in Phase 2 scope):** P2-1 orphans in body text (text-wrap), P2-2/3/4 copy variety and voice, P2-5 HTML comments, P2-7 per-page OG images, P2-8 sticky-bar landmark, P2-9 table tap targets, P2-10 hover-image preload, P2-11 landscape hero, P2-12 `pdf_download`, P2-13 case-study hero image, P2-14 measured results (needs facts), P2-15 service hero size at 2560, P2-16 mobile length, P2-17/P2-22 hero fade timing (the homepage contrast flag is the supporting line measured mid-fade, about 6:1 at rest), P2-18 schema detail, P2-19 trade-band placement, P2-21 grain.png weight. P2-20 done (`.gitignore`).
+**Still open after Phase 3:** P2-14 (facts), the asset items (P1-8, P1-15, P1-16, E-1, E-3), P0-2 (Vercel keys) and the mobile LCP re-measure on the Vercel preview.
 
 ## How this was tested
 | Step | Tool | Result file |

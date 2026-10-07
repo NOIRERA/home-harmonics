@@ -1,262 +1,34 @@
 {
  "axe": {
   "390": {
-   "/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/about/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/faq/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
+   "/": [],
+   "/about/": [],
+   "/faq/": [],
    "/inquire/": [],
    "/inquire/thanks/": [],
-   "/investment/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/journal/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/journal/how-long-whole-home-organization-takes/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/journal/organizing-inside-custom-cabinetry/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/journal/what-a-move-in-concierge-does/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/journal/working-with-your-interior-designer/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/privacy/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/services/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/services/closet-and-wardrobe-organization/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/services/move-in-concierge/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/services/pantry-and-kitchen-organization/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/services/seasonal-resets/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/services/signature-spaces/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/services/whole-home-organization/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/terms/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
+   "/investment/": [],
+   "/journal/": [],
+   "/journal/how-long-whole-home-organization-takes/": [],
+   "/journal/organizing-inside-custom-cabinetry/": [],
+   "/journal/what-a-move-in-concierge-does/": [],
+   "/journal/working-with-your-interior-designer/": [],
+   "/journal/preparing-a-custom-home-for-move-in/": [],
+   "/journal/seasonal-wardrobe-changeover/": [],
+   "/privacy/": [],
+   "/services/": [],
+   "/services/closet-and-wardrobe-organization/": [],
+   "/services/move-in-concierge/": [],
+   "/services/pantry-and-kitchen-organization/": [],
+   "/services/seasonal-resets/": [],
+   "/services/signature-spaces/": [],
+   "/services/whole-home-organization/": [],
+   "/terms/": [],
    "/trade/": [],
-   "/where-we-work/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/work/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/work/garage/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/work/guest-bathroom/": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ],
-   "/404.html": [
-    {
-     "id": "region",
-     "impact": "moderate",
-     "n": 1,
-     "help": "All page content should be contained by landmarks",
-     "targets": [
-      ".sticky-cta"
-     ]
-    }
-   ]
+   "/where-we-work/": [],
+   "/work/": [],
+   "/work/garage/": [],
+   "/work/guest-bathroom/": [],
+   "/404.html": []
   },
   "1440": {
    "/": [],
@@ -270,6 +42,8 @@
    "/journal/organizing-inside-custom-cabinetry/": [],
    "/journal/what-a-move-in-concierge-does/": [],
    "/journal/working-with-your-interior-designer/": [],
+   "/journal/preparing-a-custom-home-for-move-in/": [],
+   "/journal/seasonal-wardrobe-changeover/": [],
    "/privacy/": [],
    "/services/": [],
    "/services/closet-and-wardrobe-organization/": [],
@@ -295,7 +69,7 @@
   "/faq/": [],
   "/inquire/": [
    "Prefer to talk? Call or text (817) 883-1887, or write to hello@home-harmonics.com.",
-   "Designer, builder or realtor? Send a trade inquiry.",
+   "Designer, builder or realtor? Start a trade inquiry.",
    "Prefer to talk? Call or text (817) 883-1887."
   ],
   "/inquire/thanks/": [
@@ -316,7 +90,7 @@
    "The kitchen, so the household can make coffee and eat.",
    "Bedrooms and bathrooms, so everyone can sleep and get ready the next morning.",
    "Children’s rooms, so the first night feels familiar.",
-   "Closets, linens and the pantry, set up to the plan rather than filled at random.",
+   "Closets, linens and the pantry, set up to the plan, not filled at random.",
    "Relocations, when you arrive in a city where you do not yet know where anything is.",
    "New builds and renovations, when the cabinetry is new and nothing has a place yet.",
    "Families with young children, when the first nights need to feel normal.",
@@ -327,6 +101,15 @@
    "Plan zones by frequency of use, so everyday items sit between waist and eye height and occasional ones go higher or lower.",
    "Specify the interior fittings, such as drawer dividers, pull-outs, shelf heights and the ratio of long to double hanging, so the inside of the cabinetry is designed rather than filled.",
    "Home Harmonics works with the trade on post-install organization, move-in completion and client handoff in Dallas–Fort Worth and, by arrangement, on projects elsewhere. When a project needs built storage, Yaz can design it and coordinate a build partner, with an image of the finished space before anything is made. See how trade partnerships work."
+  ],
+  "/journal/preparing-a-custom-home-for-move-in/": [
+   "Yaz Scott, Founder",
+   "If the home is large, the move date is fixed, or you are relocating from another city, a move-in concierge takes this planning off your hands. Home Harmonics plans each room before the move, by video when you are relocating, sources the storage to the measurements, unpacks and sets up the house over consecutive days, and leaves a care guide so the system holds once you are living in it. See how Move-In Concierge works.",
+   "If you are still in the drawings, it is not too early. Shelf heights, drawer layouts and the balance of long and double hanging are far easier to change on paper than after installation. Read about organizing inside custom cabinetry."
+  ],
+  "/journal/seasonal-wardrobe-changeover/": [
+   "Yaz Scott, Founder",
+   "For clients whose homes are already organized, Home Harmonics offers spring and autumn wardrobe changeovers as part of Seasonal Resets. Because the system already exists, a changeover is quick: the off-season is cleaned, stored and labeled, the coming season comes forward, and the closet is adjusted as the wardrobe changes. If you are starting from the beginning, Closet & Wardrobe Organization sets up the system first."
   ],
   "/privacy/": [
    "You can ask us what information we hold about you, ask us to correct or delete it, or ask us to stop contacting you, by writing to hello@home-harmonics.com. You can block or delete cookies in your browser settings."
@@ -356,16 +139,16 @@
    "desc": "Home organization and move-in setup based in Dallas–Fort Worth, traveling to homes across Texas and beyond. Engagements from $600. We reply the same day.",
    "canonical": "https://www.home-harmonics.com/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/home.jpg",
    "h1": 1,
-   "headings": "12222233333233322",
+   "headings": "12222233333223332",
    "headingSkips": 0,
    "ldTypes": [
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person"
    ],
    "ldInvalid": false,
@@ -378,16 +161,16 @@
    "desc": "A letter from Yaz Scott, founder of Home Harmonics: home organization and move-in setup in Dallas–Fort Worth, designed around how your household lives.",
    "canonical": "https://www.home-harmonics.com/about/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/about.jpg",
    "h1": 1,
-   "headings": "1233332",
+   "headings": "12333322",
    "headingSkips": 0,
    "ldTypes": [
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -402,7 +185,7 @@
    "desc": "Answers about home organization and move-in setup in Dallas–Fort Worth: what it includes, what it costs, how long it takes, travel and privacy.",
    "canonical": "https://www.home-harmonics.com/faq/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/faq.jpg",
    "h1": 1,
    "headings": "123333333333332333323332332",
    "headingSkips": 0,
@@ -410,8 +193,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "FAQPage",
     "Question",
@@ -429,7 +212,7 @@
    "desc": "Request a consultation with Home Harmonics. Yaz replies the same day to arrange a complimentary 15-minute fit call.",
    "canonical": "https://www.home-harmonics.com/inquire/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/inquire.jpg",
    "h1": 1,
    "headings": "1",
    "headingSkips": 0,
@@ -437,8 +220,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -461,8 +244,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person"
    ],
    "ldInvalid": false,
@@ -475,16 +258,16 @@
    "desc": "Home Harmonics pricing: single spaces from $600, whole-home organization from $1,200, move-in concierge from $1,800. Priced by project, never by the hour.",
    "canonical": "https://www.home-harmonics.com/investment/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/investment.jpg",
    "h1": 1,
-   "headings": "1233333222333332",
+   "headings": "12333332222333332",
    "headingSkips": 0,
    "ldTypes": [
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -499,7 +282,7 @@
    "desc": "Practical thinking on home organization, move-ins, custom cabinetry and working with designers, written by Yaz Scott of Home Harmonics.",
    "canonical": "https://www.home-harmonics.com/journal/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/journal.jpg",
    "h1": 1,
    "headings": "12",
    "headingSkips": 0,
@@ -507,15 +290,15 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
    ],
    "ldInvalid": false,
    "reviewMarkup": false,
-   "imgsNoAlt": 9,
+   "imgsNoAlt": 11,
    "lang": "en-US"
   },
   "/journal/how-long-whole-home-organization-takes/": {
@@ -523,7 +306,7 @@
    "desc": "What sets the length of a whole-home organization project, why consecutive days matter, and how to make the work go faster.",
    "canonical": "https://www.home-harmonics.com/journal/how-long-whole-home-organization-takes/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/journal-how-long-whole-home-organization-takes.jpg",
    "h1": 1,
    "headings": "12222222",
    "headingSkips": 0,
@@ -531,8 +314,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Article",
     "BreadcrumbList",
@@ -548,7 +331,7 @@
    "desc": "Organize custom cabinetry so it works as well as it looks: zones by frequency of use, measuring every drawer and shelf, and inserts sized to the millwork.",
    "canonical": "https://www.home-harmonics.com/journal/organizing-inside-custom-cabinetry/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/journal-organizing-inside-custom-cabinetry.jpg",
    "h1": 1,
    "headings": "1222222222",
    "headingSkips": 0,
@@ -556,8 +339,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Article",
     "BreadcrumbList",
@@ -573,7 +356,7 @@
    "desc": "A move-in concierge plans your new home before the move, unpacks and sets up every key room, and clears the boxes: what happens before, during and after.",
    "canonical": "https://www.home-harmonics.com/journal/what-a-move-in-concierge-does/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/journal-what-a-move-in-concierge-does.jpg",
    "h1": 1,
    "headings": "122222222",
    "headingSkips": 0,
@@ -581,8 +364,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Article",
     "BreadcrumbList",
@@ -598,7 +381,7 @@
    "desc": "Where an interior designer and a professional organizer meet, when to bring the organizer in, and how a co-branded handover works.",
    "canonical": "https://www.home-harmonics.com/journal/working-with-your-interior-designer/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/journal-working-with-your-interior-designer.jpg",
    "h1": 1,
    "headings": "12222222",
    "headingSkips": 0,
@@ -606,8 +389,58 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
+    "Person",
+    "Article",
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "ldInvalid": false,
+   "reviewMarkup": false,
+   "imgsNoAlt": 5,
+   "lang": "en-US"
+  },
+  "/journal/preparing-a-custom-home-for-move-in/": {
+   "title": "Preparing a Custom Home for Move-In Day | Home Harmonics",
+   "desc": "What to settle in a new custom home before the boxes arrive, from the final walkthrough to cabinetry, measurements, sourcing and the first-night plan.",
+   "canonical": "https://www.home-harmonics.com/journal/preparing-a-custom-home-for-move-in/",
+   "robots": null,
+   "ogImage": "https://www.home-harmonics.com/og/journal-preparing-a-custom-home-for-move-in.jpg",
+   "h1": 1,
+   "headings": "122222222",
+   "headingSkips": 0,
+   "ldTypes": [
+    "ProfessionalService",
+    "PostalAddress",
+    "AdministrativeArea",
+    "City",
+    "State",
+    "Person",
+    "Article",
+    "BreadcrumbList",
+    "ListItem"
+   ],
+   "ldInvalid": false,
+   "reviewMarkup": false,
+   "imgsNoAlt": 5,
+   "lang": "en-US"
+  },
+  "/journal/seasonal-wardrobe-changeover/": {
+   "title": "How to Do a Seasonal Wardrobe Changeover | Home Harmonics",
+   "desc": "A calm spring and autumn wardrobe changeover in Texas: when to switch, what to edit, how to clean and store off-season clothes, and how to label them.",
+   "canonical": "https://www.home-harmonics.com/journal/seasonal-wardrobe-changeover/",
+   "robots": null,
+   "ogImage": "https://www.home-harmonics.com/og/journal-seasonal-wardrobe-changeover.jpg",
+   "h1": 1,
+   "headings": "1222222222",
+   "headingSkips": 0,
+   "ldTypes": [
+    "ProfessionalService",
+    "PostalAddress",
+    "AdministrativeArea",
+    "City",
+    "State",
     "Person",
     "Article",
     "BreadcrumbList",
@@ -623,7 +456,7 @@
    "desc": "How Home Harmonics collects, uses and protects the information you share through this website.",
    "canonical": "https://www.home-harmonics.com/privacy/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/privacy.jpg",
    "h1": 1,
    "headings": "1222222222",
    "headingSkips": 0,
@@ -631,8 +464,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -647,7 +480,7 @@
    "desc": "Move-in concierge, whole-home organization, signature spaces and seasonal resets in Dallas–Fort Worth. Priced by project from $600, never by the hour.",
    "canonical": "https://www.home-harmonics.com/services/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/services.jpg",
    "h1": 1,
    "headings": "122",
    "headingSkips": 0,
@@ -655,8 +488,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -671,7 +504,7 @@
    "desc": "Closet and wardrobe organization in Dallas–Fort Worth: edited, zoned, sourced and labeled around how you dress. Begins at one full day, from $600.",
    "canonical": "https://www.home-harmonics.com/services/closet-and-wardrobe-organization/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/services-closet-and-wardrobe-organization.jpg",
    "h1": 1,
    "headings": "12233333233332",
    "headingSkips": 0,
@@ -679,8 +512,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Service",
     "Offer",
@@ -698,7 +531,7 @@
    "desc": "Unpacking and move-in setup for new homes, relocations and new builds, planned before the move and finished before your first night. From $1,800.",
    "canonical": "https://www.home-harmonics.com/services/move-in-concierge/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/services-move-in-concierge.jpg",
    "h1": 1,
    "headings": "12233333233332",
    "headingSkips": 0,
@@ -706,8 +539,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Service",
     "Offer",
@@ -725,7 +558,7 @@
    "desc": "Pantry and kitchen organization in Dallas–Fort Worth: edited, zoned, decanted and labeled around how you cook. Begins at one full day, from $600.",
    "canonical": "https://www.home-harmonics.com/services/pantry-and-kitchen-organization/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/services-pantry-and-kitchen-organization.jpg",
    "h1": 1,
    "headings": "12233333233332",
    "headingSkips": 0,
@@ -733,8 +566,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Service",
     "Offer",
@@ -752,7 +585,7 @@
    "desc": "Seasonal wardrobe changeovers, pantry, holiday and post-travel resets for Home Harmonics project clients in Dallas–Fort Worth and Texas.",
    "canonical": "https://www.home-harmonics.com/services/seasonal-resets/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/services-seasonal-resets.jpg",
    "h1": 1,
    "headings": "122333332332",
    "headingSkips": 0,
@@ -760,8 +593,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Service",
     "BreadcrumbList",
@@ -777,7 +610,7 @@
    "desc": "Single-space organization for wardrobes, pantries, kitchens, offices, playrooms, laundry and garages in Dallas–Fort Worth. From $600 for one full day.",
    "canonical": "https://www.home-harmonics.com/services/signature-spaces/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/services-signature-spaces.jpg",
    "h1": 1,
    "headings": "12233332333332333332",
    "headingSkips": 0,
@@ -785,8 +618,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Service",
     "Offer",
@@ -804,7 +637,7 @@
    "desc": "Whole-home organization in Dallas–Fort Worth: every room edited, designed, sourced, installed and labeled, with a care guide. From $1,200.",
    "canonical": "https://www.home-harmonics.com/services/whole-home-organization/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/services-whole-home-organization.jpg",
    "h1": 1,
    "headings": "12233333233332",
    "headingSkips": 0,
@@ -812,8 +645,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "Service",
     "Offer",
@@ -831,7 +664,7 @@
    "desc": "Terms of use for the Home Harmonics website.",
    "canonical": "https://www.home-harmonics.com/terms/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/terms.jpg",
    "h1": 1,
    "headings": "12222222",
    "headingSkips": 0,
@@ -839,8 +672,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -855,7 +688,7 @@
    "desc": "Post-install organization, move-in completion and co-branded client handoff for designers, architects, builders and realtors in Dallas–Fort Worth.",
    "canonical": "https://www.home-harmonics.com/trade/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/trade.jpg",
    "h1": 1,
    "headings": "12333333233332",
    "headingSkips": 0,
@@ -863,8 +696,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -879,7 +712,7 @@
    "desc": "Based in Dallas–Fort Worth, traveling to homes across Texas and beyond. Travel engagements: 2 on-site days minimum, travel and lodging at cost.",
    "canonical": "https://www.home-harmonics.com/where-we-work/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/where-we-work.jpg",
    "h1": 1,
    "headings": "1222233323332",
    "headingSkips": 0,
@@ -887,8 +720,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -903,7 +736,7 @@
    "desc": "Real home organization projects by Home Harmonics, photographed on site and shared with each client’s written permission.",
    "canonical": "https://www.home-harmonics.com/work/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/work.jpg",
    "h1": 1,
    "headings": "12",
    "headingSkips": 0,
@@ -911,8 +744,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -927,7 +760,7 @@
    "desc": "A garage planned from the floor up, with storage built by a partner and organized by Yaz in two days.",
    "canonical": "https://www.home-harmonics.com/work/garage/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/work-garage.jpg",
    "h1": 1,
    "headings": "12",
    "headingSkips": 0,
@@ -935,8 +768,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -951,7 +784,7 @@
    "desc": "Open wire shelving and a crowded counter replaced by a closed cabinet and a vanity kept for daily things.",
    "canonical": "https://www.home-harmonics.com/work/guest-bathroom/",
    "robots": null,
-   "ogImage": "https://www.home-harmonics.com/_astro/hero.Da8FgDnx_1yirO1.jpg",
+   "ogImage": "https://www.home-harmonics.com/og/work-guest-bathroom.jpg",
    "h1": 1,
    "headings": "12",
    "headingSkips": 0,
@@ -959,8 +792,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person",
     "BreadcrumbList",
     "ListItem"
@@ -983,8 +816,8 @@
     "ProfessionalService",
     "PostalAddress",
     "AdministrativeArea",
-    "State",
     "City",
+    "State",
     "Person"
    ],
    "ldInvalid": false,
@@ -997,6 +830,7 @@
   "/": 200,
   "/work/": 200,
   "/about/": 200,
+  "/journal/": 200,
   "/trade/": 200,
   "/inquire/": 200,
   "/services/move-in-concierge/": 200,
@@ -1007,10 +841,11 @@
   "/services/": 200,
   "/investment/": 200,
   "/faq/": 200,
-  "/journal/": 200,
   "/work/garage/": 200,
   "/privacy/": 200,
   "/terms/": 200,
+  "/journal/preparing-a-custom-home-for-move-in/": 200,
+  "/journal/seasonal-wardrobe-changeover/": 200,
   "/journal/how-long-whole-home-organization-takes/": 200,
   "/journal/organizing-inside-custom-cabinetry/": 200,
   "/journal/what-a-move-in-concierge-does/": 200,
@@ -1059,6 +894,12 @@
    },
    {
     "tag": "a",
+    "text": "Journal",
+    "outline": "solid 2px",
+    "visible": true
+   },
+   {
+    "tag": "a",
     "text": "For the Trade",
     "outline": "solid 2px",
     "visible": true
@@ -1077,7 +918,7 @@
    },
    {
     "tag": "a",
-    "text": "See our work →",
+    "text": "See the work →",
     "outline": "solid 2px",
     "visible": true
    },
@@ -1102,12 +943,6 @@
    {
     "tag": "a",
     "text": "02Whole-Home OrganizationEvery room edit",
-    "outline": "solid 2px",
-    "visible": true
-   },
-   {
-    "tag": "a",
-    "text": "03Signature SpacesWardrobes, pantries an",
     "outline": "solid 2px",
     "visible": true
    }

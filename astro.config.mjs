@@ -40,6 +40,8 @@ export default defineConfig({
   site: 'https://www.home-harmonics.com',
   trailingSlash: 'always',
   output: 'static',
+  // ~25 KB of CSS inlined: no render-blocking stylesheet requests (audit P1-17).
+  build: { inlineStylesheets: 'always' },
   adapter: vercel(),
   integrations: [
     sitemap({ filter: (page) => !page.includes('/inquire/thanks/') }),

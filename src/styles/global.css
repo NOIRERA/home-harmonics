@@ -124,6 +124,33 @@ main:focus { outline: none; }
   .cols-3 > *, .cols-3 > * + * { border-left: 0; border-top: var(--rule); padding: 28px 0; }
 }
 
+/* Forms (inquiry + trade). Global so every page with a form is styled and the honeypot stays hidden. */
+.inq-form { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 28px; }
+.field { position: relative; display: grid; gap: 6px; align-content: start; }
+.field.full, .form-foot, .inq-form > .full { grid-column: 1 / -1; }
+.field label { font: 500 var(--fs-micro)/1.5 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; }
+.field .opt { text-transform: none; letter-spacing: 0; font-weight: 400; opacity: 0.8; }
+.field input, .field select, .field textarea {
+  appearance: none; width: 100%; min-height: 52px; padding: 12px 0;
+  background: transparent; color: inherit; border: 0; border-radius: 0;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 45%, transparent);
+  font: 400 1.0625rem/1.4 var(--sans);
+  transition: border-color var(--t-ui) var(--ease);
+}
+.field input:focus, .field select:focus, .field textarea:focus { border-bottom-color: currentColor; }
+.field input:user-invalid, .field select:user-invalid { border-bottom-color: #d9826a; }
+.field textarea { min-height: 112px; resize: vertical; }
+.field select { padding-right: 28px; cursor: pointer; }
+.field.select::after { content: ''; position: absolute; right: 6px; top: 46px; width: 8px; height: 8px; border-right: 1px solid; border-bottom: 1px solid; rotate: 45deg; pointer-events: none; }
+.field option { color: var(--ink); background: var(--alabaster); }
+.field .hint { font-size: 0.875rem; }
+[data-bg='walnut'] .inq-form { color-scheme: dark; }
+.hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-foot { display: grid; gap: 18px; justify-items: start; margin-top: 8px; }
+.form-foot .small { font-size: 0.875rem; }
+.form-status:empty { display: none; }
+@media (max-width: 767px) { .inq-form { grid-template-columns: 1fr; } .form-foot .btn { width: 100%; } }
+
 /* Buttons + links */
 .btn {
   --btn-bg: var(--walnut); --btn-fg: var(--alabaster); --btn-fill: var(--ink);

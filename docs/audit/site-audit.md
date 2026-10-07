@@ -16,7 +16,7 @@
 | **P2-7** One OG image site-wide | ✅ Fixed | `30934c3` | Designed card per page (`public/og/`, 26 cards); fallback to the page's own image for new pages |
 | **P2-8** Sticky CTA outside a landmark | ✅ Fixed | `bd17a56` | `<aside aria-label="Quick contact">`; **axe: 0 issues on all 28 pages at 390 and 1440** |
 | **P2-9** Table row links 21px | ✅ Fixed | `bd17a56` | Row links padded to ≥ 44px tall |
-| **P2-10** Hover images not preloaded | ✅ Fixed | final commit | Desktop only: the three hover images are fetched right after page load; phones never download them early (mobile weight unchanged) |
+| **P2-10** Hover images not preloaded | ✅ Fixed | `9d43145` | Desktop only: the three hover images are fetched right after page load; phones never download them early (mobile weight unchanged) |
 | **P2-11** Phone landscape hero | ✅ Fixed | `48bfc77` | At 844×390 text and image sit side by side; CTA bottom at 349px of 390 |
 | **P2-12** `pdf_download` not tracked | ✅ Fixed | `bd17a56` | Print button fires `pdf_download` (all 9 §16 events now wired) |
 | **P2-13** Case studies open text-only | ✅ Fixed | `bd17a56` | The finished (real) photo is in the case-study hero; the truth-flag build check still applies |

@@ -64,12 +64,20 @@ const glance: [string, string][] = [
     <div class="wrap split">
       <div>
         <p class="eyebrow">What’s included</p>
-        <h2 class="h2"><Words reveal text="Everything in scope, *handled.*" /></h2>
+        <h2 class="h2"><Words reveal text={s.scopeTitle} /></h2>
         {s.img2 && <Img id={s.img2} class="sv-scope-img" reveal="mask" sizes="(min-width: 1024px) 30vw, 100vw" widths={[480, 720, 1000]} />}
       </div>
-      <ul role="list" class="ticks sv-ticks">
-        {s.scope.map((x, i) => <li data-reveal style={`--delay:${i * 50}ms`}>{x}</li>)}
-      </ul>
+      <div class="sv-scope-list">
+        <ul role="list" class="ticks sv-ticks">
+          {s.scope.map((x, i) => <li data-reveal style={`--delay:${i * 50}ms`}>{x}</li>)}
+        </ul>
+        {s.detail && (
+          <div class="sv-detail" data-reveal>
+            <p class="eyebrow">{s.detail.label}</p>
+            <p>{s.detail.text}</p>
+          </div>
+        )}
+      </div>
     </div>
   </Section>
 
@@ -160,7 +168,7 @@ const glance: [string, string][] = [
     <div class="wrap split">
       <div>
         <p class="eyebrow">Questions</p>
-        <h2 class="h2"><Words reveal text="Answers, *first.*" /></h2>
+        <h2 class="h2"><Words reveal text={s.faqTitle} /></h2>
         <a class="link" href="/faq/">All questions <span class="arrow" aria-hidden="true">→</span></a>
       </div>
       <FaqList items={faqById(s.faqs)} stacked />
@@ -175,6 +183,8 @@ const glance: [string, string][] = [
   .glance dl { border-top: var(--rule); }
   .glance dl > div { display: grid; grid-template-columns: minmax(120px, 1fr) 2fr; gap: 16px; padding: 16px 0; border-bottom: var(--rule); }
   .glance .eyebrow:first-child { margin-bottom: 16px; }
+  .sv-detail { margin-top: clamp(40px, 5vw, 64px); display: grid; gap: 12px; max-width: 36rem; }
+  .sv-detail p:last-child { font: 300 clamp(1.2rem, 1.05rem + 0.55vw, 1.55rem)/1.5 var(--serif); }
   .sv-scope-img { width: 100%; aspect-ratio: 4 / 5; max-width: 420px; margin-top: 24px; }
   .spoke-list { border-top: var(--rule); margin-bottom: clamp(48px, 6vw, 88px); }
   .spoke-list li { border-bottom: var(--rule); }

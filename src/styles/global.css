@@ -225,7 +225,7 @@ html { hanging-punctuation: first allow-end; }
 @keyframes settle { from { transform: scale(1.06); } }
 .motion [data-intro] { animation: intro-up 900ms var(--ease) both; animation-delay: var(--delay, 0ms); }
 .motion [data-intro='words'], .motion [data-intro='settle'] { animation: none; }
-.motion [data-intro='words'] .w > span { animation: intro-word 1000ms var(--ease) both; animation-delay: calc(250ms + var(--i) * 70ms); }
+.motion [data-intro='words'] .w > span { animation: intro-word 1000ms var(--ease) both; animation-delay: calc(120ms + var(--i) * 60ms); }
 .motion [data-intro='settle'] picture { animation: settle 1.6s var(--ease) both; }
 
 /* While the first-visit intro is up, hold the hero's intro; it plays as the curtain lifts. */

@@ -35,7 +35,7 @@ Drawers do the most work in a well-organized kitchen or dressing room. Shallow d
 
 ## Shelves
 
-Set shelf heights to the contents rather than spacing them evenly. Risers double the usable space for plates and glasses. Turntables and pull-outs bring the back of a deep cabinet forward. Anything that has to be stacked more than a few items high usually belongs somewhere else.
+Set shelf heights to the contents, not to an even spacing. Risers double the usable space for plates and glasses. Turntables and pull-outs bring the back of a deep cabinet forward. Anything that has to be stacked more than a few items high usually belongs somewhere else.
 
 ## Pantry cabinets and tall pull-outs
 
@@ -47,7 +47,7 @@ In a dressing room, the ratio of long hanging to double hanging should follow th
 
 ## Labels that stay quiet
 
-Labels should help without shouting: small, consistent, and placed on shelf edges or inside drawer fronts rather than across the face of every container. In a beautiful room, the label should be the last thing you notice and the first thing you can read.
+Labels should help without shouting: small, consistent, and placed on shelf edges or inside drawer fronts, never across the face of every container. In a beautiful room, the label should be the last thing you notice and the first thing you can read.
 
 ## Keeping it that way
 

@@ -40,7 +40,7 @@ Every project is different, but the shape is consistent:
 
 ## After the project
 
-A whole-home project ends with a care guide and a check-in thirty days later. As the household changes with the seasons, [Seasonal Resets](/services/seasonal-resets/) bring Yaz back to restore and adjust the system rather than start again.
+A whole-home project ends with a care guide and a check-in thirty days later. As the household changes with the seasons, [Seasonal Resets](/services/seasonal-resets/) bring Yaz back to restore and adjust the system.
 
 ## The short answer
 

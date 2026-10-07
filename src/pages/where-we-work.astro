@@ -7,11 +7,11 @@ import Words from '../components/Words.astro';
 import FaqList from '../components/FaqList.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { faqById } from '../content/faq';
-import { settings, price, claim, crumbSchema } from '../lib/site';
+import { settings, price, claim, dfwCities, crumbSchema } from '../lib/site';
 
 const crumbs = [{ label: 'Where we work', href: '/where-we-work/' }];
 const tiers = [
-  { t: 'Home base: Dallas–Fort Worth', d: 'Dallas, Fort Worth and the cities between. Walkthroughs in person, and engagements scheduled as consecutive days.' },
+  { t: 'Home base: Dallas–Fort Worth', d: `Dallas, Fort Worth and the cities between, including ${dfwCities.slice(2, -1).join(', ')} and ${dfwCities.at(-1)}. Walkthroughs in person, and engagements scheduled as consecutive days.` },
   { t: 'Across Texas', d: 'Austin, Houston, San Antonio and anywhere in the state. Planning starts by video; the days on site are scheduled as one block.' },
   {
     t: 'Beyond Texas',

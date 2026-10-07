@@ -34,7 +34,7 @@ export const faqs: Faq[] = [
     id: 'how-long-whole-home',
     group: 'work',
     q: 'How long does whole-home organization take?',
-    a: 'It depends on the size of the home and how much needs editing. Whole-home work is scheduled as consecutive days, beginning at a two-day minimum, rather than spread across weeks. Your proposal sets the exact dates after the walkthrough, so you know the schedule before any work starts.',
+    a: 'It depends on the size of the home and how much needs editing. Whole-home work is scheduled as consecutive days, beginning at a two-day minimum, not spread across weeks. Your proposal sets the exact dates after the walkthrough, so you know the schedule before any work starts.',
   },
   {
     id: 'designer',
@@ -131,7 +131,7 @@ export const faqs: Faq[] = [
     id: 'how-often-reset',
     group: 'work',
     q: 'How often should an organized home be reset?',
-    a: 'Resets usually follow the year’s natural changes: a wardrobe changeover in spring and autumn, a pantry reset, a holiday reset, or a reset after travel. You choose the rhythm. Because the system already exists, a reset restores and adjusts it rather than starting again.',
+    a: 'Resets usually follow the year’s natural changes: a wardrobe changeover in spring and autumn, a pantry reset, a holiday reset, or a reset after travel. You choose the rhythm. Because the system already exists, a reset restores and adjusts it; nothing starts from scratch.',
   },
 ];
 

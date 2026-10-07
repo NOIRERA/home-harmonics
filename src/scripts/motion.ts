@@ -101,7 +101,7 @@ if (panelBtn && panel) {
   };
   const links = [...panel.querySelectorAll<HTMLAnchorElement>('a')];
   panelBtn.addEventListener('click', (e) => {
-    set(panel.hidden);
+    set(!!panel.hidden);
     // Keyboard activation (detail 0): move focus into the panel so its links come next in the tab order.
     if (!panel.hidden && e.detail === 0) links[0]?.focus();
   });
@@ -139,7 +139,7 @@ if (menuBtn && menu) {
     outside.forEach((el) => el && ((el as HTMLElement).inert = open));
     open ? lenis()?.stop() : lenis()?.start();
   };
-  menuBtn.addEventListener('click', () => set(menu.hidden));
+  menuBtn.addEventListener('click', () => set(!!menu.hidden));
   addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) { set(false); menuBtn.focus(); } });
 }
 

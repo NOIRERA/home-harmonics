@@ -27,6 +27,9 @@ export const testimonial = (id: string) => voices.find((v) => v.id === id);
 
 export const abs = (path: string) => new URL(path, settings.url).href;
 
+/** Core Dallas–Fort Worth cities (the same list the old site served). Used in schema and on /where-we-work/. */
+export const dfwCities = ['Dallas', 'Fort Worth', 'Plano', 'Frisco', 'Prosper', 'Allen', 'Southlake', 'Colleyville', 'Grapevine', 'Irving', 'Carrollton', 'Arlington', 'Grand Prairie', 'Mansfield', 'The Colony', 'Waxahachie'];
+
 export const crumbSchema = (items: { label: string; href: string }[]) => ({
   '@type': 'BreadcrumbList',
   itemListElement: [{ label: 'Home', href: '/' }, ...items].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: abs(c.href) })),
@@ -40,6 +43,7 @@ export const serviceSchema = (s: { name: string; slug: string; definition: strin
   url: abs(`/services/${s.slug}/`),
   provider: { '@id': abs('/#business') },
   areaServed: orgSchema().areaServed,
+  image: abs(`/og/services-${s.slug}.jpg`),
   ...(s.from && {
     offers: { '@type': 'Offer', priceCurrency: 'USD', priceSpecification: { '@type': 'PriceSpecification', minPrice: s.from, priceCurrency: 'USD' } },
   }),
@@ -55,10 +59,12 @@ export function orgSchema() {
     telephone: settings.phoneE164,
     email: settings.email,
     logo: abs('/icons/icon-512.png'),
-    image: abs('/icons/icon-512.png'),
+    image: abs('/og/home.jpg'),
+    priceRange: '$$$',
     address: { '@type': 'PostalAddress', addressLocality: 'Dallas', addressRegion: 'TX', addressCountry: 'US' },
     areaServed: [
       { '@type': 'AdministrativeArea', name: 'Dallas–Fort Worth' },
+      ...dfwCities.map((name) => ({ '@type': 'City', name: `${name}, Texas` })),
       { '@type': 'State', name: 'Texas' },
       ...(claim('coloradoSprings') ? [{ '@type': 'City', name: 'Colorado Springs, Colorado' }] : []),
     ],

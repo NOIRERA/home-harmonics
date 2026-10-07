@@ -27,7 +27,7 @@ On move day the work happens in a deliberate order, so the house becomes livable
 1. **The kitchen**, so the household can make coffee and eat.
 2. **Bedrooms and bathrooms**, so everyone can sleep and get ready the next morning.
 3. **Children's rooms**, so the first night feels familiar.
-4. **Closets, linens and the pantry**, set up to the plan rather than filled at random.
+4. **Closets, linens and the pantry**, set up to the plan, not filled at random.
 
 Everything is unpacked straight into its planned place and labeled where labels help. Nothing is unpacked "for now."
 
@@ -37,7 +37,7 @@ The last stage is the difference between unpacked and arrived. Boxes and packing
 
 ## What it is not
 
-A move-in concierge works alongside your movers rather than replacing them. The moving company transports and places the furniture; the concierge plans, unpacks, sources, installs and labels. It is also not a one-day reset. Most of the value is in the planning that happens before anything arrives.
+A move-in concierge works alongside your movers; it does not replace them. The moving company transports and places the furniture; the concierge plans, unpacks, sources, installs and labels. It is also not a one-day reset. Most of the value is in the planning that happens before anything arrives.
 
 ## How long it takes
 

@@ -28,6 +28,11 @@ export type Service = {
   note?: string;
   spokes?: { slug: string; line: string }[];
   others?: { name: string; line: string }[];
+  /** Section headings, so each page reads as authored, not templated. Words markup. */
+  scopeTitle: string;
+  faqTitle: string;
+  /** One specific detail of how this service runs. */
+  detail?: { label: string; text: string };
 };
 
 // Titles stay ≤ 60 characters: "in Dallas–Fort Worth" when it fits, otherwise "in Dallas".
@@ -39,6 +44,9 @@ const t = (name: string) => {
 export const services: Service[] = [
   {
     slug: 'move-in-concierge',
+    scopeTitle: 'From the first box *to the first night.*',
+    faqTitle: 'Before *the move.*',
+    detail: { label: 'The order of move day', text: 'The kitchen first, so the household can make coffee and eat. Then bedrooms and bathrooms, so everyone sleeps well and gets ready easily the next morning. Children’s rooms next, so the first night feels familiar. Closets, linens and the pantry follow, each set up to the plan.' },
     name: 'Move-In Concierge',
     short: 'Unpacking and complete setup of a new home, planned before the move.',
     bestFor: 'New homes, relocations and new builds',
@@ -70,6 +78,9 @@ export const services: Service[] = [
   },
   {
     slug: 'whole-home-organization',
+    scopeTitle: 'Room by room, *start to finish.*',
+    faqTitle: 'On time *and cost.*',
+    detail: { label: 'Why consecutive days', text: 'A whole home is scheduled as one block of consecutive days, never scattered sessions. Momentum holds, the house is in a state of change for as short a time as possible, and every room ends finished, not half done.' },
     name: 'Whole-Home Organization',
     short: 'A complete reset of the home you live in, room by room.',
     bestFor: 'Established homes that need a complete reset',
@@ -99,6 +110,8 @@ export const services: Service[] = [
   },
   {
     slug: 'signature-spaces',
+    scopeTitle: 'One space, *done properly.*',
+    faqTitle: 'Before you *book a day.*',
     name: 'Signature Spaces',
     short: 'One room or system, organized on its own.',
     bestFor: 'The one room costing you the most time',
@@ -108,7 +121,7 @@ export const services: Service[] = [
     title: 'The rooms you use most, | *designed to work.*',
     lead: 'Wardrobes, pantries, kitchens and the spaces between, each planned around how it is used.',
     definition:
-      'Signature Spaces is organization for a single room or system, booked on its own. Each space is planned around who uses it and how often, then edited, designed, sourced, installed and labeled. It is the right place to start when one room is costing you the most time.',
+      'Signature Spaces is organization for a single room or system, booked on its own. Each space is designed around its daily routine, then edited, fitted and labeled. It is the right place to start when one room is costing you the most time.',
     scope: [
       'A walkthrough of the space',
       'Editing, donation and removal',
@@ -135,6 +148,9 @@ export const services: Service[] = [
   },
   {
     slug: 'closet-and-wardrobe-organization',
+    scopeTitle: 'Every piece, *in its place.*',
+    faqTitle: 'About *wardrobes.*',
+    detail: { label: 'Measured before anything is bought', text: 'Every shelf, drawer and hanging run is measured first. Inserts and hangers are chosen to fit the joinery, and hanging lengths are set to what actually hangs there.' },
     name: 'Closet & Wardrobe Organization',
     short: 'Closets planned around what you wear and how often.',
     bestFor: 'Primary closets, dressing rooms and kids’ wardrobes',
@@ -162,6 +178,9 @@ export const services: Service[] = [
   },
   {
     slug: 'pantry-and-kitchen-organization',
+    scopeTitle: 'Shelf by shelf, *zone by zone.*',
+    faqTitle: 'About *pantries.*',
+    detail: { label: 'Decanting, where it helps', text: 'Staples that are used often and bought in bulk go into labeled canisters. Everything else stays in its packaging, grouped in baskets, so restocking stays quick.' },
     name: 'Pantry & Kitchen Organization',
     short: 'Pantries and kitchens grouped by how your household cooks and shops.',
     bestFor: 'Pantries, kitchens and coffee bars',
@@ -191,6 +210,8 @@ export const services: Service[] = [
   },
   {
     slug: 'seasonal-resets',
+    scopeTitle: 'What a reset *covers.*',
+    faqTitle: 'About *resets.*',
     name: 'Seasonal Resets',
     short: 'Return visits that keep an organized home current.',
     bestFor: 'Project clients keeping their system current',

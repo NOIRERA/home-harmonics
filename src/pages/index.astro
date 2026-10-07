@@ -36,7 +36,7 @@ const stages: { label: string; line: string; img: MediaId; pos?: string }[] = [
 
 const begin = [
   { t: 'A short fit call', d: 'Fifteen minutes, complimentary, to hear what you need and when.' },
-  { t: 'A walkthrough', d: 'Thirty to forty-five minutes in your home or by video, also complimentary. We look at every space in scope.' },
+  { t: 'A walkthrough', d: 'Thirty to forty-five minutes in your home or by video, also complimentary. Yaz looks at every space in scope.' },
   { t: 'A proposal', d: 'Scope, schedule and investment within about two business days. A 50% deposit holds your dates.' },
 ];
 ---
@@ -54,11 +54,11 @@ const begin = [
         <span class="eyebrow" data-intro style="--delay:100ms">Home organization &amp; move-in setup <span aria-hidden="true">·</span> <span class="nowrap">Based in Dallas–Fort Worth</span></span>
         <Words class="display hero-h" intro text="Your home, | already handled." />
       </h1>
-      <p class="lead hero-sub" data-intro style="--delay:750ms">An effortlessly ordered home, designed around the way you live.</p>
-      <p class="muted hero-support" data-intro style="--delay:850ms">Traveling to homes across Texas and beyond.</p>
-      <div class="hero-actions" data-intro style="--delay:950ms">
+      <p class="lead hero-sub" data-intro style="--delay:600ms">An effortlessly ordered home, designed around the way you live.</p>
+      <p class="muted hero-support" data-intro style="--delay:680ms">Traveling to homes across Texas and beyond.</p>
+      <div class="hero-actions" data-intro style="--delay:760ms">
         <a class="btn" href="/inquire/" data-magnetic>Request a consultation</a>
-        <a class="link" href="/work/">See our work <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="link" href="/work/">See the work <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
     <div class="img hero-media" data-intro="settle" data-parallax data-truth="generated_atmosphere">
@@ -78,7 +78,7 @@ const begin = [
       <h2 class="h2 st-h"><Words reveal text="Your home should support your life — *not quietly demand more from it.*" /></h2>
       <p class="lead muted st-p" data-reveal>
         The work happens where no one looks: behind cabinet doors, inside drawers, along the rail of a wardrobe.
-        Each space is planned around who uses it and how often, then sourced, installed and labeled, so the house keeps running without anyone managing it.
+        Each one is planned around the people who use it, then fitted and labeled, so the house keeps running without anyone managing it.
       </p>
       <Img id="drawer" class="st-img" reveal="mask" parallax sizes="(min-width: 1024px) 24vw, 70vw" widths={[480, 720, 1000]} />
     </div>
@@ -100,7 +100,7 @@ const begin = [
           <p class="eyebrow muted">{garage.space} · Design, built storage &amp; organization · {garage.duration}</p>
           <dl class="work-dl">
             <div><dt class="eyebrow">Starting point</dt><dd>Boxes, bags and bikes had taken over the floor.</dd></div>
-            <div><dt class="eyebrow">What we did</dt><dd>Designed the storage, brought in a build partner for the cabinetry and racks, then gave every bike, tool and stored box a place.</dd></div>
+            <div><dt class="eyebrow">What Yaz did</dt><dd>Designed the storage, brought in a build partner for the cabinetry and racks, then gave every bike, tool and stored box a place.</dd></div>
             <div><dt class="eyebrow">Result</dt><dd>{garage.results[0]}.</dd></div>
           </dl>
           <a class="link" href="/work/garage/">View the project <span class="arrow" aria-hidden="true">→</span></a>
@@ -115,7 +115,7 @@ const begin = [
     <div class="wrap">
       <header class="sec-head">
         <p class="eyebrow">Services</p>
-        <h2 class="h2"><Words reveal text="Three ways *to begin.*" /></h2>
+        <h2 class="h2"><Words reveal text="Engagements, *by scope.*" /></h2>
       </header>
       <ol role="list" class="svc-list">
         {services.map((s, i) => (
@@ -205,9 +205,22 @@ const begin = [
     </div>
   </Section>
 
-  {/* 08 Voices: only approved quotes with real text; omitted until then */}
+  {/* 08 For the trade: before Voices, so the homeowner path from proof to form stays unbroken */}
+  <Section bg="alabaster" from="limestone" id="trade" class="trade">
+    <div class="wrap t-grid">
+      <div data-reveal>
+        <p class="eyebrow">For the trade</p>
+        <h2 class="h2 t-h">You create the home. <em>We make it beautifully livable.</em></h2>
+        <p class="muted t-p">Post-install organization, move-in completion and client handoff for designers, architects, builders and realtors.</p>
+        <a class="link" href="/trade/">For designers and builders <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <Img id="laundry" class="t-img" reveal="mask" sizes="(min-width: 1024px) 40vw, 100vw" widths={[640, 960, 1280]} />
+    </div>
+  </Section>
+
+  {/* 09 Voices: only approved quotes with real text; omitted until then */}
   {voices.length > 0 && (
-    <Section bg="alabaster" from="limestone" id="voices" class="voices">
+    <Section bg="limestone" from="alabaster" id="voices" class="voices">
       <div class="wrap">
         <p class="eyebrow">Voices</p>
         <div class="v-list">
@@ -225,8 +238,8 @@ const begin = [
     </Section>
   )}
 
-  {/* 09 How we begin */}
-  <Section bg="alabaster" from={voices.length > 0 ? undefined : 'limestone'} id="begin" class="begin">
+  {/* 10 How we begin */}
+  <Section bg="alabaster" from={voices.length > 0 ? 'limestone' : undefined} id="begin" class="begin">
     <div class="wrap">
       <header class="sec-head">
         <p class="eyebrow">How we begin</p>
@@ -252,21 +265,8 @@ const begin = [
     </div>
   </Section>
 
-  {/* 10 For the trade */}
-  <Section bg="limestone" from="alabaster" id="trade" class="trade">
-    <div class="wrap t-grid">
-      <div data-reveal>
-        <p class="eyebrow">For the trade</p>
-        <h2 class="h2 t-h">You create the home. <em>We make it beautifully livable.</em></h2>
-        <p class="muted t-p">Post-install organization, move-in completion and client handoff for designers, architects, builders and realtors.</p>
-        <a class="link" href="/trade/">For designers and builders <span class="arrow" aria-hidden="true">→</span></a>
-      </div>
-      <Img id="laundry" class="t-img" reveal="mask" sizes="(min-width: 1024px) 40vw, 100vw" widths={[640, 960, 1280]} />
-    </div>
-  </Section>
-
   {/* 11 Inquire */}
-  <Section bg="walnut" from="limestone" id="inquire" class="inquire" data-hide-cta="">
+  <Section bg="walnut" from="alabaster" id="inquire" class="inquire" data-hide-cta="">
     <div class="wrap inq-grid">
       <div class="inq-intro">
         <p class="eyebrow">Inquire</p>
@@ -303,6 +303,17 @@ const begin = [
     .hero-copy { padding: 40px var(--gutter); }
     .hero-media { height: auto; aspect-ratio: 4 / 5; }
     .hero-actions .btn { width: 100%; }
+  }
+  /* Phone landscape: text and image side by side so the CTA stays above the fold. */
+  @media (orientation: landscape) and (max-height: 520px) and (max-width: 1023px) {
+    .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 100svh; }
+    .hero-copy { align-self: center; padding: 12px var(--gutter) 16px; }
+    .hero-h { margin-top: 10px; font-size: min(2.6rem, 13.5cqi); }
+    .hero-sub { margin-top: 12px; font-size: 1rem; }
+    .hero-support { display: none; }
+    .hero-actions { margin-top: 18px; }
+    .hero-actions .btn { width: auto; }
+    .hero-media { height: calc(100svh - var(--header-h)); min-height: 0; aspect-ratio: auto; }
   }
 
   /* 02 Statement */
@@ -360,9 +371,9 @@ const begin = [
     .svc-price, .svc-arrow { grid-column: auto; }
     .svc-arrow { display: none; }
   }
-  /* Tablet: image beside the text instead of a full-width stack. */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .svc-row { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); column-gap: 32px; row-gap: 8px; align-items: start; }
+  /* Tablet and phone: image beside the text instead of a full-width stack. */
+  @media (max-width: 1023px) {
+    .svc-row { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); column-gap: clamp(18px, 4vw, 32px); row-gap: 8px; align-items: start; }
     .svc-row > * { grid-column: 2; }
     .svc-row > .svc-img { grid-column: 1; grid-row: 1 / span 4; margin-bottom: 0; }
   }
@@ -384,6 +395,7 @@ const begin = [
     .mi-stages li { opacity: 1; }
     .mi-stills { gap: 24px; }
   }
+  @media (max-width: 767px) { .mi-still, .mi-still.wide { aspect-ratio: 3 / 2; } .svc-img { aspect-ratio: 4 / 5; } .svc-title { font-size: 1.45rem; } .st-img { grid-column: 5 / -1; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .mi-stills { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
     .mi-still, .mi-still.wide { aspect-ratio: 3 / 4; }
@@ -399,6 +411,7 @@ const begin = [
   .m-inline { display: none; }
   .m-link { margin-top: 32px; }
   @media (max-width: 1023px) { .m-grid { grid-template-columns: 1fr; } .m-num { display: none; } .m-inline { display: block; } .m-steps li { padding: 40px 0; } }
+  @media (max-width: 767px) { .m-steps li { padding: 28px 0; gap: 10px; } }
 
   /* 07 Letter */
   .l-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(40px, 7vw, 120px); align-items: center; }
@@ -429,7 +442,7 @@ const begin = [
     .b-cols li, .b-cols li + li { border-left: 0; border-top: var(--rule); padding: 28px 0; }
   }
 
-  /* 10 Trade (slim band) */
+  /* 08 Trade (slim band) */
   .trade { --pad: clamp(72px, 8vw, 120px); }
   .t-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(40px, 6vw, 100px); align-items: center; }
   .t-h { margin: 20px 0 24px; }

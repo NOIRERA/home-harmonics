@@ -37,7 +37,7 @@ The last stage is the difference between unpacked and arrived. Boxes and packing
 
 ## What it is not
 
-A move-in concierge works alongside your movers rather than replacing them. The moving company transports and places the furniture; the concierge plans, unpacks, sources, installs and labels. It is also not a one-day tidy-up. Most of the value is in the planning that happens before anything arrives.
+A move-in concierge works alongside your movers rather than replacing them. The moving company transports and places the furniture; the concierge plans, unpacks, sources, installs and labels. It is also not a one-day reset. Most of the value is in the planning that happens before anything arrives.
 
 ## How long it takes
 

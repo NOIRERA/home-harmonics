@@ -1,0 +1,7547 @@
+{
+ "/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "hero.Da8FgDnx_ZKyxPP.avif",
+    "alt": "Walk-in wardrobe in warm walnut, with lit shelves of folded knitwear, hanging shirts and an open drawer of accessories",
+    "w": 630,
+    "h": 692,
+    "nw": 634,
+    "nh": 357,
+    "loaded": true,
+    "upscale": 4.34,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "Open walnut drawer with suede-lined compartments holding watches and folded accessories",
+    "w": 212,
+    "h": 266,
+    "nw": 245,
+    "nh": 307,
+    "loaded": true,
+    "upscale": 1.94,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_Z2sUYBU.avif",
+    "alt": "Garage after: grey cabinetry, a wall system holding bikes and tools, overhead racks, and the car parked inside",
+    "w": 606,
+    "h": 455,
+    "nw": 634,
+    "nh": 476,
+    "loaded": true,
+    "upscale": 2.14,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_2hTysY.avif",
+    "alt": "Detail: bikes and scooters hung on the wall system above the cabinetry",
+    "w": 212,
+    "h": 266,
+    "nw": 225,
+    "nh": 168,
+    "loaded": true,
+    "upscale": 6.02,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 150,
+    "h": 188,
+    "nw": 163,
+    "nh": 92,
+    "loaded": true,
+    "upscale": 4.09,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 150,
+    "h": 188,
+    "nw": 163,
+    "nh": 92,
+    "loaded": true,
+    "upscale": 4.09,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 150,
+    "h": 188,
+    "nw": 163,
+    "nh": 109,
+    "loaded": true,
+    "upscale": 3.45,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "pantry-tall.BtB3taWd_2mDH63.avif",
+    "alt": "Kitchen with a pull-out pantry tower of glass jars beside the ovens",
+    "w": 458,
+    "h": 573,
+    "nw": 450,
+    "nh": 563,
+    "loaded": true,
+    "upscale": 2.04,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "bedroom.CstuGWg3_pfCcV.avif",
+    "alt": "Bedroom opening onto a walnut wardrobe wall, with a single moving box beside the bed",
+    "w": 458,
+    "h": 573,
+    "nw": 450,
+    "nh": 253,
+    "loaded": true,
+    "upscale": 5.07,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1C9n81.avif",
+    "alt": "Entry with a built-in bench, woven baskets and hooks holding a hat and bag",
+    "w": 458,
+    "h": 573,
+    "nw": 450,
+    "nh": 300,
+    "loaded": true,
+    "upscale": 3.82,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "yaz-portrait.B9PvXKWm_Z18TeLw.avif",
+    "alt": "Yaz Scott, founder of Home Harmonics",
+    "w": 386,
+    "h": 483,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 2.22,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_founder",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "laundry.Bx3h3jc1_ZQulLH.avif",
+    "alt": "Laundry room in walnut and stone, with woven baskets and stacked linens",
+    "w": 391,
+    "h": 261,
+    "nw": 409,
+    "nh": 273,
+    "loaded": true,
+    "upscale": 1.91,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "h1",
+    "cls": "",
+    "text": "ed in Dallas–Fort WorthYour home, already handled."
+   },
+   {
+    "tag": "p",
+    "cls": "lead hero-sub",
+    "text": "ly ordered home, designed around the way you live."
+   },
+   {
+    "tag": "p",
+    "cls": "",
+    "text": "t away from them. Two years ago I made it my work."
+   },
+   {
+    "tag": "p",
+    "cls": "",
+    "text": "ually lives, so the calm lasts long after I leave."
+   },
+   {
+    "tag": "h2",
+    "cls": "h2 t-h",
+    "text": "u create the home. We make it beautifully livable."
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "inq-form"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "span.h3.svc-title",
+    "a.link.m-link",
+    "a.link.v-google",
+    "button.btn",
+    "footer.band.site-footer",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "64.704px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 12297
+ },
+ "/about/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "yaz-portrait.B9PvXKWm_23Y9t.avif",
+    "alt": "Yaz Scott, founder of Home Harmonics",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 512,
+    "loaded": true,
+    "upscale": 1.75,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_founder",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "yaz-working.vm-clE5L_1EsYuz.avif",
+    "alt": "Yaz Scott arranging folded towels on an open linen shelf",
+    "w": 358,
+    "h": 448,
+    "nw": 307,
+    "nh": 384,
+    "loaded": true,
+    "upscale": 2.33,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_founder",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "p",
+    "cls": "",
+    "text": "t away from them. Two years ago I made it my work."
+   },
+   {
+    "tag": "h3",
+    "cls": "h3",
+    "text": "One accountable lead"
+   },
+   {
+    "tag": "h3",
+    "cls": "h3",
+    "text": "Designed around your household"
+   },
+   {
+    "tag": "h3",
+    "cls": "h3",
+    "text": "Privacy in writing"
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3807
+ },
+ "/faq/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "h1",
+    "cls": "",
+    "text": "FAQAnswers, first."
+   },
+   {
+    "tag": "h3",
+    "cls": "faq-q",
+    "text": "al organizer prepare a custom home before move-in?"
+   },
+   {
+    "tag": "h3",
+    "cls": "faq-q",
+    "text": "What happens during a consultation?"
+   },
+   {
+    "tag": "h3",
+    "cls": "faq-q",
+    "text": "rofessional organization differ from housekeeping?"
+   },
+   {
+    "tag": "h3",
+    "cls": "faq-q",
+    "text": "How are products and supplies billed?"
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "12px",
+    "53.12px"
+   ],
+   "h3": [
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 7558
+ },
+ "/inquire/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 113,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "hello@home-harmonics.com",
+    "w": 216,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "inq-form"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "button.btn",
+    "a."
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": null,
+  "docHeight": 2219
+ },
+ "/inquire/thanks/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 113,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a."
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "31.712px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": null,
+  "docHeight": 1803
+ },
+ "/investment/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Move-In Concierge",
+    "w": 200,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Whole-Home Organization",
+    "w": 281,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Signature Spaces",
+    "w": 175,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Seasonal Resets",
+    "w": 161,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Travel engagements",
+    "w": 204,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "button.link.no-print",
+    "a.",
+    "section.band.seam",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px",
+    "31.712px"
+   ],
+   "h3": [
+    "31.712px",
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 6180
+ },
+ "/journal/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 317,
+    "h": 211,
+    "nw": 286,
+    "nh": 161,
+    "loaded": true,
+    "upscale": 2.62,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 317,
+    "h": 211,
+    "nw": 286,
+    "nh": 358,
+    "loaded": true,
+    "upscale": 2.22,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 317,
+    "h": 211,
+    "nw": 286,
+    "nh": 161,
+    "loaded": true,
+    "upscale": 2.62,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "laundry.Bx3h3jc1_Z1B8juE.avif",
+    "alt": "",
+    "w": 317,
+    "h": 211,
+    "nw": 286,
+    "nh": 191,
+    "loaded": true,
+    "upscale": 2.22,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "span.h3.jn-title",
+    "span.link",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3105
+ },
+ "/journal/how-long-whole-home-organization-takes/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z11mKSF.avif",
+    "alt": "Open-plan living room and kitchen, with a tall walnut pantry cabinet standing open",
+    "w": 626,
+    "h": 417,
+    "nw": 614,
+    "nh": 345,
+    "loaded": true,
+    "upscale": 2.42,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Journal",
+    "w": 64,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Yaz Scott",
+    "w": 63,
+    "h": 20,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Whole-Home Organization",
+    "w": 179,
+    "h": 20,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Seasonal Resets",
+    "w": 130,
+    "h": 23,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "29.44px",
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 4987
+ },
+ "/journal/organizing-inside-custom-cabinetry/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1YNDoM.avif",
+    "alt": "Open walnut drawer with suede-lined compartments holding watches and folded accessories",
+    "w": 626,
+    "h": 417,
+    "nw": 614,
+    "nh": 768,
+    "loaded": true,
+    "upscale": 2.04,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Journal",
+    "w": 64,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Yaz Scott",
+    "w": 63,
+    "h": 20,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Closet & Wardrobe Organization",
+    "w": 221,
+    "h": 20,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Seasonal Reset",
+    "w": 122,
+    "h": 23,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "closet and wardrobe",
+    "w": 166,
+    "h": 23,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "pantry and kitchen",
+    "w": 151,
+    "h": 23,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "29.44px",
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 5312
+ },
+ "/journal/what-a-move-in-concierge-does/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "bedroom.CstuGWg3_pfCcV.avif",
+    "alt": "Bedroom opening onto a walnut wardrobe wall, with a single moving box beside the bed",
+    "w": 626,
+    "h": 417,
+    "nw": 614,
+    "nh": 345,
+    "loaded": true,
+    "upscale": 2.42,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Journal",
+    "w": 64,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Yaz Scott",
+    "w": 63,
+    "h": 20,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Move-In Concierge",
+    "w": 127,
+    "h": 20,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Move-In Concierge",
+    "w": 151,
+    "h": 23,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "29.44px",
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 5525
+ },
+ "/journal/working-with-your-interior-designer/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "laundry.Bx3h3jc1_ZQulLH.avif",
+    "alt": "Laundry room in walnut and stone, with woven baskets and stacked linens",
+    "w": 626,
+    "h": 417,
+    "nw": 614,
+    "nh": 409,
+    "loaded": true,
+    "upscale": 2.04,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Journal",
+    "w": 64,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Yaz Scott",
+    "w": 63,
+    "h": 20,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Whole-Home Organization",
+    "w": 179,
+    "h": 20,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "See how trade partnerships work",
+    "w": 268,
+    "h": 23,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "29.44px",
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 4872
+ },
+ "/privacy/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "hello@home-harmonics.com",
+    "w": 216,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "hello@home-harmonics.com",
+    "w": 216,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "31.712px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3415
+ },
+ "/services/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "Dressing room with a stone-topped island and walnut shelving lit from within",
+    "w": 261,
+    "h": 326,
+    "nw": 286,
+    "nh": 191,
+    "loaded": true,
+    "upscale": 3.41,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "pantry-tall.BtB3taWd_ZRLBjV.avif",
+    "alt": "Kitchen with a pull-out pantry tower of glass jars beside the ovens",
+    "w": 217,
+    "h": 271,
+    "nw": 225,
+    "nh": 281,
+    "loaded": true,
+    "upscale": 1.93,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Move-In Concierge",
+    "w": 200,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Signature Spaces",
+    "w": 175,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Seasonal Resets",
+    "w": 161,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Travel engagements",
+    "w": 204,
+    "h": 25,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "How investment works",
+    "w": 172,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Closet & Wardrobe Organization",
+    "w": 247,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Pantry & Kitchen Organization",
+    "w": 227,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "Offices, playrooms, laundry and garages",
+    "w": 304,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "a.",
+    "section.band.seam",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3224
+ },
+ "/services/closet-and-wardrobe-organization/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_ZhAyQl.avif",
+    "alt": "Dressing room with a stone-topped island and walnut shelving lit from within",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 273,
+    "loaded": true,
+    "upscale": 3.28,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "Open walnut drawer with suede-lined compartments holding watches and folded accessories",
+    "w": 358,
+    "h": 448,
+    "nw": 307,
+    "nh": 384,
+    "loaded": true,
+    "upscale": 2.33,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "p",
+    "cls": "sv-definition is-in",
+    "text": "d inserts, and labels what is stored out of reach."
+   },
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "The Harmonics Method."
+   },
+   {
+    "tag": "h3",
+    "cls": "faq-q",
+    "text": "How does a professional organize a custom closet?"
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Services",
+    "w": 67,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Signature Spaces",
+    "w": 135,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px",
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 5986
+ },
+ "/services/move-in-concierge/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "bedroom.CstuGWg3_pfCcV.avif",
+    "alt": "Bedroom opening onto a walnut wardrobe wall, with a single moving box beside the bed",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 230,
+    "loaded": true,
+    "upscale": 3.9,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "pantry-tall.BtB3taWd_ZRLBjV.avif",
+    "alt": "Kitchen with a pull-out pantry tower of glass jars beside the ovens",
+    "w": 358,
+    "h": 448,
+    "nw": 307,
+    "nh": 384,
+    "loaded": true,
+    "upscale": 2.33,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "The Harmonics Method."
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Services",
+    "w": 67,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px",
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 6499
+ },
+ "/services/pantry-and-kitchen-organization/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "pantry-wide.lit98Meq_Z2enJ6p.avif",
+    "alt": "Walk-in pantry lined with glass jars on lit walnut shelves",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 273,
+    "loaded": true,
+    "upscale": 3.28,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "pantry-tall.BtB3taWd_ZRLBjV.avif",
+    "alt": "Kitchen with a pull-out pantry tower of glass jars beside the ovens",
+    "w": 358,
+    "h": 448,
+    "nw": 307,
+    "nh": 384,
+    "loaded": true,
+    "upscale": 2.33,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "p",
+    "cls": "lead muted ph-lead",
+    "text": "ound how your household cooks, shops and restocks."
+   },
+   {
+    "tag": "p",
+    "cls": "sv-definition is-in",
+    "text": " helps, and sets up cabinets and drawers to match."
+   },
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "The Harmonics Method."
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Services",
+    "w": 67,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Signature Spaces",
+    "w": 135,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px",
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 6316
+ },
+ "/services/seasonal-resets/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1YNDoM.avif",
+    "alt": "Open walnut drawer with suede-lined compartments holding watches and folded accessories",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 512,
+    "loaded": true,
+    "upscale": 1.75,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "Entry with a built-in bench, woven baskets and hooks holding a hat and bag",
+    "w": 358,
+    "h": 448,
+    "nw": 307,
+    "nh": 204,
+    "loaded": true,
+    "upscale": 4.39,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "p",
+    "cls": "sv-definition is-in",
+    "text": " quickly and adjusts it as your household changes."
+   },
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "The Harmonics Method."
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Services",
+    "w": 67,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px",
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 5401
+ },
+ "/services/signature-spaces/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_ZhAyQl.avif",
+    "alt": "Dressing room with a stone-topped island and walnut shelving lit from within",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 273,
+    "loaded": true,
+    "upscale": 3.28,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_2hTysY.avif",
+    "alt": "",
+    "w": 167,
+    "h": 208,
+    "nw": 184,
+    "nh": 138,
+    "loaded": true,
+    "upscale": 3.01,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "guest-bathroom-after.CWZiErT1_29uK9I.avif",
+    "alt": "",
+    "w": 167,
+    "h": 208,
+    "nw": 184,
+    "nh": 327,
+    "loaded": true,
+    "upscale": 1.82,
+    "fit": "cover",
+    "pos": "50% 0%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "The Harmonics Method."
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Services",
+    "w": 67,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "span.h3.spoke-name",
+    "span.link",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px",
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 7477
+ },
+ "/services/whole-home-organization/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z11mKSF.avif",
+    "alt": "Open-plan living room and kitchen, with a tall walnut pantry cabinet standing open",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 230,
+    "loaded": true,
+    "upscale": 3.9,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "laundry.Bx3h3jc1_Z1B8juE.avif",
+    "alt": "Laundry room in walnut and stone, with woven baskets and stacked linens",
+    "w": 358,
+    "h": 448,
+    "nw": 307,
+    "nh": 204,
+    "loaded": true,
+    "upscale": 4.39,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "The Harmonics Method."
+   },
+   {
+    "tag": "h3",
+    "cls": "faq-q",
+    "text": "rofessional organization differ from housekeeping?"
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Services",
+    "w": 67,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px",
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 6387
+ },
+ "/terms/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "hello@home-harmonics.com",
+    "w": 216,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 113,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "31.712px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 2706
+ },
+ "/trade/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "laundry.Bx3h3jc1_ZQulLH.avif",
+    "alt": "Laundry room in walnut and stone, with woven baskets and stacked linens",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 273,
+    "loaded": true,
+    "upscale": 3.28,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "Dressing room with a stone-topped island and walnut shelving lit from within",
+    "w": 358,
+    "h": 448,
+    "nw": 307,
+    "nh": 204,
+    "loaded": true,
+    "upscale": 4.39,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "h1",
+    "cls": "",
+    "text": "u create the home. We make it beautifully livable."
+   },
+   {
+    "tag": "p",
+    "cls": "lead muted ph-lead",
+    "text": "rs, relocation specialists and household managers."
+   },
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "Your client, your credit."
+   },
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "Tell us about the project."
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 113,
+    "h": 22,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "name",
+    "w": 153,
+    "h": 21,
+    "inline": false,
+    "where": "inq-form"
+   },
+   {
+    "text": "firm",
+    "w": 153,
+    "h": 21,
+    "inline": false,
+    "where": "inq-form"
+   },
+   {
+    "text": "email",
+    "w": 153,
+    "h": 21,
+    "inline": false,
+    "where": "inq-form"
+   },
+   {
+    "text": "phone",
+    "w": 153,
+    "h": 21,
+    "inline": false,
+    "where": "inq-form"
+   },
+   {
+    "text": "Choose oneInterior designerArchitectBuil",
+    "w": 140,
+    "h": 19,
+    "inline": false,
+    "where": "inq-form"
+   },
+   {
+    "text": "location",
+    "w": 153,
+    "h": 21,
+    "inline": false,
+    "where": "inq-form"
+   },
+   {
+    "text": "timeline",
+    "w": 153,
+    "h": 21,
+    "inline": false,
+    "where": "inq-form"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "button.btn",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3750
+ },
+ "/where-we-work/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1C9n81.avif",
+    "alt": "Entry with a built-in bench, woven baskets and hooks holding a hat and bag",
+    "w": 358,
+    "h": 448,
+    "nw": 409,
+    "nh": 273,
+    "loaded": true,
+    "upscale": 3.28,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "pantry-wide.lit98Meq_2dHtYc.avif",
+    "alt": "Walk-in pantry lined with glass jars on lit walnut shelves",
+    "w": 358,
+    "h": 239,
+    "nw": 307,
+    "nh": 204,
+    "loaded": true,
+    "upscale": 2.34,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "h1",
+    "cls": "",
+    "text": "ere we workBased in Dallas. Working where you are."
+   },
+   {
+    "tag": "p",
+    "cls": "lead muted ph-lead",
+    "text": " to homes across Texas and beyond, by arrangement."
+   },
+   {
+    "tag": "h2",
+    "cls": "h3",
+    "text": "Home base: Dallas–Fort Worth"
+   },
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "Planned from afar, finished in person."
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "31.712px",
+    "53.12px"
+   ],
+   "h3": [
+    "31.712px",
+    "24.768px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3973
+ },
+ "/work/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_Z2sUYBU.avif",
+    "alt": "A garage, fully fitted: the finished garage",
+    "w": 469,
+    "h": 586,
+    "nw": 512,
+    "nh": 384,
+    "loaded": true,
+    "upscale": 3.05,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "guest-bathroom-after.CWZiErT1_SBCof.avif",
+    "alt": "A guest bath, cleared and calm: the finished guest bathroom",
+    "w": 391,
+    "h": 489,
+    "nw": 512,
+    "nh": 909,
+    "loaded": true,
+    "upscale": 1.53,
+    "fit": "cover",
+    "pos": "50% 0%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "span.h2.wk-title",
+    "span.link",
+    "section.band.seam",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3197
+ },
+ "/work/garage/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "garage-before.Dre1-gTv_ZYVOXX.avif",
+    "alt": "Garage before: bins, boxes, bikes and bags spread across the floor",
+    "w": 414,
+    "h": 311,
+    "nw": 460,
+    "nh": 345,
+    "loaded": true,
+    "upscale": 1.8,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": true,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_2hTysY.avif",
+    "alt": "Garage after: grey cabinetry, a wall system holding bikes and tools, overhead racks, and the car parked inside",
+    "w": 414,
+    "h": 311,
+    "nw": 460,
+    "nh": 345,
+    "loaded": true,
+    "upscale": 1.8,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": true,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_2hTysY.avif",
+    "alt": "Detail: bikes and scooters hung on the wall system above the cabinetry",
+    "w": 320,
+    "h": 400,
+    "nw": 245,
+    "nh": 184,
+    "loaded": true,
+    "upscale": 8.26,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": true,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Work",
+    "w": 42,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "span.h2",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3699
+ },
+ "/work/guest-bathroom/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "guest-bathroom-before.D9T7PfKN_18gTi5.avif",
+    "alt": "Guest bathroom before: crowded wire shelving and products across the counter",
+    "w": 414,
+    "h": 736,
+    "nw": 460,
+    "nh": 818,
+    "loaded": true,
+    "upscale": 1.8,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": true,
+    "inQuote": false
+   },
+   {
+    "file": "guest-bathroom-after.CWZiErT1_29uK9I.avif",
+    "alt": "Guest bathroom after: a cleared vanity, a green linen shower curtain and styled open shelving",
+    "w": 414,
+    "h": 736,
+    "nw": 460,
+    "nh": 818,
+    "loaded": true,
+    "upscale": 1.8,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": true,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Work",
+    "w": 42,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "span.h2",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [
+    "53.12px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 3685
+ },
+ "/404.html": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 195,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 435,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1IP2Si.avif",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 348,
+    "nh": 232,
+    "loaded": true,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 101,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Instagram",
+    "w": 67,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Services",
+    "w": 58,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Work",
+    "w": 37,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "About",
+    "w": 41,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "For the Trade",
+    "w": 92,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Investment",
+    "w": 75,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "FAQ",
+    "w": 28,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Where we work",
+    "w": 107,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Journal",
+    "w": 52,
+    "h": 37,
+    "inline": false,
+    "where": ""
+   },
+   {
+    "text": "Privacy",
+    "w": 50,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   },
+   {
+    "text": "Terms",
+    "w": 42,
+    "h": 37,
+    "inline": false,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "59.712px"
+   ],
+   "h2": [],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 1151
+ }
+}

@@ -1,0 +1,575 @@
+{
+ "/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z1x059z.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_1rH7zo.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_k2rvi.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z2v1q7u.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "hero.Da8FgDnx_ZKyxPP.avif",
+    "alt": "Walk-in wardrobe in warm walnut, with lit shelves of folded knitwear, hanging shirts and an open drawer of accessories",
+    "w": 775,
+    "h": 824,
+    "nw": 892,
+    "nh": 502,
+    "loaded": true,
+    "upscale": 3.68,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z1KvG7O.avif",
+    "alt": "Open walnut drawer with suede-lined compartments holding watches and folded accessories",
+    "w": 306,
+    "h": 383,
+    "nw": 345,
+    "nh": 432,
+    "loaded": true,
+    "upscale": 1.99,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_Z1JPPuf.avif",
+    "alt": "Garage after: grey cabinetry, a wall system holding bikes and tools, overhead racks, and the car parked inside",
+    "w": 856,
+    "h": 642,
+    "nw": 892,
+    "nh": 669,
+    "loaded": true,
+    "upscale": 2.15,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_2hTysY.avif",
+    "alt": "Detail: bikes and scooters hung on the wall system above the cabinetry",
+    "w": 306,
+    "h": 383,
+    "nw": 316,
+    "nh": 237,
+    "loaded": true,
+    "upscale": 4.36,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "bedroom.CstuGWg3_Z2hMwIy.avif",
+    "alt": "",
+    "w": 187,
+    "h": 234,
+    "nw": 230,
+    "nh": 129,
+    "loaded": true,
+    "upscale": 3.63,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_Z1W4gF9.avif",
+    "alt": "",
+    "w": 187,
+    "h": 234,
+    "nw": 230,
+    "nh": 129,
+    "loaded": true,
+    "upscale": 3.63,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_13YSy6.avif",
+    "alt": "",
+    "w": 187,
+    "h": 234,
+    "nw": 230,
+    "nh": 153,
+    "loaded": true,
+    "upscale": 3.06,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "pantry-tall.BtB3taWd_2mDH63.avif",
+    "alt": "Kitchen with a pull-out pantry tower of glass jars beside the ovens",
+    "w": 644,
+    "h": 805,
+    "nw": 633,
+    "nh": 791,
+    "loaded": true,
+    "upscale": 2.04,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "bedroom.CstuGWg3_pfCcV.avif",
+    "alt": "Bedroom opening onto a walnut wardrobe wall, with a single moving box beside the bed",
+    "w": 644,
+    "h": 429,
+    "nw": 633,
+    "nh": 356,
+    "loaded": true,
+    "upscale": 2.7,
+    "fit": "cover",
+    "pos": "100% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_1C9n81.avif",
+    "alt": "Entry with a built-in bench, woven baskets and hooks holding a hat and bag",
+    "w": 644,
+    "h": 429,
+    "nw": 633,
+    "nh": 422,
+    "loaded": true,
+    "upscale": 2.03,
+    "fit": "cover",
+    "pos": "55% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "yaz-portrait.B9PvXKWm_Z1U2Xhu.avif",
+    "alt": "Yaz Scott, founder of Home Harmonics",
+    "w": 520,
+    "h": 650,
+    "nw": 489,
+    "nh": 612,
+    "loaded": true,
+    "upscale": 2.13,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_founder",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "laundry.Bx3h3jc1_ZQulLH.avif",
+    "alt": "Laundry room in walnut and stone, with woven baskets and stacked linens",
+    "w": 550,
+    "h": 367,
+    "nw": 576,
+    "nh": 384,
+    "loaded": true,
+    "upscale": 1.91,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [
+   {
+    "tag": "p",
+    "cls": "",
+    "text": "ually lives, so the calm lasts long after I leave."
+   },
+   {
+    "tag": "p",
+    "cls": "",
+    "text": "e. … Her support made settling in so much easier.”"
+   },
+   {
+    "tag": "h2",
+    "cls": "h2",
+    "text": "Tell us about your home."
+   }
+  ],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "inq-form"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "span.h3.svc-title",
+    "a.link.m-link",
+    "a.link.v-google",
+    "button.btn",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "73.1995px"
+   ],
+   "h2": [
+    "65.6px"
+   ],
+   "h3": [
+    "37.12px"
+   ]
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 13989
+ },
+ "/work/garage/": {
+  "overflow": 0,
+  "images": [
+   {
+    "file": "bedroom.CstuGWg3_Z1x059z.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "living-pantry.C-YvdWgP_1rH7zo.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "closet.fgDAhJKc_k2rvi.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "drawer.WaQBUUX1_Z2v1q7u.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "entry.B8Rjswfv_Z2rTYLF.jpg",
+    "alt": "",
+    "w": 0,
+    "h": 0,
+    "nw": 0,
+    "nh": 0,
+    "loaded": false,
+    "upscale": 0,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "generated_atmosphere",
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   },
+   {
+    "file": "garage-before.Dre1-gTv_Z1hVyBi.avif",
+    "alt": "Garage before: bins, boxes, bikes and bags spread across the floor",
+    "w": 592,
+    "h": 444,
+    "nw": 648,
+    "nh": 486,
+    "loaded": true,
+    "upscale": 1.83,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": true,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_Z1JPPuf.avif",
+    "alt": "Garage after: grey cabinetry, a wall system holding bikes and tools, overhead racks, and the car parked inside",
+    "w": 592,
+    "h": 444,
+    "nw": 648,
+    "nh": 486,
+    "loaded": true,
+    "upscale": 1.83,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": true,
+    "inQuote": false
+   },
+   {
+    "file": "garage-after.BZhTB0-c_2hTysY.avif",
+    "alt": "Detail: bikes and scooters hung on the wall system above the cabinetry",
+    "w": 320,
+    "h": 400,
+    "nw": 345,
+    "nh": 259,
+    "loaded": true,
+    "upscale": 4.17,
+    "fit": "cover",
+    "pos": "50% 50%",
+    "truth": "real_client_work",
+    "stretched": false,
+    "inCaseStudy": true,
+    "inQuote": false
+   },
+   {
+    "file": "lockup-ink.Ba_Lhe7C_ZFPxcj.webp",
+    "alt": "Home Harmonics",
+    "w": 200,
+    "h": 167,
+    "nw": 200,
+    "nh": 167,
+    "loaded": true,
+    "upscale": 2,
+    "fit": "fill",
+    "pos": "50% 50%",
+    "truth": null,
+    "stretched": false,
+    "inCaseStudy": false,
+    "inQuote": false
+   }
+  ],
+  "orphans": [],
+  "taps": [
+   {
+    "text": "Work",
+    "w": 41,
+    "h": 44,
+    "inline": false,
+    "where": "hh-primary"
+   },
+   {
+    "text": "Home",
+    "w": 41,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "Work",
+    "w": 42,
+    "h": 16,
+    "inline": true,
+    "where": "ph-crumbs"
+   },
+   {
+    "text": "(817) 883-1887",
+    "w": 93,
+    "h": 18,
+    "inline": true,
+    "where": "band"
+   }
+  ],
+  "design": {
+   "radius": [],
+   "shadow": [],
+   "gradients": [
+    "button.hh-item",
+    "a.hh-item",
+    "a.btn.btn-sm",
+    "a.link",
+    "a.btn",
+    "section.band.seam",
+    "span.h2",
+    "a.",
+    "a.btn.sticky-cta"
+   ],
+   "cursor": [],
+   "backdrop": [
+    "header.site-header.scrolled"
+   ]
+  },
+  "fontSizes": {
+   "h1": [
+    "75.52px"
+   ],
+   "h2": [
+    "65.6px"
+   ],
+   "h3": []
+  },
+  "measureIssues": [],
+  "stickyCta": false,
+  "docHeight": 4255
+ }
+}

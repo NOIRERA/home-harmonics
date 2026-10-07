@@ -1,0 +1,168 @@
+{
+ "utmHiddenFields": {
+  "utm_source": "audit",
+  "utm_medium": "cpc",
+  "utm_campaign": "launch",
+  "utm_term": "",
+  "utm_content": "",
+  "gclid": "TEST123",
+  "msclkid": "",
+  "fbclid": "",
+  "page": "/inquire/"
+ },
+ "inquiryLandedOn": "/inquire/thanks/",
+ "thanksNoindex": "noindex",
+ "homeInquiryLandedOn": "/inquire/thanks/",
+ "emptySubmitBlocked": true,
+ "tradeLandedOn": "/inquire/thanks/",
+ "noJsLandedOn": "/inquire/thanks/",
+ "events": [
+  {
+   "page": "/",
+   "name": "form_start",
+   "params": {
+    "transport_type": "beacon",
+    "form": "/api/inquire/"
+   }
+  },
+  {
+   "page": "/",
+   "name": "phone_tap",
+   "params": {
+    "transport_type": "beacon",
+    "page": "/"
+   }
+  },
+  {
+   "page": "/",
+   "name": "scroll_75",
+   "params": {
+    "transport_type": "beacon",
+    "page": "/"
+   }
+  },
+  {
+   "page": "/",
+   "name": "cta_click",
+   "params": {
+    "transport_type": "beacon",
+    "cta_text": "Request a consultation",
+    "page": "/"
+   }
+  },
+  {
+   "page": "/inquire/",
+   "name": "form_start",
+   "params": {
+    "transport_type": "beacon",
+    "form": "/api/inquire/"
+   }
+  },
+  {
+   "page": "/inquire/",
+   "name": "form_step1_submit",
+   "params": {
+    "transport_type": "beacon"
+   }
+  },
+  {
+   "page": "/inquire/thanks/",
+   "name": "generate_lead",
+   "params": {
+    "transport_type": "beacon",
+    "form": "inquiry"
+   }
+  },
+  {
+   "page": "/",
+   "name": "form_start",
+   "params": {
+    "transport_type": "beacon",
+    "form": "/api/inquire/"
+   }
+  },
+  {
+   "page": "/",
+   "name": "scroll_75",
+   "params": {
+    "transport_type": "beacon",
+    "page": "/"
+   }
+  },
+  {
+   "page": "/",
+   "name": "form_step1_submit",
+   "params": {
+    "transport_type": "beacon"
+   }
+  },
+  {
+   "page": "/inquire/thanks/",
+   "name": "generate_lead",
+   "params": {
+    "transport_type": "beacon",
+    "form": "inquiry"
+   }
+  },
+  {
+   "page": "/inquire/",
+   "name": "form_start",
+   "params": {
+    "transport_type": "beacon",
+    "form": "/api/inquire/"
+   }
+  },
+  {
+   "page": "/trade/",
+   "name": "form_start",
+   "params": {
+    "transport_type": "beacon",
+    "form": "/api/trade/"
+   }
+  },
+  {
+   "page": "/trade/",
+   "name": "scroll_75",
+   "params": {
+    "transport_type": "beacon",
+    "page": "/trade/"
+   }
+  },
+  {
+   "page": "/trade/",
+   "name": "trade_form_submit",
+   "params": {
+    "transport_type": "beacon"
+   }
+  },
+  {
+   "page": "/inquire/thanks/",
+   "name": "generate_lead",
+   "params": {
+    "transport_type": "beacon",
+    "form": "trade"
+   }
+  },
+  {
+   "page": "/work/garage/",
+   "name": "project_view",
+   "params": {
+    "transport_type": "beacon",
+    "project": "/work/garage/"
+   }
+  }
+ ],
+ "eventNames": [
+  "form_start",
+  "phone_tap",
+  "scroll_75",
+  "cta_click",
+  "form_step1_submit",
+  "generate_lead",
+  "trade_form_submit",
+  "project_view"
+ ],
+ "missingEvents": [
+  "pdf_download"
+ ]
+}

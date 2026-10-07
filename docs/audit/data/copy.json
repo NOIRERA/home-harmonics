@@ -1,0 +1,676 @@
+{
+ "perPage": {
+  "/": {
+   "words": 965,
+   "emDash": 1,
+   "emDashCtx": [
+    "See our work → | Your home should support your life — not quietly demand more from it. | The work happens where no"
+   ],
+   "notXbutY": [],
+   "banned": [
+    "bins?\\b: lt storage & organization · 2 days | Starting point | Bins, boxes and bikes had taken over the floor. | What we did | ",
+    "bins?\\b: binetry and racks, then gave every bike, tool and bin a place. | Result | A clear floor, with room around the car."
+   ],
+   "filler": [
+    "effortless(ly)?: n Dallas–Fort WorthYour home, already handled. | An effortlessly ordered home, designed around the way you live.",
+    "transform(ative|ed|s)?: s | “Zero judgment, amazing results. Home Harmonics transformed my home and my peace of mind.” | Rose S. · Home or",
+    "transform(ative|ed|s)?:  | “Yaz is amazing at what she does. She completely transformed my pantry and brought my vision to life … I woul",
+    "peace of mind: esults. Home Harmonics transformed my home and my peace of mind.” | Rose S. · Home organization | “After my move, ",
+    "beautifully: e → | For the trade | You create the home. We make it beautifully livable. | Post-install organization, move-in comp"
+   ],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$1,800",
+    "$1,200",
+    "$600",
+    "$600,",
+    "$1,200,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 15,
+   "we": 15,
+   "yaz": 4,
+   "firstPerson": 8
+  },
+  "/about/": {
+   "words": 510,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 2,
+   "we": 7,
+   "yaz": 4,
+   "firstPerson": 12
+  },
+  "/faq/": {
+   "words": 1389,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [
+    "consecutive days, beginning at a two-day minimum, rather than spread across weeks. Your proposal sets the exac",
+    "m already exists, a reset restores and adjusts it rather than starting again. | Investment | How much does whole-h"
+   ],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [
+    "billed at cost plus a handling fee. | Do you charge by the hour? | No. Engagements are priced by project, not by t",
+    " hour? | No. Engagements are priced by project, not by the hour, so you know the investment before work begins. "
+   ],
+   "prices": [
+    "$1,200,",
+    "$600",
+    "$1,200",
+    "$1,800",
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 15,
+   "we": 7,
+   "yaz": 10,
+   "firstPerson": 1
+  },
+  "/inquire/": {
+   "words": 326,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,",
+    "$1,200,",
+    "$1,800",
+    "$600"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 0,
+   "we": 8,
+   "yaz": 1,
+   "firstPerson": 1
+  },
+  "/inquire/thanks/": {
+   "words": 239,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 1,
+   "we": 4,
+   "yaz": 1,
+   "firstPerson": 0
+  },
+  "/investment/": {
+   "words": 825,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [
+    "sal. | Every engagement is priced by project, never by the hour. These are the minimums; your proposal sets the ",
+    "same day. | Questions | Answers, first. | Do you charge by the hour? | No. Engagements are priced by project, not by t",
+    " hour? | No. Engagements are priced by project, not by the hour, so you know the investment before work begins. "
+   ],
+   "prices": [
+    "$1,800",
+    "$1,200",
+    "$600",
+    "$1,200,",
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 5,
+   "we": 6,
+   "yaz": 5,
+   "firstPerson": 0
+  },
+  "/journal/": {
+   "words": 346,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 2,
+   "we": 6,
+   "yaz": 1,
+   "firstPerson": 0
+  },
+  "/journal/how-long-whole-home-organization-takes/": {
+   "words": 784,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [
+    "e as possible, and means every room ends finished rather than “in progress.” It is why Home Harmonics books en",
+    "s | bring Yaz back to restore and adjust the system rather than start again. | The short answer | Whole-home organiz"
+   ],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 7,
+   "we": 6,
+   "yaz": 1,
+   "firstPerson": 0
+  },
+  "/journal/organizing-inside-custom-cabinetry/": {
+   "words": 837,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [
+    "e rest. | Shelves | Set shelf heights to the contents rather than spacing them evenly. Risers double the usable sp",
+    "and placed on shelf edges or inside drawer fronts rather than across the face of every container. In a beautif"
+   ],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 10,
+   "we": 6,
+   "yaz": 0,
+   "firstPerson": 0
+  },
+  "/journal/what-a-move-in-concierge-does/": {
+   "words": 916,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [
+    " so boxes are labeled by destination and priority rather than “kitchen, misc.” | If you are building or renovati",
+    "losets, linens and the pantry, set up to the plan rather than filled at random. | Everything is unpacked straigh",
+    "t | A move-in concierge works alongside your movers rather than replacing them. The moving company transports an"
+   ],
+   "banned": [
+    "tidy: es, installs and labels. It is also not a one-day tidy-up. Most of the value is in the planning that happens b"
+   ],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 4,
+   "we": 6,
+   "yaz": 0,
+   "firstPerson": 1
+  },
+  "/journal/working-with-your-interior-designer/": {
+   "words": 802,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [
+    "nging, so the inside of the cabinetry is designed rather than filled. | If the millwork is already installed, a "
+   ],
+   "banned": [],
+   "filler": [
+    "simply:  inserts, risers and adjustable shelves. There is simply more freedom on paper. | What the designer keeps | The de"
+   ],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 7,
+   "we": 6,
+   "yaz": 1,
+   "firstPerson": 0
+  },
+  "/privacy/": {
+   "words": 564,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 3,
+   "we": 24,
+   "yaz": 0,
+   "firstPerson": 0
+  },
+  "/services/": {
+   "words": 370,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [
+    "ging at cost | 2 full days | Priced by project, never by the hour. Products are billed at cost plus a handling fee"
+   ],
+   "prices": [
+    "$1,800",
+    "$1,200",
+    "$600",
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 2,
+   "we": 6,
+   "yaz": 1,
+   "firstPerson": 0
+  },
+  "/services/closet-and-wardrobe-organization/": {
+   "words": 743,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600",
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 11,
+   "we": 8,
+   "yaz": 5,
+   "firstPerson": 0
+  },
+  "/services/move-in-concierge/": {
+   "words": 827,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$1,800",
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 13,
+   "we": 8,
+   "yaz": 3,
+   "firstPerson": 0
+  },
+  "/services/pantry-and-kitchen-organization/": {
+   "words": 764,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [
+    "transform(ative|ed|s)?:  | “Yaz is amazing at what she does. She completely transformed my pantry and brought my vision to life … I woul"
+   ],
+   "team": [],
+   "hourly": [
+    "stem keeps working as life changes. | Do you charge by the hour? | No. Engagements are priced by project, not by t",
+    " hour? | No. Engagements are priced by project, not by the hour, so you know the investment before work begins. "
+   ],
+   "prices": [
+    "$600",
+    "$1,200",
+    "$1,800",
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 10,
+   "we": 8,
+   "yaz": 5,
+   "firstPerson": 1
+  },
+  "/services/seasonal-resets/": {
+   "words": 623,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [
+    "m already exists, a reset restores and adjusts it rather than starting again. | Tell us about your home. | We repl"
+   ],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 6,
+   "we": 8,
+   "yaz": 3,
+   "firstPerson": 0
+  },
+  "/services/signature-spaces/": {
+   "words": 882,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [
+    "ows within about two business days. | Do you charge by the hour? | No. Engagements are priced by project, not by t",
+    " hour? | No. Engagements are priced by project, not by the hour, so you know the investment before work begins. "
+   ],
+   "prices": [
+    "$600",
+    "$1,200",
+    "$1,800",
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 15,
+   "we": 8,
+   "yaz": 5,
+   "firstPerson": 0
+  },
+  "/services/whole-home-organization/": {
+   "words": 764,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [
+    "consecutive days, beginning at a two-day minimum, rather than spread across weeks. Your proposal sets the exac"
+   ],
+   "banned": [],
+   "filler": [
+    "transform(ative|ed|s)?: r | “Zero judgment, amazing results. Home Harmonics transformed my home and my peace of mind.” | Rose S. · Home or",
+    "peace of mind: esults. Home Harmonics transformed my home and my peace of mind.” | Rose S. · Home organization | Questions | Answer"
+   ],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$1,200",
+    "$1,200,",
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 12,
+   "we": 8,
+   "yaz": 3,
+   "firstPerson": 0
+  },
+  "/terms/": {
+   "words": 392,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 2,
+   "we": 6,
+   "yaz": 0,
+   "firstPerson": 0
+  },
+  "/trade/": {
+   "words": 446,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [
+    "beautifully: rade | For the tradeYou create the home. We make it beautifully livable. | Organization, move-in completion and cl"
+   ],
+   "team": [],
+   "hourly": [],
+   "prices": [],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 5,
+   "we": 8,
+   "yaz": 2,
+   "firstPerson": 0
+  },
+  "/where-we-work/": {
+   "words": 556,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 5,
+   "we": 9,
+   "yaz": 1,
+   "firstPerson": 1
+  },
+  "/work/": {
+   "words": 289,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 1,
+   "we": 7,
+   "yaz": 1,
+   "firstPerson": 0
+  },
+  "/work/garage/": {
+   "words": 368,
+   "emDash": 1,
+   "emDashCtx": [
+    "A garage, fully fitted — Garage | Home Harmonics Skip to content | Home Harmonics | Ser"
+   ],
+   "notXbutY": [],
+   "banned": [
+    "bins?\\b: ion · 2 daysStarting point | →Result | Starting point | Bins, boxes, bikes and bags had taken over the floor, with n",
+    "bins?\\b: or, with room around the car | Every bike, tool and bin given a fixed place | Phone photography by Home Harmonics."
+   ],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 5,
+   "we": 6,
+   "yaz": 2,
+   "firstPerson": 0
+  },
+  "/work/guest-bathroom/": {
+   "words": 340,
+   "emDash": 1,
+   "emDashCtx": [
+    "A guest bath, cleared and calm — Guest bathroom | Home Harmonics Skip to content | Home Harmo"
+   ],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [
+    "$600,"
+   ],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 3,
+   "we": 6,
+   "yaz": 1,
+   "firstPerson": 0
+  },
+  "/404.html": {
+   "words": 193,
+   "emDash": 0,
+   "emDashCtx": [],
+   "notXbutY": [],
+   "banned": [],
+   "filler": [],
+   "team": [],
+   "hourly": [],
+   "prices": [],
+   "tbd": [],
+   "credentials": [],
+   "triplets": 0,
+   "we": 4,
+   "yaz": 0,
+   "firstPerson": 0
+  }
+ },
+ "totals": {
+  "emDash": 3
+ },
+ "repeatedSentences": [
+  {
+   "s": ": the frosted header's backdrop-filter would otherwise trap this fixed overlay.",
+   "pages": 26
+  },
+  {
+   "s": "Dallas–Fort Worth home base · Travel engagements across Texas and beyond",
+   "pages": 26
+  },
+  {
+   "s": "Nothing is photographed or shared without written consent.",
+   "pages": 26
+  },
+  {
+   "s": "Atmospheric imagery on this site is digitally created.",
+   "pages": 26
+  },
+  {
+   "s": "Project photography is of real Home Harmonics work.",
+   "pages": 26
+  },
+  {
+   "s": "Engagements begin at $600, and a 50% deposit holds your dates.",
+   "pages": 19
+  },
+  {
+   "s": "We walk the home and talk through routines: who uses each space, how often, and what gets in the way.",
+   "pages": 7
+  },
+  {
+   "s": "Together we decide what stays, what goes, what is donated and what moves somewhere better.",
+   "pages": 7
+  },
+  {
+   "s": "A system plan for each space, with product and cabinetry-fit specifications and a sourcing list for your appro",
+   "pages": 7
+  },
+  {
+   "s": "Every item placed where you would reach for it.",
+   "pages": 7
+  },
+  {
+   "s": "A final walkthrough, a care guide for the household, and a check-in thirty days later.",
+   "pages": 7
+  },
+  {
+   "s": "Deliverable · Care guide and Seasonal Resets offer",
+   "pages": 7
+  },
+  {
+   "s": "Every engagement follows the same five steps, and each one ends with something in your hands.",
+   "pages": 6
+  },
+  {
+   "s": "Can household organization be maintained after the initial project?",
+   "pages": 5
+  },
+  {
+   "s": "Every project ends with a care guide written for your household and a check-in thirty days later.",
+   "pages": 5
+  },
+  {
+   "s": "Seasonal Resets, offered to every project client, bring Yaz back for wardrobe changeovers, pantry resets, holi",
+   "pages": 5
+  },
+  {
+   "s": "First, a complimentary 15-minute fit call about what you need and when.",
+   "pages": 4
+  },
+  {
+   "s": "Then a complimentary 30–45 minute walkthrough, in your home or by video, covering every space in scope, how yo",
+   "pages": 4
+  },
+  {
+   "s": "A written proposal follows within about two business days.",
+   "pages": 4
+  },
+  {
+   "s": "Engagements are priced by project, not by the hour, so you know the investment before work begins.",
+   "pages": 4
+  },
+  {
+   "s": "Single spaces begin at $600 for one full day, whole-home organization at $1,200 and move-in concierge at $1,80",
+   "pages": 4
+  },
+  {
+   "s": "Yaz selects and purchases the products in your approved design plan, so you never have to shop or manage deliv",
+   "pages": 4
+  },
+  {
+   "s": "Products are billed at cost plus a handling fee, within the product budget you approve in the design plan.",
+   "pages": 4
+  }
+ ]
+}

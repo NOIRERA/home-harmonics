@@ -1,0 +1,91 @@
+{
+ "mobile /": {
+  "perf": 83,
+  "a11y": 97,
+  "bp": 100,
+  "seo": 100,
+  "lcp": 4356,
+  "cls": 0,
+  "tbt": 124,
+  "fcp": 1806,
+  "kb": 640,
+  "lcpEl": null,
+  "failed": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "max-potential-fid",
+   "interactive",
+   "color-contrast",
+   "cache-insight",
+   "document-latency-insight",
+   "forced-reflow-insight",
+   "image-delivery-insight",
+   "network-dependency-tree-insight"
+  ]
+ },
+ "mobile /services/move-in-concierge/": {
+  "perf": 86,
+  "a11y": 100,
+  "bp": 100,
+  "seo": 100,
+  "lcp": 3981,
+  "cls": 0.003,
+  "tbt": 0,
+  "fcp": 1954,
+  "kb": 553,
+  "lcpEl": null,
+  "failed": [
+   "first-contentful-paint",
+   "largest-contentful-paint",
+   "interactive",
+   "unused-css-rules",
+   "cache-insight",
+   "document-latency-insight",
+   "forced-reflow-insight",
+   "image-delivery-insight",
+   "network-dependency-tree-insight"
+  ]
+ },
+ "mobile /trade/": {
+  "perf": 88,
+  "a11y": 100,
+  "bp": 100,
+  "seo": 100,
+  "lcp": 3830,
+  "cls": 0.004,
+  "tbt": 0,
+  "fcp": 1654,
+  "kb": 553,
+  "lcpEl": null,
+  "failed": [
+   "largest-contentful-paint",
+   "interactive",
+   "cache-insight",
+   "document-latency-insight",
+   "image-delivery-insight",
+   "network-dependency-tree-insight"
+  ]
+ },
+ "mobile /work/garage/": {
+  "perf": 85,
+  "a11y": 100,
+  "bp": 100,
+  "seo": 100,
+  "lcp": 4206,
+  "cls": 0,
+  "tbt": 0,
+  "fcp": 1656,
+  "kb": 573,
+  "lcpEl": null,
+  "failed": [
+   "largest-contentful-paint",
+   "interactive",
+   "cache-insight",
+   "document-latency-insight",
+   "forced-reflow-insight",
+   "image-delivery-insight",
+   "lcp-discovery-insight",
+   "network-dependency-tree-insight"
+  ]
+ }
+}

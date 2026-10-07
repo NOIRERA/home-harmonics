@@ -1,6 +1,6 @@
 ---
 title: What a move-in concierge actually does
-description: A move-in concierge plans your new home before the move, unpacks and sets up every key room, and clears the boxes. Here is what happens before, during and after.
+description: "A move-in concierge plans your new home before the move, unpacks and sets up every key room, and clears the boxes: what happens before, during and after."
 summary: A move-in concierge plans and sets up your new home around your move, so you arrive to a home that already works. The work starts before moving day with a room-by-room plan, continues with unpacking and setup of every key space, and ends with the boxes gone, everything labeled and a care guide in hand.
 published: 2026-10-06
 reviewed: 2026-10-06

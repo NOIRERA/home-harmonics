@@ -35,7 +35,9 @@ const journal = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/journal' }),
   schema: z.object({
     title: z.string(),
-    description: z.string().max(170),
+    /** Shorter title for <title> when `title` would push it past ~60 characters. */
+    seoTitle: z.string().optional(),
+    description: z.string().max(160),
     /** Answer-first summary, 40–60 words; shown as "In short" and used in Article schema. */
     summary: z.string(),
     published: z.coerce.date(),

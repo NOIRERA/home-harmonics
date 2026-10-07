@@ -17,8 +17,8 @@ const groups: { id: Faq['group']; label: string }[] = [
 const reviewed = new Date(lastReviewed + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 <Base
-  title="Professional Organizer FAQ: Cost, Process, Travel | Home Harmonics"
-  description="Answers about professional home organization and move-in setup: what it includes, what it costs, how long it takes, travel, and privacy. Home Harmonics, Dallas–Fort Worth."
+  title="Professional Organizer FAQ | Home Harmonics, Dallas"
+  description="Answers about home organization and move-in setup in Dallas–Fort Worth: what it includes, what it costs, how long it takes, travel and privacy."
   schema={[faqSchema(faqs), crumbSchema(crumbs)]}
 >
   <PageHero eyebrow="FAQ" title="Answers, | *first.*" lead={`The questions we are asked most, answered plainly. Last reviewed ${reviewed}.`} crumbs={crumbs}>

@@ -1,5 +1,6 @@
 ---
 title: How a professional organizer works with your interior designer
+seoTitle: Working With Your Interior Designer
 description: Where an interior designer and a professional organizer meet, when to bring the organizer in, and how a co-branded handover works.
 summary: A professional organizer works alongside your interior designer to set up what goes inside the cabinetry, closets and pantry, so the home works as well as it looks. The best results come when the organizer joins before the millwork is finalized, while shelf heights and drawer layouts can still change.
 published: 2026-10-06

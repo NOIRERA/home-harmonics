@@ -1,6 +1,6 @@
 ---
 title: Organizing inside custom cabinetry
-description: "How to organize custom cabinetry so it works as well as it looks: zones by frequency of use, measuring every drawer and shelf, and inserts sized to the millwork."
+description: "Organize custom cabinetry so it works as well as it looks: zones by frequency of use, measuring every drawer and shelf, and inserts sized to the millwork."
 summary: Custom cabinetry is only as useful as what goes inside it. Organizing it well means measuring every drawer and shelf, placing items by how often they are used, and choosing inserts, risers and dividers sized to the millwork, so nothing slides, stacks or disappears behind a door.
 published: 2026-10-06
 reviewed: 2026-10-06

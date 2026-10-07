@@ -30,7 +30,11 @@ export type Service = {
   others?: { name: string; line: string }[];
 };
 
-const t = (name: string) => `${name} in Dallas–Fort Worth and Texas | Home Harmonics`;
+// Titles stay ≤ 60 characters: "in Dallas–Fort Worth" when it fits, otherwise "in Dallas".
+const t = (name: string) => {
+  const full = `${name} in Dallas–Fort Worth | Home Harmonics`;
+  return full.length <= 60 ? full : `${name} in Dallas | Home Harmonics`;
+};
 
 export const services: Service[] = [
   {
@@ -98,7 +102,7 @@ export const services: Service[] = [
     name: 'Signature Spaces',
     short: 'One room or system, organized on its own.',
     bestFor: 'The one room costing you the most time',
-    metaTitle: t('Signature Spaces: Closet, Pantry & Room Organization'),
+    metaTitle: t('Signature Spaces'),
     metaDescription: `Single-space organization for wardrobes, pantries, kitchens, offices, playrooms, laundry and garages in Dallas–Fort Worth. From $${price.single.toLocaleString('en-US')} for one full day.`,
     eyebrow: 'Signature Spaces',
     title: 'The rooms you use most, | *designed to work.*',
@@ -190,7 +194,7 @@ export const services: Service[] = [
     name: 'Seasonal Resets',
     short: 'Return visits that keep an organized home current.',
     bestFor: 'Project clients keeping their system current',
-    metaTitle: t('Seasonal Resets & Ongoing Home Organization'),
+    metaTitle: t('Seasonal Resets'),
     metaDescription: 'Seasonal wardrobe changeovers, pantry, holiday and post-travel resets for Home Harmonics project clients in Dallas–Fort Worth and Texas.',
     eyebrow: 'Seasonal Resets',
     title: 'Order that keeps up | *with the seasons.*',

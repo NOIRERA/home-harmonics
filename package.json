@@ -9,7 +9,8 @@
     "build": "astro build && node scripts/fix-redirects.mjs",
     "build:prod": "npm run build && node scripts/launch-gate.mjs",
     "preview": "astro preview",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "og": "node scripts/og-cards.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

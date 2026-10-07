@@ -123,11 +123,12 @@ await icon(180, 0.2, 'apple-touch-icon.png');
 await icon(192, 0.2, 'icon-192.png');
 await icon(512, 0.2, 'icon-512.png');
 // Static film grain tile (~3%): half dark, half light specks so it reads on alabaster and walnut.
-const G = 160;
+// 128px tile, four alpha steps, palette PNG: same look, about a third of the bytes.
+const G = 128;
 const grain = Buffer.alloc(G * G * 4);
 for (let i = 0; i < G * G; i++) {
   const v = Math.random() < 0.5 ? 0 : 255;
-  grain.set([v, v, v, Math.round(Math.random() * 18)], i * 4);
+  grain.set([v, v, v, [0, 6, 12, 18][Math.floor(Math.random() * 4)]], i * 4);
 }
-await sharp(grain, { raw: { width: G, height: G, channels: 4 } }).png().toFile('public/grain.png');
+await sharp(grain, { raw: { width: G, height: G, channels: 4 } }).png({ palette: true, compressionLevel: 9, effort: 10 }).toFile('public/grain.png');
 console.log('media done');

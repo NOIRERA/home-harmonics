@@ -99,7 +99,21 @@ if (panelBtn && panel) {
     panel.hidden = !open;
     header.classList.toggle('panel-open', open);
   };
-  panelBtn.addEventListener('click', () => set(panel.hidden));
+  const links = [...panel.querySelectorAll<HTMLAnchorElement>('a')];
+  panelBtn.addEventListener('click', (e) => {
+    set(panel.hidden);
+    // Keyboard activation (detail 0): move focus into the panel so its links come next in the tab order.
+    if (!panel.hidden && e.detail === 0) links[0]?.focus();
+  });
+  // Tab out of the last link continues to the next nav item; Shift+Tab from the first returns to the toggle.
+  panel.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab') return;
+    if (!e.shiftKey && document.activeElement === links[links.length - 1]) {
+      e.preventDefault(); set(false); (panelBtn.nextElementSibling as HTMLElement | null)?.focus();
+    } else if (e.shiftKey && document.activeElement === links[0]) {
+      e.preventDefault(); set(false); panelBtn.focus();
+    }
+  });
   header.addEventListener('focusout', (e) => { if (!header.contains(e.relatedTarget as Node)) set(false); });
   header.addEventListener('mouseleave', () => set(false));
   addEventListener('keydown', (e) => { if (e.key === 'Escape' && !panel.hidden) { set(false); panelBtn.focus(); } });
@@ -115,7 +129,7 @@ if (panelBtn && panel) {
 const menuBtn = header.querySelector<HTMLButtonElement>('[data-menu-toggle]');
 const menu = document.getElementById('menu');
 if (menuBtn && menu) {
-  const outside = [document.getElementById('main'), document.querySelector('.site-footer'), document.querySelector('[data-sticky-cta]')];
+  const outside = [document.querySelector('.skip'), document.getElementById('main'), document.querySelector('.site-footer'), document.querySelector('[data-sticky-cta]')];
   const set = (open: boolean) => {
     menuBtn.setAttribute('aria-expanded', String(open));
     menuBtn.querySelector('.hh-menu-label')!.textContent = open ? 'Close' : 'Menu';

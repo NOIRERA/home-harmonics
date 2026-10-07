@@ -202,6 +202,14 @@ Single short form, saved immediately:
 - **Known:** `npm audit` flags path-to-regexp inside the Vercel adapter's build-time router (not runtime, not user input). Fonts are cached a year; rename the file if a font changes.
 - **Deferred:** Keystatic CMS (needs the GitHub repo first). No CSP header (inline JSON-LD, GA and theme scripts); add a nonce-based CSP later if required.
 
+## 13. Build log: Phase 3 polish (7 Oct 2026)
+- **Homepage order changed (conversion):** … Letter → For the trade → Voices → How we begin → Inquire. Plan §10 had the trade band between "How we begin" and the form; it interrupted the homeowner's path.
+- **Journal in the primary nav** now that there are six articles (plan §9.1).
+- **New sections:** care-guide sample on /investment/ (labeled illustrative), "Standards" on /about/ (ledger-gated), Phase-3 form craft.
+- **Voice rule:** "Yaz" for who does the work; "we" only in reply promises and invitations; "I" only in the Letter.
+- **Social cards:** `npm run og` renders `public/og/*.jpg`; pages without a card use their own image.
+- Details and evidence: `docs/audit/site-audit.md` → Phase 3 results.
+
 ## 9. Still `{{TBD}}`
 GA4 measurement ID (Yaz must create it) · Turnstile and Resend keys · optional `g.page/r/…` review-request link · Yaz's real portrait (replaces the AI-rendered ones) · out-of-state insurance confirmation (before promoting beyond Texas) · lawyer review of terms · Workspace decision for sending as hello@ · Pinterest/LinkedIn URLs (after launch) · any further Letter detail Yaz wants to add.
 

@@ -19,7 +19,7 @@ results:
 before: garageBefore
 after: garageAfter
 detail:
-  zoom: 1.9
+  zoom: 1.35
   origin: 52% 46%
   alt: "Detail: bikes and scooters hung on the wall system above the cabinetry"
 consent: full_residence

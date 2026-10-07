@@ -27,10 +27,11 @@ const services: { href: string; title: string; line: string; from: number; img: 
   { href: '/services/signature-spaces/', title: 'Signature Spaces', line: 'Wardrobes, pantries and the rooms you use most.', from: price.single, img: 'closet' },
 ];
 
-const stages: { label: string; line: string; img: MediaId }[] = [
+// pos: focal point when a landscape source fills a tall frame (keeps the moving box in "Move day").
+const stages: { label: string; line: string; img: MediaId; pos?: string }[] = [
   { label: 'Before the move', line: 'A room-by-room plan, sourcing and labels, settled before the truck arrives.', img: 'pantryTall' },
-  { label: 'Move day', line: 'Kitchen, pantry, closets, linens and baths unpacked and set up.', img: 'bedroom' },
-  { label: 'The day after', line: 'Kids’ spaces ready, boxes gone, every drawer where you would look for it.', img: 'entry' },
+  { label: 'Move day', line: 'Kitchen, pantry, closets, linens and baths unpacked and set up.', img: 'bedroom', pos: '100% 50%' },
+  { label: 'The day after', line: 'Kids’ spaces ready, boxes gone, every drawer where you would look for it.', img: 'entry', pos: '55% 50%' },
 ];
 
 const begin = [
@@ -94,7 +95,7 @@ const begin = [
         <a class="work-main" href="/work/garage/" aria-label="View the garage project">
           <Img id="garageAfter" reveal="mask" parallax sizes="(min-width: 1024px) 62vw, 100vw" widths={[640, 960, 1280, 1448]} />
         </a>
-        <Img id="garageAfter" class="work-detail" reveal="mask" alt="Detail: bikes and scooters hung on the wall system above the cabinetry" zoom={1.9} origin="52% 46%" sizes="(min-width: 1024px) 22vw, 60vw" widths={[480, 720, 1000]} style="--delay:200ms" />
+        <Img id="garageAfter" class="work-detail" reveal="mask" alt="Detail: bikes and scooters hung on the wall system above the cabinetry" zoom={1.35} origin="52% 46%" sizes="(min-width: 1024px) 22vw, 60vw" widths={[480, 720, 1000]} style="--delay:200ms" />
         <div class="work-copy" data-reveal>
           <p class="eyebrow muted">{garage.space} · Design, built storage &amp; organization · {garage.duration}</p>
           <dl class="work-dl">
@@ -156,7 +157,7 @@ const begin = [
       </div>
       <div class="mi-stills">
         {stages.map((s, i) => (
-          <Img id={s.img} class="mi-still" reveal="mask" parallax={i === 1} sizes="(min-width: 1024px) 44vw, 100vw" widths={[640, 960, 1280]} data-step={`movein:${i}`} />
+          <Img id={s.img} class={media[s.img].src.width > media[s.img].src.height ? 'mi-still wide' : 'mi-still'} reveal="mask" position={s.pos} parallax={i === 1} sizes="(min-width: 1024px) 44vw, 100vw" widths={[640, 960, 1280]} data-step={`movein:${i}`} />
         ))}
       </div>
     </div>
@@ -327,7 +328,7 @@ const begin = [
   .work-caption { font-size: 0.8125rem; }
   @media (max-width: 1023px) {
     .work-main { grid-column: 1 / -1; margin-inline: calc(var(--gutter) * -1); }
-    .work-detail { grid-column: 5 / -1; margin-top: -20%; }
+    .work-detail { grid-column: 7 / -1; margin-top: -20%; }
     .work-copy { grid-column: 1 / -1; grid-row: 3; margin-top: 40px; }
   }
 
@@ -376,6 +377,7 @@ const begin = [
   .mi-stages li.is-active { opacity: 1; }
   .mi-stills { display: grid; gap: clamp(64px, 12vh, 160px); }
   .mi-still { aspect-ratio: 4 / 5; }
+  .mi-still.wide { aspect-ratio: 3 / 2; } /* landscape sources keep their shape (sharper, subject stays in frame) */
   @media (max-width: 1023px) {
     .mi-grid { grid-template-columns: 1fr; }
     .mi-text { position: static; }
@@ -384,7 +386,7 @@ const begin = [
   }
   @media (min-width: 768px) and (max-width: 1023px) {
     .mi-stills { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-    .mi-still { aspect-ratio: 3 / 4; }
+    .mi-still, .mi-still.wide { aspect-ratio: 3 / 4; }
   }
 
   /* 06 Method */

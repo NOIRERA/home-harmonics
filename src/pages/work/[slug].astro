@@ -100,6 +100,7 @@ const portrait = media[after].src.height > media[after].src.width;
   .cs-lists { display: grid; gap: 40px; }
   .cs-lists .eyebrow { margin-bottom: 12px; }
   .cs-detail { aspect-ratio: 4 / 5; max-width: 320px; }
+  @media (max-width: 767px) { .cs-detail { max-width: 240px; } }
   .cs-credit { font-size: 0.875rem; }
   .cs-next-in { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 32px; }
   .cs-next-link { display: grid; gap: 12px; text-align: right; text-decoration: none; }

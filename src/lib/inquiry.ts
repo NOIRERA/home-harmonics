@@ -25,13 +25,19 @@ export function invalid(f: Fields, required: string[]) {
 /** Cloudflare Turnstile. Skipped only when no secret is configured (local dev). */
 export async function human(token: string | undefined, ip: string | undefined) {
   if (!TURNSTILE_SECRET_KEY) return true;
-  if (!token) return false;
+  if (!token) {
+    console.error('[inquiry] Turnstile: no token received (widget did not run, or hostname not allowed in the widget settings)');
+    return false;
+  }
   const body = new URLSearchParams({ secret: TURNSTILE_SECRET_KEY, response: token });
   if (ip) body.set('remoteip', ip);
   try {
     const r = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body });
-    return ((await r.json()) as { success?: boolean }).success === true;
-  } catch {
+    const j = (await r.json()) as { success?: boolean; 'error-codes'?: string[]; hostname?: string };
+    if (j.success !== true) console.error('[inquiry] Turnstile rejected token', j['error-codes'], j.hostname);
+    return j.success === true;
+  } catch (e) {
+    console.error('[inquiry] Turnstile verify request failed', e);
     return false;
   }
 }

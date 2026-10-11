@@ -55,7 +55,7 @@ export default defineConfig({
     schema: {
       RESEND_API_KEY: envField.string({ context: 'server', access: 'secret', optional: true }),
       TURNSTILE_SECRET_KEY: envField.string({ context: 'server', access: 'secret', optional: true }),
-      INQUIRY_TO: envField.string({ context: 'server', access: 'secret', default: 'hello@home-harmonics.com' }),
+      INQUIRY_TO: envField.string({ context: 'server', access: 'secret', default: 'thehomeharmonics@gmail.com' }),
       EMAIL_FROM: envField.string({ context: 'server', access: 'secret', default: 'Home Harmonics <hello@home-harmonics.com>' }),
       PUBLIC_TURNSTILE_SITE_KEY: envField.string({ context: 'client', access: 'public', optional: true }),
       PUBLIC_GA4_ID: envField.string({ context: 'client', access: 'public', optional: true }),

@@ -9,6 +9,9 @@ import laundry from '../assets/gen/laundry.jpg';
 import entry from '../assets/gen/entry.jpg';
 import pantryWide from '../assets/gen/pantry-wide.jpg';
 import pantryTall from '../assets/gen/pantry-tall.jpg';
+import moveinPlan from '../assets/gen/movein-plan.jpg';
+import moveinUnpack from '../assets/gen/movein-unpack.jpg';
+import moveinReady from '../assets/gen/movein-ready.jpg';
 import garageBefore from '../assets/real/garage-before.jpg';
 import garageAfter from '../assets/real/garage-after.jpg';
 import pantryBefore from '../assets/real/pantry-before.jpg';
@@ -35,6 +38,9 @@ export const media = {
   laundry: gen(laundry, 'Laundry room in walnut and stone, with woven baskets and stacked linens'),
   entry: gen(entry, 'Entry with a built-in bench, woven baskets and hooks holding a hat and bag'),
   pantryWide: gen(pantryWide, 'Walk-in pantry lined with glass jars on lit walnut shelves'),
+  moveinPlan: gen(moveinPlan, 'Empty living room with a few taped moving boxes, a rolled floor plan, a clipboard and a measuring tape on a walnut console'),
+  moveinUnpack: gen(moveinUnpack, 'Kitchen mid-unpack, with open boxes of glassware on the island, flattened boxes against the wall and linens going into drawers'),
+  moveinReady: gen(moveinReady, 'The same kitchen finished, with ordered glass-front cabinets, a clear island and no boxes'),
   pantryTall: gen(pantryTall, 'Kitchen with a pull-out pantry tower of glass jars beside the ovens'),
   garageBefore: real(garageBefore, 'Garage before: bins, boxes, bikes and bags spread across the floor'),
   garageAfter: real(garageAfter, 'Garage after: grey cabinetry, a wall system holding bikes and tools, overhead racks, and the car parked inside'),

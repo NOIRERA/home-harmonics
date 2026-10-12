@@ -80,7 +80,7 @@ const begin = [
         The work happens where no one looks: behind cabinet doors, inside drawers, along the rail of a wardrobe.
         Each one is planned around the people who use it, then fitted and labeled, so the house keeps running without anyone managing it.
       </p>
-      <Img id="drawer" class="st-img" reveal="mask" parallax sizes="(min-width: 1024px) 24vw, 70vw" widths={[480, 720, 1000]} />
+      <Img id="drawer" class="st-img" reveal="mask" parallax sizes="(min-width: 1024px) 46vw, (min-width: 768px) 56vw, 100vw" widths={[480, 720, 1000]} />
     </div>
   </Section>
 
@@ -317,15 +317,20 @@ const begin = [
   }
 
   /* 02 Statement */
-  .st-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: 56px; }
-  .st-h { grid-column: 2 / span 9; }
-  .st-p { grid-column: 6 / span 4; }
-  .st-img { grid-column: 10 / span 3; aspect-ratio: 4 / 5; }
+  /* Headline across the top; below it a large image on the left and the paragraph on the right, bottom-aligned to the image. */
+  .st-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: clamp(48px, 6vw, 96px); }
+  .st-h { grid-column: 2 / span 10; }
+  .st-img { grid-column: 2 / span 6; grid-row: 2; aspect-ratio: 6 / 7; }
+  .st-p { grid-column: 9 / span 4; grid-row: 2; align-self: end; font-size: clamp(1.25rem, 1.05rem + .75vw, 1.625rem); line-height: 1.5; }
   @media (max-width: 1023px) {
-    .st-h, .st-p { grid-column: 1 / -1; }
-    .st-img { grid-column: 4 / -1; }
+    .st-h { grid-column: 1 / -1; }
+    .st-img { grid-column: 1 / span 7; grid-row: 2; aspect-ratio: 4 / 5; }
+    .st-p { grid-column: 8 / -1; grid-row: 2; align-self: end; font-size: 1.1875rem; }
   }
-  @media (min-width: 768px) and (max-width: 1023px) { .st-img { grid-column: 7 / -1; } }
+  @media (max-width: 767px) {
+    .st-img { grid-column: 1 / -1; aspect-ratio: 4 / 5; }
+    .st-p { grid-column: 1 / -1; grid-row: 3; align-self: start; font-size: 1.1875rem; }
+  }
 
   /* 03 Selected work */
   .work-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; }
@@ -395,7 +400,7 @@ const begin = [
     .mi-stages li { opacity: 1; }
     .mi-stills { gap: 24px; }
   }
-  @media (max-width: 767px) { .mi-still, .mi-still.wide { aspect-ratio: 3 / 2; } .svc-img { aspect-ratio: 4 / 5; } .svc-title { font-size: 1.45rem; } .st-img { grid-column: 5 / -1; } }
+  @media (max-width: 767px) { .mi-still, .mi-still.wide { aspect-ratio: 3 / 2; } .svc-img { aspect-ratio: 4 / 5; } .svc-title { font-size: 1.45rem; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .mi-stills { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
     .mi-still, .mi-still.wide { aspect-ratio: 3 / 4; }

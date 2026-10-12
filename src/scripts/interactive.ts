@@ -45,11 +45,16 @@ function hotspots() {
   const close = () => {
     open?.setAttribute('aria-expanded', 'false');
     open = null;
+    fig.classList.remove('is-zoom');
   };
   const show = (b: HTMLButtonElement) => {
     close();
     open = b;
     b.setAttribute('aria-expanded', 'true');
+    const z = fig.querySelector<HTMLElement>('.st-zoom');
+    z?.style.setProperty('--zx', b.style.getPropertyValue('--x'));
+    z?.style.setProperty('--zy', b.style.getPropertyValue('--y'));
+    fig.classList.add('is-zoom');
     btns.forEach((x) => x.classList.add('seen'));
     const label = b.getAttribute('aria-label')!.split(':')[0];
     const strong = document.createElement('strong');

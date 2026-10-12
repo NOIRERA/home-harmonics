@@ -89,14 +89,15 @@ const begin = [
         Each one is planned around the people who use it, then fitted and labeled, so the house keeps running without anyone managing it.
       </p>
       <figure class="st-fig" data-hotspots data-reveal>
-        <div class="st-frame">
+        <div class="st-frame"><div class="st-zoom">
           <Img id="drawer" class="st-img" sizes="(min-width: 1024px) 46vw, (min-width: 768px) 56vw, 100vw" widths={[480, 720, 1000]} />
           {spots.map((h, i) => (
             <button type="button" class="hs" style={`--x:${h.x}%;--y:${h.y}%`} aria-expanded="false" aria-controls="hs-note" data-hs={String(i)} data-text={h.text} aria-label={`${h.label}: ${h.text}`} hidden>
-              <span class="hs-dot" aria-hidden="true"></span>
+              <span class="hs-dot" aria-hidden="true">{i + 1}</span>
+              <span class="hs-lab" aria-hidden="true">{h.label}</span>
             </button>
           ))}
-        </div>
+        </div></div>
         <figcaption class="hs-cap">
           <p class="hs-note" id="hs-note" aria-live="polite"><span class="hs-hint">Inside one drawer. Tap a marker.</span></p>
           <ul class="hs-list" role="list">
@@ -369,15 +370,22 @@ const begin = [
 
   /* Drawer hotspots (JS reveals the markers; without JS the same notes show as a list). */
   .st-frame { position: relative; }
-  .hs { position: absolute; z-index: 3; left: var(--x); top: var(--y); width: 44px; height: 44px; margin: -22px 0 0 -22px; padding: 0; background: none; border: 0; cursor: pointer; color: var(--alabaster); }
+  .st-frame { overflow: hidden; }
+  .st-zoom { position: relative; transform-origin: var(--zx, 50%) var(--zy, 50%); transition: transform 1100ms var(--ease); }
+  .st-fig.is-zoom .st-zoom { transform: scale(1.7); }
+  .hs { position: absolute; z-index: 3; left: var(--x); top: var(--y); width: 44px; height: 44px; margin: -22px 0 0 -22px; padding: 0; background: none; border: 0; cursor: pointer; color: var(--alabaster); transition: opacity 500ms var(--ease), transform 1100ms var(--ease); }
+  .st-fig.is-zoom .hs { transform: scale(0.588); }
+  .st-fig.is-zoom .hs:not([aria-expanded='true']) { opacity: 0.45; }
   .hs[hidden] { display: none; }
-  .hs-dot { position: absolute; inset: 14px; border: 1px solid currentColor; background: color-mix(in srgb, var(--ink) 28%, transparent); backdrop-filter: none; transition: background-color 400ms var(--ease), transform 400ms var(--ease); }
-  .hs::after { content: ''; position: absolute; inset: 8px; border: 1px solid currentColor; opacity: 0; }
+  .hs-dot { position: absolute; inset: 9px; display: grid; place-items: center; border: 1px solid currentColor; border-radius: 50%; font: 500 0.72rem/1 var(--sans, system-ui); letter-spacing: 0.02em; background: color-mix(in srgb, var(--ink) 38%, transparent); transition: background-color 400ms var(--ease), color 400ms var(--ease); }
+  .hs::after { content: ''; position: absolute; inset: 4px; border: 1px solid currentColor; border-radius: 50%; opacity: 0; }
   .motion .hs:not(.seen)::after { animation: hs-ring 3.2s var(--ease) infinite; }
-  .hs:hover .hs-dot { transform: scale(1.18); }
-  .hs[aria-expanded='true'] .hs-dot { background: var(--alabaster); }
-  .hs:focus-visible { outline: 2px solid var(--alabaster); outline-offset: -4px; }
-  @keyframes hs-ring { 0% { opacity: 0.7; transform: scale(0.6); } 70%, 100% { opacity: 0; transform: scale(1.5); } }
+  .hs[aria-expanded='true'] .hs-dot { background: var(--alabaster); color: var(--ink); }
+  .hs-lab { position: absolute; left: 42px; top: 50%; translate: 0 -50%; white-space: nowrap; font: 400 0.8rem/1 var(--sans, system-ui); letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 9px; background: color-mix(in srgb, var(--ink) 62%, transparent); opacity: 0; transition: opacity 500ms var(--ease) 300ms; pointer-events: none; }
+  .hs[aria-expanded='true'] .hs-lab, .hs:hover .hs-lab, .hs:focus-visible .hs-lab { opacity: 1; }
+  .hs:focus-visible { outline: 2px solid var(--alabaster); outline-offset: -2px; }
+  @keyframes hs-ring { 0% { opacity: 0.7; transform: scale(0.7); } 70%, 100% { opacity: 0; transform: scale(1.6); } }
+  @media (prefers-reduced-motion: reduce) { .st-zoom, .hs { transition: none; } }
   .hs-cap { min-height: 4.2em; }
   .hs-note { margin: 0; max-width: 34rem; font-size: 1rem; line-height: 1.55; }
   .hs-note strong { font-weight: 500; }

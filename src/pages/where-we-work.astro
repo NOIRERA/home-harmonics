@@ -58,7 +58,22 @@ const model = [
         <svg class="ww-svg" viewBox="0 0 580 640" role="img" aria-labelledby="ww-map-t ww-map-d" preserveAspectRatio="xMidYMid meet">
           <title id="ww-map-t">Home Harmonics travel map</title>
           <desc id="ww-map-d">Schematic map of Texas with routes from the Dallas–Fort Worth home base to Austin, San Antonio and Houston{claim('coloradoSprings') ? ', and a route north-west to Colorado Springs' : ''}.</desc>
+          <defs>
+            <pattern id="ww-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="6" stroke="currentColor" stroke-width="0.6" opacity="0.14" /></pattern>
+            <pattern id="ww-sea" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="0.7" fill="currentColor" opacity="0.18" /></pattern>
+            <clipPath id="ww-clip"><path d={outline} /></clipPath>
+          </defs>
+          <rect class="ww-sea" x="-20" y="100" width="620" height="540" fill="url(#ww-sea)" />
           <path class="ww-tx" d={outline} />
+          <g clip-path="url(#ww-clip)">
+            <rect x="0" y="100" width="580" height="540" fill="url(#ww-hatch)" />
+            {[60, 120, 180, 240].map((r) => <circle class="ww-ring" cx={home.x} cy={home.y} r={r} />)}
+            <text class="ww-ringlab" x={home.x + 60 * 0.7071 + 4} y={home.y + 60 * 0.7071 + 12}>1 hr</text>
+            <text class="ww-ringlab" x={home.x + 120 * 0.7071 + 4} y={home.y + 120 * 0.7071 + 12}>2 hr</text>
+            <text class="ww-ringlab" x={home.x + 180 * 0.7071 + 4} y={home.y + 180 * 0.7071 + 12}>3 hr</text>
+          </g>
+          <text class="ww-gulf" x="470" y="560" transform="rotate(-24 470 560)">Gulf of Mexico</text>
+          <g class="ww-compass" transform="translate(70 120)"><path d="M0 -26 L5 0 L0 26 L-5 0 Z" fill="none" stroke="currentColor" stroke-width="0.8" /><path d="M-26 0 L0 5 L26 0 L0 -5 Z" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.5" /><text x="0" y="-34" text-anchor="middle">N</text></g>
           {stops.map((st) => (
             <path class="ww-route" data-route={st.id} d={`M${home.x} ${home.y} Q${st.c} ${st.x} ${st.y}`} />
           ))}
@@ -130,7 +145,13 @@ const model = [
   .ww-map-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(32px, 6vw, 120px); align-items: center; }
   .ww-svg-wrap { margin: 0; }
   .ww-svg { width: 100%; height: auto; max-height: 78svh; display: block; color: var(--ink); overflow: visible; }
-  .ww-tx { fill: color-mix(in srgb, var(--ink) 5%, transparent); stroke: color-mix(in srgb, var(--ink) 42%, transparent); stroke-width: 1; stroke-linejoin: round; }
+  .ww-tx { fill: var(--limestone); stroke: var(--walnut); stroke-width: 1.4; stroke-linejoin: round; }
+  .ww-sea { color: var(--ink); }
+  .ww-ring { fill: none; stroke: currentColor; stroke-width: 0.6; opacity: 0.2; }
+  .ww-ringlab { font: 400 9px/1 var(--sans, system-ui); letter-spacing: 0.12em; text-transform: uppercase; fill: currentColor; opacity: 0.55; }
+  .ww-gulf { font: italic 400 13px/1 var(--serif, Georgia, serif); letter-spacing: 0.18em; fill: currentColor; opacity: 0.45; }
+  .ww-compass { color: var(--ink); opacity: 0.6; }
+  .ww-compass text { font: 400 11px/1 var(--sans, system-ui); fill: currentColor; }
   .ww-route { fill: none; stroke: currentColor; stroke-width: 1; stroke-dasharray: 3 5; opacity: 0.32; transition: opacity 500ms var(--ease); }
   .ww-route.on { opacity: 1; stroke-dasharray: none; }
   .ww-node { fill: currentColor; }

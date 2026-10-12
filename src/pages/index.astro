@@ -34,6 +34,14 @@ const stages: { label: string; line: string; img: MediaId; pos?: string }[] = [
   { label: 'The day after', line: 'Kids’ spaces ready, boxes gone, every drawer where you would look for it.', img: 'entry', pos: '55% 50%' },
 ];
 
+const spots: { label: string; text: string; x: number; y: number }[] = [
+  { label: 'Watches', text: 'Each watch has its own cushioned slot, so nothing touches and every piece is visible at a glance.', x: 21, y: 57 },
+  { label: 'Sunglasses', text: 'One compartment per pair, sized to fit, so lenses never stack or scratch.', x: 42, y: 49 },
+  { label: 'Belts', text: 'Rolled and laid side by side, so you can see the whole collection without lifting anything.', x: 63, y: 53 },
+  { label: 'Small leather goods', text: 'Wallets and cases sit in a front compartment, where you reach first.', x: 51, y: 62 },
+  { label: 'Knitwear', text: 'Folded to the width of its compartment, so a stack stays square.', x: 35, y: 69 },
+];
+
 const begin = [
   { t: 'A short fit call', d: 'Fifteen minutes, complimentary, to hear what you need and when.' },
   { t: 'A walkthrough', d: 'Thirty to forty-five minutes in your home or by video, also complimentary. Yaz looks at every space in scope.' },
@@ -80,7 +88,22 @@ const begin = [
         The work happens where no one looks: behind cabinet doors, inside drawers, along the rail of a wardrobe.
         Each one is planned around the people who use it, then fitted and labeled, so the house keeps running without anyone managing it.
       </p>
-      <Img id="drawer" class="st-img" reveal="mask" parallax sizes="(min-width: 1024px) 46vw, (min-width: 768px) 56vw, 100vw" widths={[480, 720, 1000]} />
+      <figure class="st-fig" data-hotspots data-reveal>
+        <div class="st-frame">
+          <Img id="drawer" class="st-img" sizes="(min-width: 1024px) 46vw, (min-width: 768px) 56vw, 100vw" widths={[480, 720, 1000]} />
+          {spots.map((h, i) => (
+            <button type="button" class="hs" style={`--x:${h.x}%;--y:${h.y}%`} aria-expanded="false" aria-controls="hs-note" data-hs={String(i)} data-text={h.text} aria-label={`${h.label}: ${h.text}`} hidden>
+              <span class="hs-dot" aria-hidden="true"></span>
+            </button>
+          ))}
+        </div>
+        <figcaption class="hs-cap">
+          <p class="hs-note" id="hs-note" aria-live="polite"><span class="hs-hint">Inside one drawer. Tap a marker.</span></p>
+          <ul class="hs-list" role="list">
+            {spots.map((h) => <li><strong>{h.label}.</strong> {h.text}</li>)}
+          </ul>
+        </figcaption>
+      </figure>
     </div>
   </Section>
 
@@ -147,7 +170,7 @@ const begin = [
         <p class="lead mi-sub" data-reveal>Walk into a home that’s ready to live in.</p>
         <ol role="list" class="mi-stages">
           {stages.map((s, i) => (
-            <li class:list={[i === 0 && 'is-active']} data-step-for={`movein:${i}`}>
+            <li class:list={[i === 0 && 'is-active']} data-mi-step={String(i)}>
               <span class="eyebrow">{s.label}</span>
               <span>{s.line}</span>
             </li>
@@ -155,10 +178,19 @@ const begin = [
         </ol>
         <a class="btn" href="/services/move-in-concierge/">Plan a move-in</a>
       </div>
-      <div class="mi-stills">
-        {stages.map((s, i) => (
-          <Img id={s.img} class={media[s.img].src.width > media[s.img].src.height ? 'mi-still wide' : 'mi-still'} reveal="mask" position={s.pos} parallax={i === 1} sizes="(min-width: 1024px) 44vw, 100vw" widths={[640, 960, 1280]} data-step={`movein:${i}`} />
-        ))}
+      <div class="mi-right">
+        <div class="mi-stills" data-mi-stills data-reveal="mask">
+          {stages.map((s, i) => (
+            <Img id={s.img} class:list={[media[s.img].src.width > media[s.img].src.height ? 'mi-still wide' : 'mi-still', i === 0 && 'is-on']} position={s.pos} sizes="(min-width: 1024px) 44vw, 100vw" widths={[640, 960, 1280]} data-mi-still={String(i)} />
+          ))}
+        </div>
+        <div class="mi-control" data-mi-control>
+          <label class="mi-label" for="mi-range">Drag through the move</label>
+          <input id="mi-range" class="mi-range" type="range" min="0" max={stages.length - 1} step="1" value="0" aria-valuetext={stages[0].label} />
+          <div class="mi-marks" aria-hidden="true">
+            {stages.map((s, i) => <span class:list={[i === 0 && 'is-active']} data-mi-mark={String(i)}>{s.label}</span>)}
+          </div>
+        </div>
       </div>
     </div>
   </Section>
@@ -320,17 +352,40 @@ const begin = [
   /* Headline across the top; below it a large image on the left and the paragraph on the right, bottom-aligned to the image. */
   .st-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: clamp(48px, 6vw, 96px); }
   .st-h { grid-column: 2 / span 10; }
-  .st-img { grid-column: 2 / span 6; grid-row: 2; aspect-ratio: 6 / 7; }
+  .st-fig { grid-column: 2 / span 6; grid-row: 2; margin: 0; display: grid; gap: 14px; }
+  .st-img { aspect-ratio: 6 / 7; }
   .st-p { grid-column: 9 / span 4; grid-row: 2; align-self: end; font-size: clamp(1.25rem, 1.05rem + .75vw, 1.625rem); line-height: 1.5; }
   @media (max-width: 1023px) {
     .st-h { grid-column: 1 / -1; }
-    .st-img { grid-column: 1 / span 7; grid-row: 2; aspect-ratio: 4 / 5; }
+    .st-fig { grid-column: 1 / span 7; grid-row: 2; }
+    .st-img { aspect-ratio: 4 / 5; }
     .st-p { grid-column: 8 / -1; grid-row: 2; align-self: end; font-size: 1.1875rem; }
   }
   @media (max-width: 767px) {
-    .st-img { grid-column: 1 / -1; aspect-ratio: 4 / 5; }
+    .st-fig { grid-column: 1 / -1; }
+    .st-img { aspect-ratio: 4 / 5; }
     .st-p { grid-column: 1 / -1; grid-row: 3; align-self: start; font-size: 1.1875rem; }
   }
+
+  /* Drawer hotspots (JS reveals the markers; without JS the same notes show as a list). */
+  .st-frame { position: relative; }
+  .hs { position: absolute; z-index: 3; left: var(--x); top: var(--y); width: 44px; height: 44px; margin: -22px 0 0 -22px; padding: 0; background: none; border: 0; cursor: pointer; color: var(--alabaster); }
+  .hs[hidden] { display: none; }
+  .hs-dot { position: absolute; inset: 14px; border: 1px solid currentColor; background: color-mix(in srgb, var(--ink) 28%, transparent); backdrop-filter: none; transition: background-color 400ms var(--ease), transform 400ms var(--ease); }
+  .hs::after { content: ''; position: absolute; inset: 8px; border: 1px solid currentColor; opacity: 0; }
+  .motion .hs:not(.seen)::after { animation: hs-ring 3.2s var(--ease) infinite; }
+  .hs:hover .hs-dot { transform: scale(1.18); }
+  .hs[aria-expanded='true'] .hs-dot { background: var(--alabaster); }
+  .hs:focus-visible { outline: 2px solid var(--alabaster); outline-offset: -4px; }
+  @keyframes hs-ring { 0% { opacity: 0.7; transform: scale(0.6); } 70%, 100% { opacity: 0; transform: scale(1.5); } }
+  .hs-cap { min-height: 4.2em; }
+  .hs-note { margin: 0; max-width: 34rem; font-size: 1rem; line-height: 1.55; }
+  .hs-note strong { font-weight: 500; }
+  .hs-hint { color: color-mix(in srgb, var(--ink) 72%, transparent); }
+  .js .hs-list { display: none; }
+  .hs-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 0.95rem; }
+  .js .hs-note { display: block; }
+  .hs-note { display: none; }
 
   /* 03 Selected work */
   .work-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; }
@@ -405,6 +460,42 @@ const begin = [
     .mi-stills { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
     .mi-still, .mi-still.wide { aspect-ratio: 3 / 4; }
   }
+
+  /* Move-In timeline (JS only: without it the three stills simply stack). */
+  .mi-control { display: none; }
+  .js .mi-right { display: grid; gap: 22px; align-self: start; position: sticky; top: calc(var(--header-h) + 4vh); }
+  .js .mi-stills { display: block; position: relative; overflow: hidden; width: 100%; aspect-ratio: 4 / 5; max-height: calc(100svh - var(--header-h) - 200px); background: color-mix(in srgb, currentColor 8%, transparent); }
+  .js .mi-still, .js .mi-still.wide { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; z-index: 1; clip-path: inset(0 0 0 100%); }
+  .js .mi-still.is-prev { z-index: 2; clip-path: inset(0); }
+  .js .mi-still.is-on { z-index: 3; clip-path: inset(0); }
+  .js .mi-still picture { transform: scale(1.05); }
+  .js .mi-still.is-on picture { transform: scale(1); }
+  .motion .mi-still { transition: clip-path 1100ms var(--ease); }
+  .motion .mi-still picture { transition: transform 1800ms var(--ease); }
+  .js .mi-control { display: grid; gap: 6px; }
+  .mi-label { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; }
+  .mi-range { -webkit-appearance: none; appearance: none; width: 100%; height: 36px; margin: 0; background: transparent; cursor: grab; touch-action: pan-y; }
+  .mi-range:active { cursor: grabbing; }
+  .mi-range::-webkit-slider-runnable-track { height: 1px; background: color-mix(in srgb, currentColor 45%, transparent); }
+  .mi-range::-moz-range-track { height: 1px; background: color-mix(in srgb, currentColor 45%, transparent); }
+  .mi-range::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; margin-top: -8px; background: currentColor; border: 0; border-radius: 0; }
+  .mi-range::-moz-range-thumb { width: 16px; height: 16px; background: currentColor; border: 0; border-radius: 0; }
+  .mi-range:focus-visible { outline: none; }
+  .mi-range:focus-visible::-webkit-slider-thumb { outline: 2px solid currentColor; outline-offset: 4px; }
+  .mi-range:focus-visible::-moz-range-thumb { outline: 2px solid currentColor; outline-offset: 4px; }
+  .mi-marks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); font-size: 0.9rem; }
+  .mi-marks span { opacity: 0.5; cursor: pointer; transition: opacity 500ms var(--ease); }
+  .mi-marks span:nth-child(2) { text-align: center; }
+  .mi-marks span:nth-child(3) { text-align: right; }
+  .mi-marks span.is-active { opacity: 1; }
+  .js .mi-stages li { cursor: pointer; }
+  @media (max-width: 1023px) {
+    .js .mi-right { position: static; }
+    .js .mi-stills { aspect-ratio: 4 / 3; max-height: none; }
+    .js .mi-stages li { opacity: 0.62; }
+    .js .mi-stages li.is-active { opacity: 1; }
+  }
+  @media (max-width: 767px) { .js .mi-stills { aspect-ratio: 1 / 1; } }
 
   /* 06 Method */
   .m-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(40px, 6vw, 120px); }

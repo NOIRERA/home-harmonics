@@ -210,6 +210,15 @@ Single short form, saved immediately:
 - **Social cards:** `npm run og` renders `public/og/*.jpg`; pages without a card use their own image.
 - Details and evidence: `docs/audit/site-audit.md` → Phase 3 results.
 
+## 14. Build log: interactive sections (11 Oct 2026)
+- **Why:** Yaz asked for a more experiential site. Hero video was tried via Higgsfield (Kling start/end-frame chains) and **dropped**: generated clothes motion warped and read as AI. The hero stays the static generated still.
+- **Three interactions, all progressive enhancement** (server HTML carries every word; no-JS shows stacked stills, a notes list and the tier text). Code: `src/scripts/interactive.ts`, loaded as its own ~1.4KB-gzip chunk only where present.
+  1. **Move-In timeline** (home): a native range input plus the three stage rows drive one stage frame. Wipes use `clip-path` only; reduced-motion/Save-Data get instant swaps.
+  2. **Drawer hotspots** (home, statement section): five tap targets on the generated drawer image. Notes describe what the picture shows; no claims, stats or prices.
+  3. **Travel map** (/where-we-work/): schematic Texas outline, DFW home base, Austin/San Antonio/Houston, Colorado Springs only while `coloradoSprings` is true (city level). A square marker travels the route (transform animation, instant for reduced motion).
+- **§10 compliance:** only transform/opacity/clip-path animate; no scroll-jacking, custom cursor, pills, shadows or bounce; radius 0; homepage JS budget unchanged in practice. The hotspot ring pulse is opacity+transform and stops after first use.
+- **Analytics events (GA4, no-ops until ID set):** `movein_timeline`, `drawer_hotspot`, `travel_map`.
+
 ## 9. Still `{{TBD}}`
 GA4 measurement ID (Yaz must create it) · Turnstile and Resend keys · optional `g.page/r/…` review-request link · Yaz's real portrait (replaces the AI-rendered ones) · out-of-state insurance confirmation (before promoting beyond Texas) · lawyer review of terms · Workspace decision for sending as hello@ · Pinterest/LinkedIn URLs (after launch) · any further Letter detail Yaz wants to add.
 

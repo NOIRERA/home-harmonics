@@ -167,3 +167,6 @@ if (motion && fine && !(nav.deviceMemory && nav.deviceMemory <= 4)) {
   const idle = () => ('requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 2000 }) : setTimeout(go, 600));
   document.readyState === 'complete' ? idle() : addEventListener('load', idle, { once: true });
 }
+
+// Interactive sections (Move-In timeline, drawer hotspots, travel map): own chunk, only where present.
+if (document.querySelector('[data-mi-stills], [data-hotspots], [data-map]')) import('./interactive').then((m) => m.init());

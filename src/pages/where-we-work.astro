@@ -18,6 +18,21 @@ const tiers = [
     d: `By arrangement, with the same model: plan by video, then a scheduled block on site.${claim('coloradoSprings') ? ' Recent work includes Colorado Springs.' : ''}`,
   },
 ];
+
+// Travel map: schematic, not survey-accurate. Coordinates are projected from city centres.
+const outline = 'M174 148 L289 148 L289 233 L319 249 L361 253 L397 269 L421 264 L467 262 L498 273 L514 277 L514 346 L533 381 L525 418 L522 447 L489 462 L459 486 L421 508 L395 535 L387 566 L397 612 L357 607 L323 592 L308 544 L278 508 L262 473 L236 444 L202 439 L187 447 L172 478 L149 469 L119 451 L103 407 L62 372 L39 354 L39 346 L173 346 Z';
+const home = { x: 401, y: 312 };
+const byVideo = `planning starts by video, and the days on site are scheduled as one block (${price.travelDays}-day minimum, travel and lodging at cost).`;
+const stops: { id: string; label: string; x: number; y: number; c: string; note: string; dx: number; dy: number; anchor: string }[] = [
+  { id: 'austin', label: 'Austin', x: 374, y: 422, c: '380 372', note: `Austin: ${byVideo}`, dx: -14, dy: 4, anchor: 'end' },
+  { id: 'san-antonio', label: 'San Antonio', x: 346, y: 459, c: '340 392', note: `San Antonio: ${byVideo}`, dx: -14, dy: 14, anchor: 'end' },
+  { id: 'houston', label: 'Houston', x: 464, y: 444, c: '470 380', note: `Houston: ${byVideo}`, dx: 14, dy: 4, anchor: 'start' },
+  ...(claim('coloradoSprings')
+    ? [{ id: 'colorado-springs', label: 'Colorado Springs', x: 106, y: 45, c: '150 250', note: 'Colorado Springs: recent work. Beyond Texas is by arrangement, with the same model of planning by video and then a scheduled block on site.', dx: 14, dy: 4, anchor: 'start' }]
+    : []),
+];
+const homeNote = 'Dallas–Fort Worth is home base: walkthroughs in person, and engagements scheduled as consecutive days.';
+
 const model = [
   { t: 'Listen, by video', d: 'A virtual walkthrough of the home and the household, so the plan and sourcing are ready before arrival.' },
   { t: 'A block on site', d: `A scoped residency of consecutive days, with a minimum of ${price.travelDays} on-site days.` },
@@ -37,7 +52,46 @@ const model = [
     crumbs={crumbs}
   />
 
-  <Section bg="alabaster" class="ww-tiers">
+  <Section bg="alabaster" class="ww-map">
+    <div class="wrap ww-map-grid" data-map>
+      <figure class="ww-svg-wrap">
+        <svg class="ww-svg" viewBox="0 0 580 640" role="img" aria-labelledby="ww-map-t ww-map-d" preserveAspectRatio="xMidYMid meet">
+          <title id="ww-map-t">Home Harmonics travel map</title>
+          <desc id="ww-map-d">Schematic map of Texas with routes from the Dallas–Fort Worth home base to Austin, San Antonio and Houston{claim('coloradoSprings') ? ', and a route north-west to Colorado Springs' : ''}.</desc>
+          <path class="ww-tx" d={outline} />
+          {stops.map((st) => (
+            <path class="ww-route" data-route={st.id} d={`M${home.x} ${home.y} Q${st.c} ${st.x} ${st.y}`} />
+          ))}
+          {stops.map((st) => (
+            <g class="ww-stop" data-stop={st.id} transform={`translate(${st.x} ${st.y})`}>
+              <rect class="ww-hit" x="-22" y="-22" width="44" height="44" />
+              <rect class="ww-node" x="-4" y="-4" width="8" height="8" />
+              <text x={st.dx} y={st.dy} text-anchor={st.anchor}>{st.label}</text>
+            </g>
+          ))}
+          <g class="ww-home" transform={`translate(${home.x} ${home.y})`}>
+            <rect class="ww-node home" x="-6" y="-6" width="12" height="12" />
+            <text x="16" y="-10" text-anchor="start">Dallas–Fort Worth</text>
+          </g>
+          <g class="ww-walker" data-walker transform={`translate(${home.x} ${home.y})`} aria-hidden="true">
+            <rect x="-9" y="-9" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1" />
+          </g>
+        </svg>
+      </figure>
+      <div class="ww-panel">
+        <p class="eyebrow">Where we work</p>
+        <h2 class="h2"><Words reveal text="Choose a destination. | *Follow the route.*" /></h2>
+        <div class="ww-dests" role="group" aria-label="Destinations" data-dests hidden>
+          <button type="button" class="ww-dest is-on" data-dest="home" aria-pressed="true">Dallas–Fort Worth</button>
+          {stops.map((st) => <button type="button" class="ww-dest" data-dest={st.id} aria-pressed="false">{st.label}</button>)}
+        </div>
+        <p class="ww-note" aria-live="polite" data-note>{homeNote}</p>
+        <script type="application/json" data-notes set:html={JSON.stringify({ home: homeNote, ...Object.fromEntries(stops.map((x) => [x.id, x.note])) })} />
+      </div>
+    </div>
+  </Section>
+
+  <Section bg="limestone" from="alabaster" class="ww-tiers">
     <div class="wrap">
       <ol role="list" class="cols-3">
         {tiers.map((x, i) => <li data-reveal style={`--delay:${i * 90}ms`}><span class="eyebrow muted">0{i + 1}</span><h2 class="h3">{x.t}</h2><p class="muted">{x.d}</p></li>)}
@@ -45,7 +99,7 @@ const model = [
     </div>
   </Section>
 
-  <Section bg="limestone" from="alabaster" class="ww-model">
+  <Section bg="alabaster" from="limestone" class="ww-model">
     <div class="wrap split">
       <div>
         <p class="eyebrow">Travel engagements</p>
@@ -58,7 +112,7 @@ const model = [
     </div>
   </Section>
 
-  <Section bg="alabaster" from="limestone" class="ww-faq">
+  <Section bg="limestone" from="alabaster" class="ww-faq">
     <div class="wrap split">
       <div>
         <p class="eyebrow">Questions</p>
@@ -69,10 +123,32 @@ const model = [
     </div>
   </Section>
 
-  <CtaBand from="alabaster" />
+  <CtaBand from="limestone" />
 </Base>
 
 <style is:global>
+  .ww-map-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(32px, 6vw, 120px); align-items: center; }
+  .ww-svg-wrap { margin: 0; }
+  .ww-svg { width: 100%; height: auto; max-height: 78svh; display: block; color: var(--ink); overflow: visible; }
+  .ww-tx { fill: color-mix(in srgb, var(--ink) 5%, transparent); stroke: color-mix(in srgb, var(--ink) 42%, transparent); stroke-width: 1; stroke-linejoin: round; }
+  .ww-route { fill: none; stroke: currentColor; stroke-width: 1; stroke-dasharray: 3 5; opacity: 0.32; transition: opacity 500ms var(--ease); }
+  .ww-route.on { opacity: 1; stroke-dasharray: none; }
+  .ww-node { fill: currentColor; }
+  .ww-node.home { fill: var(--walnut); }
+  .ww-stop text, .ww-home text { font: 400 15px/1 var(--sans, system-ui); fill: currentColor; }
+  .ww-stop text { opacity: 0.7; transition: opacity 500ms var(--ease); }
+  .ww-stop.on text { opacity: 1; }
+  .ww-hit { fill: transparent; }
+  .js .ww-stop { cursor: pointer; }
+  .ww-walker { opacity: 0; transition: opacity 400ms var(--ease); }
+  .js .ww-walker { opacity: 1; }
+  .ww-dests { display: flex; flex-wrap: wrap; gap: 6px 28px; margin-top: 28px; }
+  .ww-dests[hidden] { display: none; }
+  .ww-dest { background: none; border: 0; padding: 12px 0; font: inherit; color: inherit; cursor: pointer; opacity: 0.62; background: linear-gradient(currentColor, currentColor) no-repeat 0 calc(100% - 8px) / 0 1px; transition: opacity 400ms var(--ease), background-size 500ms var(--ease); }
+  .ww-dest:hover { opacity: 1; }
+  .ww-dest.is-on { opacity: 1; background-size: 100% 1px; }
+  .ww-note { margin-top: 20px; max-width: 30rem; min-height: 6.5em; font-size: 1.05rem; line-height: 1.55; }
+  @media (max-width: 899px) { .ww-map-grid { grid-template-columns: 1fr; } .ww-svg { max-height: 62svh; } }
   .ww-tiers .cols-3 h2 { margin-top: 4px; }
   .ww-img { width: 100%; aspect-ratio: 3 / 2; margin-top: 16px; }
 </style>

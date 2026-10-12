@@ -133,7 +133,35 @@ function travelMap() {
   stops.forEach((st) => st.addEventListener('click', () => select(st.dataset.stop!)));
 }
 
+// How we begin: a hairline rail fills as the three steps come into view; hovering or tapping a step re-weights it.
+function begin() {
+  const rail = document.querySelector<HTMLElement>('[data-rail]');
+  const list = document.querySelector<HTMLElement>('[data-steps]');
+  const fill = rail?.querySelector<HTMLElement>('i');
+  if (!rail || !list || !fill) return;
+  const steps = [...list.querySelectorAll<HTMLElement>('[data-b-step]')];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const set = (n: number) => {
+    fill.style.transform = `scaleX(${(n + 1) / steps.length})`;
+    steps.forEach((el, i) => el.classList.toggle('is-active', i === n));
+    list.classList.add('has-active');
+  };
+  steps.forEach((el, i) => {
+    el.addEventListener('mouseenter', () => set(i));
+    el.addEventListener('click', () => { set(i); track('begin_step', { step: i + 1 }); });
+  });
+  const io = new IntersectionObserver((es) => {
+    if (!es.some((e) => e.isIntersecting)) return;
+    io.disconnect();
+    if (reduce) { fill.style.transform = 'scaleX(1)'; return; }
+    steps.forEach((_, i) => setTimeout(() => { if (!list.matches(':hover')) fill.style.transform = `scaleX(${(i + 1) / steps.length})`; }, 500 + i * 800));
+  }, { threshold: 0.4 });
+  io.observe(list);
+  list.addEventListener('mouseleave', () => { list.classList.remove('has-active'); steps.forEach((el) => el.classList.remove('is-active')); fill.style.transform = 'scaleX(1)'; });
+}
+
 export function init() {
+  begin();
   moveIn();
   hotspots();
   travelMap();

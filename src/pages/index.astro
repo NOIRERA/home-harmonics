@@ -43,9 +43,9 @@ const spots: { label: string; text: string; x: number; y: number }[] = [
 ];
 
 const begin = [
-  { t: 'A short fit call', d: 'Fifteen minutes, complimentary, to hear what you need and when.' },
-  { t: 'A walkthrough', d: 'Thirty to forty-five minutes in your home or by video, also complimentary. Yaz looks at every space in scope.' },
-  { t: 'A proposal', d: 'Scope, schedule and investment within about two business days. A 50% deposit holds your dates.' },
+  { time: '15 min', t: 'A short fit call', d: 'Fifteen minutes, complimentary, to hear what you need and when.' },
+  { time: '30–45 min', t: 'A walkthrough', d: 'Thirty to forty-five minutes in your home or by video, also complimentary. Yaz looks at every space in scope.' },
+  { time: 'About 2 business days', t: 'A proposal', d: 'Scope, schedule and investment within about two business days. A 50% deposit holds your dates.' },
 ];
 ---
 <Base
@@ -278,10 +278,11 @@ const begin = [
         <p class="eyebrow">How we begin</p>
         <h2 class="h2"><Words reveal text="Three conversations, *then a plan.*" /></h2>
       </header>
-      <ol role="list" class="b-cols">
+      <div class="b-rail" data-rail aria-hidden="true"><i></i></div>
+      <ol role="list" class="b-cols" data-steps>
         {begin.map((b, i) => (
-          <li data-reveal style={`--delay:${i * 90}ms`}>
-            <span class="eyebrow muted">0{i + 1}</span>
+          <li data-reveal style={`--delay:${i * 90}ms`} data-b-step={String(i)}>
+            <span class="eyebrow muted b-top"><span>0{i + 1}</span><span class="b-time">{b.time}</span></span>
             <h3 class="h3">{b.t}</h3>
             <p class="muted">{b.d}</p>
           </li>
@@ -535,6 +536,15 @@ const begin = [
   @media (max-width: 1023px) { .v-list { grid-template-columns: 1fr; } }
 
   /* 09 How we begin */
+  .b-rail { display: none; }
+  .js .b-rail { display: block; height: 1px; background: color-mix(in srgb, var(--ink) 18%, transparent); position: relative; overflow: hidden; }
+  .b-rail i { position: absolute; inset: 0; background: var(--walnut); transform: scaleX(0); transform-origin: 0 50%; transition: transform 1100ms var(--ease); }
+  .b-top { display: flex; justify-content: space-between; gap: 16px; }
+  .b-time { letter-spacing: 0.08em; }
+  .js .b-cols { border-top: 0; }
+  .js .b-cols li { cursor: default; transition: opacity 600ms var(--ease); }
+  .js .b-cols.has-active li:not(.is-active) { opacity: 0.5; }
+  @media (prefers-reduced-motion: reduce) { .b-rail i { transition: none; } }
   .b-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: var(--rule); }
   .b-cols li { display: grid; gap: 12px; align-content: start; padding: 32px 32px 8px 0; }
   .b-cols li + li { border-left: var(--rule); padding-left: 32px; }

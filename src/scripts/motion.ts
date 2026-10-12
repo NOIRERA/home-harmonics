@@ -169,4 +169,4 @@ if (motion && fine && !(nav.deviceMemory && nav.deviceMemory <= 4)) {
 }
 
 // Interactive sections (Move-In timeline, drawer hotspots, travel map): own chunk, only where present.
-if (document.querySelector('[data-mi-stills], [data-hotspots], [data-map]')) import('./interactive').then((m) => m.init());
+if (document.querySelector('[data-mi-stills], [data-hotspots], [data-map], [data-rail]')) import('./interactive').then((m) => m.init());

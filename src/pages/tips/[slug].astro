@@ -1,0 +1,128 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { getImage } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import Img from '../../components/Img.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { media, type MediaId } from '../../lib/media';
+import { settings, abs, smart, crumbSchema } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const all = (await getCollection('tips')).sort((a, b) => a.data.order - b.data.order);
+  return all.map((tip) => ({
+    params: { slug: tip.id },
+    props: {
+      tip,
+      related: tip.data.related.map((id) => {
+        const r = all.find((x) => x.id === id);
+        if (!r) throw new Error(`Tip ${tip.id}: unknown related tip ${id}`);
+        return r;
+      }),
+    },
+  }));
+}
+const { tip, related } = Astro.props as { tip: CollectionEntry<'tips'>; related: CollectionEntry<'tips'>[] };
+const d = tip.data;
+const asId = (id: string) => {
+  if (!(id in media)) throw new Error(`Tip ${tip.id}: unknown media id ${id}`);
+  return id as MediaId;
+};
+const images = d.images.map(asId);
+const { Content } = await render(tip);
+const iso = d.published.toISOString().slice(0, 10);
+const crumbs = [{ label: 'Tips', href: '/tips/' }, { label: d.h1, href: `/tips/${tip.id}/` }];
+const schemaImg = await getImage({ src: media[images[0]].src, width: 1000, format: 'jpg' });
+const article = {
+  '@type': 'Article',
+  headline: d.h1,
+  description: d.description,
+  datePublished: iso,
+  dateModified: iso,
+  image: abs(schemaImg.src),
+  mainEntityOfPage: abs(`/tips/${tip.id}/`),
+  author: { '@type': 'Person', '@id': abs('/about/#yaz'), name: settings.founder, url: abs('/about/') },
+  publisher: { '@id': abs('/#business') },
+};
+const ratio = (id: MediaId) => `aspect-ratio: ${media[id].src.width} / ${media[id].src.height}`;
+---
+<Base title={d.titleTag} description={d.description} image={images[0]} footerFrom="limestone" schema={[article, crumbSchema(crumbs)]}>
+  <PageHero eyebrow="Tips" title={smart(d.h1)} lead={smart(d.intro)} crumbs={crumbs} />
+
+  <Section bg="alabaster" class="tp">
+    <div class="wrap tp-grid">
+      <div class:list={['tp-imgs', images.length > 1 && 'two']}>
+        {images.map((id, i) => (
+          <Img id={id} class="tp-img" reveal="mask" style={`${ratio(id)}; --delay:${i * 150}ms`} sizes="(min-width: 1024px) 30vw, (min-width: 768px) 38vw, 46vw" widths={[400, 600, 800, 1000]} />
+        ))}
+      </div>
+      <article class="tp-body">
+        <div class="prose tp-prose" data-reveal><Content /></div>
+        <div class="tp-handle" data-reveal>
+          <h2 class="eyebrow">How we handle it</h2>
+          <p>{smart(d.handle)}</p>
+        </div>
+      </article>
+    </div>
+  </Section>
+
+  <CtaBand
+    from="alabaster"
+    title="Want this done *for you?*"
+    note="Home Harmonics plans and leads home organization and move-in setup across Dallas–Fort Worth."
+    label="Start a conversation"
+  />
+
+  <Section bg="limestone" class="tp-related">
+    <div class="wrap">
+      <h2 class="eyebrow tp-related-h">Related tips</h2>
+      <ul role="list" class="tp-rel">
+        {related.map((r) => (
+          <li data-reveal>
+            <a href={`/tips/${r.id}/`}>
+              <Img id={asId(r.data.images[0])} class="tp-rel-img" alt="" sizes="(min-width: 768px) 12vw, 28vw" widths={[200, 400]} />
+              <span class="tp-rel-text">
+                <span class="h3 tp-rel-title">{smart(r.data.h1)}</span>
+                <span class="muted">{smart(r.data.intro)}</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a class="link tp-all" href="/tips/">All tips <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </Section>
+</Base>
+
+<style is:global>
+  .tp { padding-top: 0; }
+  .tp-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: clamp(40px, 6vw, 112px); align-items: start; }
+  .tp-imgs { display: grid; gap: 24px; }
+  .tp-imgs:not(.two) { position: sticky; top: calc(var(--header-h) + 32px); }
+  .tp-body { max-width: 42rem; display: grid; gap: 48px; }
+  .tp-prose { font-size: 1.125rem; line-height: 1.75; max-width: none; }
+  .tp-prose h2 { font: 350 clamp(1.5rem, 1.2rem + 1vw, 2.1rem)/1.2 var(--serif); margin-top: 1.4em; }
+  .tp-prose h2:first-child { margin-top: 0; }
+  .tp-prose ol, .tp-prose ul { display: grid; gap: 0.5em; padding-left: 1.3em; }
+  .tp-prose li::marker { color: var(--taupe); }
+  .tp-prose strong { font-weight: 600; }
+  .tp-handle { display: grid; gap: 12px; padding-top: 28px; border-top: 1px solid currentColor; }
+  .tp-handle p { font: 300 clamp(1.2rem, 1.05rem + 0.6vw, 1.6rem)/1.45 var(--serif); }
+  .tp-related-h { margin-bottom: 24px; }
+  .tp-rel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
+  .tp-rel a { display: grid; grid-template-columns: minmax(96px, 1fr) 3fr; gap: 24px; align-items: center; padding-top: 24px; border-top: var(--rule); text-decoration: none; }
+  .tp-rel-img { aspect-ratio: 2 / 3; }
+  .tp-rel-text { display: grid; gap: 10px; }
+  .tp-rel a:hover .tp-rel-title { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+  .tp-all { margin-top: 40px; }
+  @media (max-width: 1023px) {
+    .tp-rel { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 767px) {
+    .tp-grid { grid-template-columns: 1fr; }
+    .tp-imgs:not(.two) { position: static; max-width: 300px; }
+    .tp-imgs.two { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .tp-rel a { grid-template-columns: 88px 1fr; gap: 16px; }
+  }
+</style>

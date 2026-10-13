@@ -47,4 +47,22 @@ const journal = defineCollection({
   }),
 });
 
-export const collections = { projects, journal };
+// Tips: short practical pages linked from Pinterest (copy: docs/tip-pages.md). `images` are media ids.
+const tips = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/tips' }),
+  schema: z.object({
+    /** Full <title> tag, used as written. */
+    titleTag: z.string(),
+    description: z.string(),
+    h1: z.string(),
+    intro: z.string(),
+    images: z.array(z.string()).min(1),
+    /** "How we handle it" paragraph. */
+    handle: z.string(),
+    related: z.array(z.string()),
+    order: z.number(),
+    published: z.coerce.date(),
+  }),
+});
+
+export const collections = { projects, journal, tips };

@@ -1,0 +1,73 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import Section from '../../components/Section.astro';
+import Img from '../../components/Img.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { media, type MediaId } from '../../lib/media';
+import { abs, smart, crumbSchema } from '../../lib/site';
+
+const tips = (await getCollection('tips')).sort((a, b) => a.data.order - b.data.order);
+const crumbs = [{ label: 'Tips', href: '/tips/' }];
+const list = {
+  '@type': 'ItemList',
+  itemListElement: tips.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(`/tips/${t.id}/`), name: t.data.h1 })),
+};
+const lead = (id: string) => {
+  if (!(id in media)) throw new Error(`Tips index: unknown media id ${id}`);
+  return id as MediaId;
+};
+---
+<Base
+  title="Home organization tips | Home Harmonics, Dallas–Fort Worth"
+  description="Short, practical tips for closets, linen closets, garages, drawers, kids' spaces and move-in setup, from Home Harmonics in Dallas–Fort Worth."
+  image={lead(tips[0].data.images[0])}
+  schema={[list, crumbSchema(crumbs)]}
+>
+  <PageHero
+    eyebrow="Tips"
+    title="Practical organizing, | *one idea at a time.*"
+    lead={smart("Short, usable tips from Yaz Scott. Pick the space you're working on.")}
+    crumbs={crumbs}
+  />
+
+  <Section bg="alabaster" class="tps">
+    <div class="wrap">
+      <ol role="list" class="tps-list">
+        {tips.map((t, i) => (
+          <li data-reveal style={`--delay:${(i % 2) * 90}ms`}>
+            <a class="tps-row" href={`/tips/${t.id}/`}>
+              <Img id={lead(t.data.images[0])} class="tps-img" alt="" sizes="(min-width: 1024px) 14vw, (min-width: 768px) 18vw, 30vw" widths={[200, 400, 600]} />
+              <span class="tps-text">
+                <span class="eyebrow muted">0{i + 1}</span>
+                <span class="h3 tps-title">{smart(t.data.h1)}</span>
+                <span class="muted">{smart(t.data.intro)}</span>
+                <span class="link">Read <span class="arrow" aria-hidden="true">→</span></span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </Section>
+
+  <CtaBand
+    from="alabaster"
+    title="Want this done *for you?*"
+    note="Home Harmonics plans and leads home organization and move-in setup across Dallas–Fort Worth."
+    label="Start a conversation"
+  />
+</Base>
+
+<style is:global>
+  .tps-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(32px, 5vw, 80px); border-top: var(--rule); }
+  .tps-list > li { border-bottom: var(--rule); }
+  .tps-row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 5fr); gap: clamp(20px, 3vw, 40px); align-items: center; padding: clamp(28px, 3.5vw, 48px) 0; text-decoration: none; }
+  .tps-img { aspect-ratio: 2 / 3; }
+  .tps-text { display: grid; gap: 12px; justify-items: start; }
+  .tps-title { background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 0 1px; transition: background-size 700ms var(--ease); }
+  .tps-row:hover .tps-title, .tps-row:focus-visible .tps-title { background-size: 100% 1px; }
+  @media (max-width: 1023px) { .tps-list { grid-template-columns: 1fr; } }
+  @media (max-width: 767px) { .tps-row { grid-template-columns: 96px minmax(0, 1fr); gap: 18px; } .tps-title { font-size: 1.4rem; } }
+</style>

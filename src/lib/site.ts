@@ -27,6 +27,9 @@ export const testimonial = (id: string) => voices.find((v) => v.id === id);
 
 export const abs = (path: string) => new URL(path, settings.url).href;
 
+/** Typographic quotes for plain strings (markdown bodies already get these from Astro's smartypants). */
+export const smart = (s: string) => s.replace(/(\w)'/g, '$1’').replace(/"([^"]*)"/g, '“$1”');
+
 /** Core Dallas–Fort Worth cities (the same list the old site served). Used in schema and on /where-we-work/. */
 export const dfwCities = ['Dallas', 'Fort Worth', 'Plano', 'Frisco', 'Prosper', 'Allen', 'Southlake', 'Colleyville', 'Grapevine', 'Irving', 'Carrollton', 'Arlington', 'Grand Prairie', 'Mansfield', 'The Colony', 'Waxahachie'];
 

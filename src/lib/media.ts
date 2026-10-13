@@ -21,6 +21,18 @@ import bathAfter from '../assets/real/guest-bathroom-after.jpg';
 import yazPortrait from '../assets/founder/yaz-portrait.jpg';
 import yazWorking from '../assets/founder/yaz-working.jpg';
 
+import tipGarage from '../assets/tips/02-garage-fully-fitted.jpg';
+import tipEditFirst from '../assets/tips/03-edit-first-then-buy.jpg';
+import tipUnpack from '../assets/tips/04-unpack-in-this-order.jpg';
+import tipLabel from '../assets/tips/05-label-what-you-cant-see.jpg';
+import tipVertical from '../assets/tips/06-go-vertical.jpg';
+import tipSheets from '../assets/tips/07-store-sheets-as-a-set.jpg';
+import tipKnits from '../assets/tips/08-knits-fold-never-hang.jpg';
+import tipDrawer from '../assets/tips/09-one-compartment-one-category.jpg';
+import tipKids from '../assets/tips/10-organize-at-their-height.jpg';
+import tipOneInOneOut from '../assets/tips/11-one-in-one-out.jpg';
+import tipSwap from '../assets/tips/12-swap-twice-a-year.jpg';
+
 /** Plan §0.2: every image carries a truth flag. Generated images never appear in case studies. */
 export type Truth = 'real_client_work' | 'real_founder' | 'real_process' | 'generated_atmosphere';
 export type MediaEntry = { src: ImageMetadata; alt: string; truth: Truth; placeholder?: boolean };
@@ -50,6 +62,18 @@ export const media = {
   bathAfter: real(bathAfter, 'Guest bathroom after: a cleared vanity, a green linen shower curtain and styled open shelving'),
   yazPortrait: { src: yazPortrait, alt: 'Yaz Scott, founder of Home Harmonics', truth: 'real_founder' },
   yazWorking: { src: yazWorking, alt: 'Yaz Scott arranging folded towels on an open linen shelf', truth: 'real_founder' },
+  // Tip pins (Pinterest, 2:3; garage 4:5). Headline text is part of the image. Alt text from hh-posts/SCHEDULE.md.
+  tipGarage: real(tipGarage, 'Before and after of a Dallas–Fort Worth garage: cluttered with bins and bikes, then fitted with gray cabinets, slatwall, overhead racks and a vintage car parked inside.'),
+  tipEditFirst: gen(tipEditFirst, 'A wooden console with a tape measure, pencil, linen notebook and woven baskets, with the text "Edit first. Then buy."'),
+  tipUnpack: gen(tipUnpack, 'Labeled moving boxes for bedroom, bath and kitchen in a sunlit new home, with the text "Unpack in this order."'),
+  tipLabel: gen(tipLabel, 'A linen closet with woven baskets and clear bins, each with a handwritten label such as Towels, Blankets and Toilet Paper.'),
+  tipVertical: gen(tipVertical, 'A garage with bikes and tools on a slatwall, overhead storage racks with bins, and gray cabinets, leaving the floor clear.'),
+  tipSheets: gen(tipSheets, 'Linen shelves with sheet sets folded inside pillowcases, labeled King, Queen, Full and Twin.'),
+  tipKnits: gen(tipKnits, 'Three folded knit sweaters in beige, cream and charcoal on a wooden shelf.'),
+  tipDrawer: gen(tipDrawer, 'An open dresser drawer with velvet dividers holding watches, sunglasses, wallets, a belt, cufflinks and a pen, each in its own compartment.'),
+  tipKids: gen(tipKids, "A low wooden shelf in a child's closet with folded knits, wooden toys and a stuffed bunny in open bins."),
+  tipOneInOneOut: gen(tipOneInOneOut, 'A walk-in closet with neutral clothing on wooden hangers and lit shoe shelves.'),
+  tipSwap: gen(tipSwap, 'A closet with linen shirts and knits on hangers, a labeled Seasonal box above and a Bags box below.'),
 } satisfies Record<string, MediaEntry>;
 
 export type MediaId = keyof typeof media;

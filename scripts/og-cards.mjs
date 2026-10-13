@@ -3,6 +3,7 @@
 //
 // Renders the built site in a headless browser so the cards use the real fonts:
 //   npm run build && PLAYWRIGHT=/path/to/node_modules/playwright/index.mjs node scripts/og-cards.mjs && npm run build
+//   (add PW_CHANNEL=chrome to use the installed Chrome)
 // Playwright is not a project dependency; point PLAYWRIGHT at any install (or `npm i -D playwright`).
 import { createServer } from 'node:http';
 import { readFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs';
@@ -34,7 +35,8 @@ const base = 'http://127.0.0.1:4411';
 const mark = `data:image/png;base64,${readFileSync('src/assets/brand/mark-ink.png').toString('base64')}`;
 
 mkdirSync(OUT, { recursive: true });
-const browser = await chromium.launch();
+// PW_CHANNEL=chrome uses the installed Chrome instead of Playwright's bundled browser.
+const browser = await chromium.launch(process.env.PW_CHANNEL ? { channel: process.env.PW_CHANNEL } : {});
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
 const card = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 
